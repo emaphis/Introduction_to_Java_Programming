@@ -14,7 +14,7 @@ public class Main {
      */
     public static void main(String[] args) {
         var hello = "Hello, Intro";
-        System.out.println("Hello, Intro");
+        System.out.println(hello);
     }
 
 }
