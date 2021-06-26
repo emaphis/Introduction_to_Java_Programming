@@ -1,13 +1,13 @@
 /*
  * Check Point
  */
-package chapter02.checkpoint02_07;
+package chapter02.check_point;
 
 /**
  *
  * @author emaph
  */
-public class CheckPoint {
+public class CheckPoint02_07 {
     // 2.7.1 What are the benefits of using constants?
     // You dont have to type out the value each itme,
     // If the value changes, You type it only once

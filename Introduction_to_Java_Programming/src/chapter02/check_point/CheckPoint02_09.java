@@ -1,10 +1,10 @@
-package chapter02.checkpoint02_09;
+package chapter02.check_point;
 
 /**
  *
  * @author emaph
  */
-public class CheckPoint {
+public class CheckPoint02_09 {
 
     // 2.9.1  - Find the largest and smallest byte, short, int, long, float, and double
     static void sizes() {
