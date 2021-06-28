@@ -1,4 +1,6 @@
-
+/*
+ * Listing 2.5  DispalyTime.java
+*/
 package chapter02.examples.listing02_05;
 
 import java.util.Scanner;
@@ -17,6 +19,6 @@ public class DisplayTime {
         int minutes = seconds / 60;   // Find minutes in secons
         int remainingSeconds = seconds % 60;  // find the remaining
         System.out.println(seconds + " seconds is " + minutes +
-                " munuts and " + remainingSeconds + " sseconds");
+                "  minuts and " + remainingSeconds + " sseconds");
     }
 }

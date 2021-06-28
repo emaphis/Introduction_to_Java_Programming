@@ -1,18 +1,18 @@
 /*
- * Listing 2.6.1
+ * Check Point 2.6.1
  * Assignment Statements and Assignment Expressions
  */
-package chapter02.examples.listing02_06_01;
+package chapter02.check_point;
 
 /**
- * Fix all of the erros.
- *
+ * Check Point 2.6
  * @author emaph
  */
-public class Test {
+public class CheckPoint02_06 {
 
+    // 2.6.1 Identify and fix the errors in the following code:
     public static void main(String[] args) {
-        int i, j, k;
+        int i, j, k;  // fix
         i = j = k = 2;
         System.out.println(i + " " + j + " " + k);
     }

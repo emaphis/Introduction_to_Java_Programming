@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author emaph
  */
-public class ComputeArea {
+public class ComputeAreaWithConsoleInput {
 
     public static void main(String[] args) {
         // Create a Scanner object

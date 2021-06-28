@@ -36,7 +36,7 @@ public class CheckPoint02_09 {
 
     // 2.9.3 - If today is Tuesday, what will be the day in 100 days?
     static void days() {
-        System.out.println("Day: " + (3 + 100) % 7);  // 5 thursdays
+        System.out.println("Day: " + (2 + 100) % 7);  // 4 thursdays
         System.out.println();
     }
 
