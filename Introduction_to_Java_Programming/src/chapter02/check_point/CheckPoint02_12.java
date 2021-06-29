@@ -1,5 +1,5 @@
 /*
- *  Check Point 2.11
+ *  Check Point 2.12
  */
 package chapter02.check_point;
 
@@ -7,7 +7,7 @@ package chapter02.check_point;
  *
  * @author emaph
  */
-public class CheckPoint02_11 {
+public class CheckPoint02_12 {
 
     public static void main(String[] args) {
         // a.
