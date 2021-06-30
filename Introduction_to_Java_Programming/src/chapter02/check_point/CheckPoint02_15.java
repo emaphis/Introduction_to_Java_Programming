@@ -19,6 +19,7 @@ public class CheckPoint02_15 {
     //           d. The statement x = y = x = 0 is illegal
     // false
 
+    // 2.15.2  Show the output of the following code:
     public static void main(String[] args) {
         int a = 6;
         int b = a++;

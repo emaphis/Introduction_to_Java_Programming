@@ -12,8 +12,8 @@ public class CheckPoint02_06 {
 
     // 2.6.1 Identify and fix the errors in the following code:
     public static void main(String[] args) {
-        int i, j, k;  // fix
-        i = j = k = 2;
+        int  j, k;  // fix
+        int i = j = k = 2;
         System.out.println(i + " " + j + " " + k);
     }
 }

@@ -15,24 +15,29 @@ public class CheckPoint02_16 {
     //            of the double value? Does casting change the variable being cast?
     // Fractionl part is ignored
     // Casting doesn't change the original vavlirable
-    // 2.16.3 Show the following output:
+
+// 2.16.3 Show the following output:
     static void output() {
         float f = 12.5F;
         int i = (int) f;
         System.out.println("f is " + f);
         System.out.println("i is " + i);
+
+        System.out.println();
     }
 
     // 2.16.4 If you change (int)(tax * 100) / 100.0 to (int)(tax * 100) / 100 in line
     //           11 in Listing 2.8, what will be the output for the input purchase amount of 197.556?
     static void tax() {
-        double tax = 197.55;
+        double tax = 197.55 * 0.06;
 
         double oldTax = (int) (tax * 100) / 100.0;
         System.out.println("old: " + oldTax);
 
         double newTax = (int) (tax * 100) / 100;
         System.out.println("new: " + newTax);
+
+        System.out.println();
     }
 
     // 2.16.5 Show the output of the following code:
@@ -46,8 +51,8 @@ public class CheckPoint02_16 {
     //   (int) (num + 0.5)
 
     public static void main(String[] args) {
-        //output();
-        //tax();
+        output();
+        tax();
         output2();
     }
 

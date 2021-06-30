@@ -46,5 +46,6 @@ public class ComputeChange {
         System.out.println(" " + numberOfDimes + " dimes");
         System.out.println(" " + numberOfNickels + " nickels");
         System.out.println(" " + numberOfPennies + " pennies");
+        System.out.println("nn" + 4.0 / 25.0);
     }
 }
