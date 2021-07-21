@@ -17,6 +17,8 @@ public class CheckPoint03_03 {
         if (y > 0) {
             x = 1;
         }
+
+        System.out.println("x: " + x);
     }
 
     // 3.3.2    Write an if statement that increases pay by 3% if score is greater than 90.

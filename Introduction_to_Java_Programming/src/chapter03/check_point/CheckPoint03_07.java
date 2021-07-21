@@ -10,7 +10,7 @@ package chapter03.check_point;
 public class CheckPoint03_07 {
     // Which of the following is a possible output from invoking Math.random()?
     // 323.4, 0.5, 34, 1.0, 0.0, 0.234
-    // 0.5 0.0 0.234
+    // a. 0.5 0.0 0.234
 
     // 3.7.2
     static void generate() {
