@@ -42,10 +42,9 @@ public class Algerbra {
         }
         else
             System.out.println("The equation has no solution.");
-
-
     }
 }
+
 // test data:
 // 9.0 4.0 3.0 -5.0 -6.0 -21.0
 // solution
