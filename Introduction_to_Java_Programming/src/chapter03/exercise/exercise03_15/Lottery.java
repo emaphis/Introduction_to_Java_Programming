@@ -26,7 +26,7 @@ public class Lottery {
         int lottery = (int) (Math.random() * 1000);
 
         // for testing
-         System.out.println("number: " + lottery);
+        //System.out.println("number: " + lottery);
 
         // Prompt the user to enter a guess
         Scanner input = new Scanner(System.in);
