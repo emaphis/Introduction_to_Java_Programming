@@ -9,12 +9,36 @@
  */
 package chapter03.exercise.exercise03_31;
 
+import java.util.Scanner;
+
 /**
  *
  * @author emaph
  */
 public class CurrencyExchange {
     public static void main(String[] args) {
-        System.out.print("Onter the exchange rate from dollars to RMB:");
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the exchange rate from dollars to RMB: ");
+        double rate = input.nextDouble();
+        System.out.print("Enter 0 to convert dollars to RMB and 1 vice versa: ");
+        int selection = input.nextInt();
+
+        double currency;
+        switch (selection) {
+            case 0:
+                System.out.print("Enter the dollar amount: ");
+                currency = input.nextDouble();
+                double yuan = currency * rate;
+                System.out.println("$" + currency + " is " + yuan + " yuan");
+                break;
+            case 1:
+                System.out.print("Enter the RMB amount: ");
+                currency = input.nextDouble();
+                double dollars = currency / rate;
+                System.out.println(currency + " yuan is $" + dollars);
+                break;
+            default:
+                System.out.println("Incorrect input");
+        }
     }
 }
