@@ -13,7 +13,7 @@ public class CheckPoint04_02 {
     // 4.2.1 Evaluate the following method calls:
     static void expressions1() {
         System.out.println("a: " + Math.sqrt(4));     // 2.0
-        System.out.println("b: " + Math.sin(2 * Math.PI)); // -2.4492935982947064E-16
+        System.out.println("b: " + Math.sin(2 * Math.PI)); // 0.0
         System.out.println("c: " + Math.cos(2 * Math.PI)); // 1.0
         System.out.println("d: " + Math.pow(2, 2));    // 4.0
         System.out.println("e: " + Math.log(Math.E));  // 1.0
@@ -55,12 +55,13 @@ public class CheckPoint04_02 {
     //       obtains a random number between 5.5 and 55.5.
     static void expressions5() {
         int rnd1 = ((int) (Math.random() * 21)) + 34;
-        int rnd2 = ((int) (Math.random() * 999));
-        System.out.println(rnd1 + " " + rnd2);
+        int rnd2 = ((int) (Math.random() * 1000));
+        double rnd3 = Math.random() * 50.0;
+        System.out.println(rnd1 + " " + rnd2 + " " + rnd3);
     }
 
     // 4.2.6 Why does the Math class not need to be imported?
-    // a. It's inported by default in  the JVM
+    // a. It's inported by default in  the JVM, it's part of the default java.lang package.
 
     // 4.2.7 What is Math.log(Math.exp(5.5))?           // 5.5
     //       What is Math.exp(Math.log(5.5))?           // 5.5
@@ -75,7 +76,7 @@ public class CheckPoint04_02 {
 
     // program to run examples
     public static void main(String[] args) {
-        expressions7();
+        expressions1();
         //vars4();
     }
 }
