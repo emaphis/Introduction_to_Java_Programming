@@ -1,8 +1,8 @@
 /*
- * Listing 3.8
- * Lottery Case Study
+ * Listing 4.5
+ * Case Study: Revising the Lottery Program Using Strings
  */
-package chapter03.example.listing03_08;
+package chapter04.example.listing04_05;
 
 import java.util.Scanner;
 
@@ -10,36 +10,40 @@ import java.util.Scanner;
  * A program to play the lottery
  * @author emaph
  */
-public class Lottery {
+public class LotteryUsingStrings {
     public static void main(String[] args) {
         // Generatea two digit lottery number
-        int lottery = (int) (Math.random() * 100);
+        String lottery = "" + (int) (Math.random() * 10)
+            + (int)(Math.random() * 10);
+
+        // Code for testing
+        System.out.println("Lottery pick: " + lottery);
 
         // Prompt the user to enter a guess
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your lottery pick (two digits): ");
-        int guess = input.nextInt();
+        String guess = input.nextLine();
 
         // Get digits from lottery
-        int lotteryDigit1 = lottery / 10;
-        int lotteryDigit2 = lottery % 10;
+        char lotteryDigit1 = lottery.charAt(0);
+        char lotteryDigit2 = lottery.charAt(1);
 
         // Get digits from guess
-        int guessDigit1 = guess / 10;
-        int guessDigit2 = guess % 10;
+        char guessDigit1 = guess.charAt(0);
+        char guessDigit2 = guess.charAt(1);
 
         System.out.println("The lottery number is " + lotteryDigit1 + " " + lotteryDigit2);
 
         // Check the guess
-        if (guess == lottery)
+        if (guess.equals(lottery))
             System.out.println("Exact match: you win $10,000");
         else if (guessDigit2 == lotteryDigit1
                 && guessDigit1 == lotteryDigit2)
             System.out.println("Match all digits you win $3,000");
         else if (guessDigit1 == lotteryDigit1
-                || guessDigit1 == lotteryDigit2
-                || guessDigit2 == lotteryDigit1
-                || guessDigit2 == lotteryDigit2)
+              || guessDigit1 == lotteryDigit2
+              || guessDigit2 == lotteryDigit1
+              || guessDigit2 == lotteryDigit2)
             System.out.println("Match one digit: you win $1,000");
         else
             System.out.println("Sorry, no match");

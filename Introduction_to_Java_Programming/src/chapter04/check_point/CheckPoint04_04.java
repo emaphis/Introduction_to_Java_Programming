@@ -177,7 +177,7 @@ public class CheckPoint04_04 {
     static void strings7() {
         double d = Math.PI;
         int len = ("" + d).length();
-        System.out.println("lenght: " + len);  // 10
+        System.out.println("lenght: " + len);  // 17
     }
 
     public static void main(String[] args) {
