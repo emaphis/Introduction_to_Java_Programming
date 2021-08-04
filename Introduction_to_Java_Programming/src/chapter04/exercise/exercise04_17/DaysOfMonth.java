@@ -19,7 +19,6 @@ public class DaysOfMonth {
 
         System.out.print("Enter a year: ");
         int year = input.nextInt();
-        System.out.println("year: " + year);
         System.out.print("Enter a month: ");
         String month = input.next();
         month = month.substring(0, 3);
@@ -29,7 +28,7 @@ public class DaysOfMonth {
                 = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
         int febdays = (isLeapYear ? 29 : 28);
 
-        String output = "";
+        String output;
         switch (month) {
             case "Jan": output = "January " + year + " has 31 days"; break;
             case "Feb": output = "February " + year + " has " + febdays + " days"; break;
@@ -42,7 +41,8 @@ public class DaysOfMonth {
             case "Sep": output = "September " + year + " has 30 days"; break;
             case "Oct": output = "October " + year + " has 31 days"; break;
             case "Nov": output = "November " + year + " has 30 days"; break;
-            case "Dec": output = "December " + year + " has 31 days";
+            case "Dec": output = "December " + year + " has 31 days"; break;
+            default: output = month + " is not a correct month name";
         }
 
         System.out.println(output);
