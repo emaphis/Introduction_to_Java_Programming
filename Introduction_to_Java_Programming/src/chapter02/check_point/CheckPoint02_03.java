@@ -19,6 +19,12 @@ public class CheckPoint02_03 {
         System.out.println("radius: "  + radius);
     }
 
+    // 2.3.2 Are there any performance differences between the following two import
+    //       statements?
+    //         import java.util.Scanner;
+    //         import java.util.*;
+    // a. no difference.
+
     public static void main(String[] args) {
         scan1();
     }

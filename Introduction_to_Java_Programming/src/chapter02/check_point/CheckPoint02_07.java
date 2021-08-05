@@ -22,7 +22,8 @@ public class CheckPoint02_07 {
     //Step 3: Declare a double variable named kilometers, multiply miles and
     //KILOMETERS_PER_MILE, and assign the result to kilometers.
     //Step 4: Display kilometers to the console.
-    //What is kilometers after Step 4? --> 16.00
+    //What is kilometers after Step 4?
+    // a. 16.09
     static void speed() {
         double miles = 10;
         final double KILOMETERS_PER_MILE = 1.609;
