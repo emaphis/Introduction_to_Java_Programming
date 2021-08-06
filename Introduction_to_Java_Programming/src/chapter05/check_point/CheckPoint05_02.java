@@ -29,19 +29,19 @@ public class CheckPoint05_02 {
     static void loop2() {
         int i;
 
-        // (a) - never stops
+        // (a) - never stops, i never updates
         //i = 1;
         //while (i < 10)
         //    if (i % 2 == 0)
         //        System.out.println("a: " + i);
 
-        // (b)  - never stops
+        // (b)  - never stops, i never updates
         //i = 1;
         //while (i < 10)
         //    if (i % 2 == 0)
         //        System.out.println("b: " + i++);
 
-        // (c) - 10 times
+        // (c) - 9 times
         i = 1;
         while (i < 10)
             if ((i++) % 2 == 0)
@@ -49,7 +49,8 @@ public class CheckPoint05_02 {
     }
 
     // 5.2.3 What is the output of the following code? Explain the reason.
-    // loops until integer overflow
+    // x is -2147483648
+    // loops until integer overflow, and x becomes negative
     static void loop3() {
         int x = 80000000;
 

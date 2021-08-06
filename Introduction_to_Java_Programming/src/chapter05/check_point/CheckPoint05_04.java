@@ -8,7 +8,6 @@ package chapter05.check_point;
 import java.util.Scanner;
 
 /**
- *
  * @author emaph
  */
 public class CheckPoint05_04 {
