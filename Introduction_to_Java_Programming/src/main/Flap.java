@@ -1,13 +1,12 @@
 
-package main;
+// Program to run experiments
 
-class Message {
-    public static void main(String[] args) {
-        System.out.println("a messge");
-    }
-}
+package main;
 
 public class Flap {
 
+    public static void main(String[] args) {
+        System.out.println("Hello");
 
+    }
 }
