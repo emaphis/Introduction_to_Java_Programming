@@ -10,7 +10,7 @@ package chapter05.exercise.exercise05_27;
  * Display leap years
  * @author emaph
  */
-public class DisplayLeepYears {
+public class DisplayLeapYears {
 
     public static void main(String args[]) {
         final int FIRST_YEAR = 101;
