@@ -27,48 +27,35 @@ public class FindSalesAmount {
     public static void main(String[] args) {
         final double BASE_PAY = 5000;
         final double GOAL = 30000;
-        double commision;
-        final double STARTING_VALUE = 25000;
+        final double LOW_SALES = 5000;
+        final double MED_SAES = 10000;
+        final double LOW_COMM_RATE = 0.06;
+        final double MED_COMM_RATE = 0.10;
+        final double HIGH_COMM_RATE = 0.12;
 
-        double temp = STARTING_VALUE;
-        while (true) {
-            double sales = temp;
-            commision = 0;
+        double commision = 0;
+        double earnings = 0;
+        double sales = 0;
 
-            if (sales > .01) {
-                if (sales > 5000) {
-                    sales -= 5000;
-                    commision += 5000 * 0.08;
-                } else {
-                    commision += sales * 0.08;
-                }
+        while (earnings <= GOAL) {
+            sales += 1;
+
+            if (sales <= LOW_SALES) {
+                commision = sales * LOW_COMM_RATE;
+            } else if (sales <= MED_SAES) {
+                commision = sales * LOW_COMM_RATE + (sales - LOW_COMM_RATE) * MED_COMM_RATE;
+            } else {
+                commision = (5000 * LOW_COMM_RATE) + (5000 * MED_COMM_RATE)
+                        + (sales - 10000) * HIGH_COMM_RATE;
             }
 
-            if (sales > .01) {
-                if (sales > 5000) {
-                    sales -= 5000;
-                    commision += 5000 * 0.10;
-                } else {
-                    commision += sales * 0.10;
-                }
-            }
-
-            if (sales > 0.01) {
-                commision += sales * 0.12;
-            }
-
-            //System.out.println("commision " + commision);
-
-            if (BASE_PAY + commision > GOAL) {
-                System.out.println("Sales of " + temp + " beats goal of " + GOAL);
-                System.out.println("Producing a commision of " + commision);
-               break;
-            }
-
-            temp += 10;
+            earnings = BASE_PAY + commision;
         }
+
+        System.out.println("Sales of " + sales + " beats goal of " + GOAL);
+        System.out.println("Producing a commision of " + commision);
     }
 }
 
-// Sales of 210840.0 beats goal of 30000.0
-// Producing a commision of 25000.8
+// Sales of 211670.0 beats goal of 30000.0
+// Producing a commision of 25000.04
