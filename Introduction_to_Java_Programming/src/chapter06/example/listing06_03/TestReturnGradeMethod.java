@@ -4,8 +4,6 @@
  */
 package chapter06.example.listing06_03;
 
-import chapter06.example.listing06_02.*;
-
 /**
  * Program to demonstrate method that returns a value
  * @author emaph
@@ -32,5 +30,4 @@ public class TestReturnGradeMethod {
         else
             return 'F';
     }
-
 }
