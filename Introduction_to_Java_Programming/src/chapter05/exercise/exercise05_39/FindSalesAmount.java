@@ -33,7 +33,7 @@ public class FindSalesAmount {
         final double MED_COMM_RATE = 0.10;
         final double HIGH_COMM_RATE = 0.12;
 
-        double commision = 0;
+        double commission = 0;
         double earnings = 0;
         double sales = 0;
 
@@ -41,19 +41,19 @@ public class FindSalesAmount {
             sales += 1;
 
             if (sales <= LOW_SALES) {
-                commision = sales * LOW_COMM_RATE;
+                commission = sales * LOW_COMM_RATE;
             } else if (sales <= MED_SAES) {
-                commision = sales * LOW_COMM_RATE + (sales - LOW_COMM_RATE) * MED_COMM_RATE;
+                commission = sales * LOW_COMM_RATE + (sales - LOW_COMM_RATE) * MED_COMM_RATE;
             } else {
-                commision = (5000 * LOW_COMM_RATE) + (5000 * MED_COMM_RATE)
+                commission = (5000 * LOW_COMM_RATE) + (5000 * MED_COMM_RATE)
                         + (sales - 10000) * HIGH_COMM_RATE;
             }
 
-            earnings = BASE_PAY + commision;
+            earnings = BASE_PAY + commission;
         }
 
         System.out.println("Sales of " + sales + " beats goal of " + GOAL);
-        System.out.println("Producing a commision of " + commision);
+        System.out.println("Producing a commision of " + commission);
     }
 }
 

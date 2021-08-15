@@ -25,30 +25,30 @@ public class FindSalesAmount {
         final double COMMISSION_SOUGHT = input.nextInt();
 
         double remainder;
-        double commision = 0;
+        double commission = 0;
         double sales;
 
-        for (sales = 0.0; commision <= COMMISSION_SOUGHT; sales += 1.0) {
+        for (sales = 0.0; commission <= COMMISSION_SOUGHT; sales += 1.0) {
             remainder = 0;
-            commision = 0;
+            commission = 0;
 
             if (sales > 10000.00) {
                 remainder = sales - 10000;
-                commision += remainder * HIGH_COMM_RATE;
+                commission += remainder * HIGH_COMM_RATE;
             }
 
             if (sales > 5000.00) {
                 remainder -= (remainder - 5000.00);
-                commision += remainder * MED_COMM_RATE;
+                commission += remainder * MED_COMM_RATE;
             }
 
             if (sales > 0.00) {
-                commision += remainder * LOW_COMM_RATE;
+                commission += remainder * LOW_COMM_RATE;
             }
         }
 
         System.out.printf("Sales of $%.2f beats desired commission of $%.2f\n", sales,  COMMISSION_SOUGHT);
-        System.out.printf("Producing a commision of $%.2f\n", commision);
+        System.out.printf("Producing a commision of $%.2f\n", commission);
     }
 }
 
