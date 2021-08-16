@@ -19,7 +19,7 @@ public class PerimeterOfTriangle {
         double s2 = input.nextDouble();
         double s3 = input.nextDouble();
 
-        if (s1 > (s2 + s3) && s2 > (s1 + s3) && s3 > (s1 + s2)) {
+        if (s1 < (s2 + s3) && s2 < (s1 + s3) && s3 < (s1 + s2)) {
             System.out.println("Invalid triangle");
         } else {
             double perimeter = s1 + s2 + s3;
