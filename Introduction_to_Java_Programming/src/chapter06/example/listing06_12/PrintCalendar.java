@@ -78,7 +78,7 @@ public class PrintCalendar {
         for (int i = 0; i < startDay; i++)
             System.out.print("    ");
 
-        for (int i = 1; i < numberOfDaysInMonth; i++) {
+        for (int i = 1; i <= numberOfDaysInMonth; i++) {
             System.out.printf("%4d", i);
 
             if ((i + startDay) % 7 == 0)
