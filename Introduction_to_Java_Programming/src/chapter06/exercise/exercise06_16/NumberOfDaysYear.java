@@ -26,7 +26,7 @@ public class NumberOfDaysYear {
 
     /** return number of days in a year */
     public static int numberOfDaysInAYear(int year) {
-        return isLeapYear(year) ? 365 : 364;
+        return isLeapYear(year) ? 366 : 365;
     }
 
     /** Return true if passed year is a leap year */
