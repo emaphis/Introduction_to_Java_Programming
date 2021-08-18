@@ -22,7 +22,7 @@ public class Randomcharacter {
 
     /** Generate a random lowercase letter */
     public static char getRandomUpperCaseLetter() {
-        return getRandomCharacter('A', 'B');
+        return getRandomCharacter('A', 'Z');
     }
 
 
@@ -37,6 +37,4 @@ public class Randomcharacter {
         return getRandomCharacter('0', '9');
     }
 
-    public static void main(String[] args) {
-    }
 }
