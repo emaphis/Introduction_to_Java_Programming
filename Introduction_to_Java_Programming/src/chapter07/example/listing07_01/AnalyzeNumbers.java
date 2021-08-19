@@ -32,7 +32,7 @@ public class AnalyzeNumbers {
         // The numbers above average
         int count = 0;
         for (int i = 0; i < n; i++)
-            if (numbers[i] == average)
+            if (numbers[i] > average)
                 count++;
 
         System.out.println("Average is " + average);
