@@ -4,7 +4,7 @@
  *  This section presents a program to count the occurrences of each letter in an array of
  *  characters.
  */
-package chapter07.example.listing07_034;
+package chapter07.example.listing07_04;
 
 import chapter06.example.listing06_10.Randomcharacter;
 
