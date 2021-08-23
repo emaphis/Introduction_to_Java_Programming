@@ -40,7 +40,7 @@ public class QuadraticEquation {
         if (disc > 0) {
             double r1 = (-b + Math.pow(disc, 0.5)) / (2 * a);
             double r2 = (-b - Math.pow(disc, 0.5)) / (2 * a);
-            System.out.println("The equation has tow roots: " + r1 + " and " + r2);
+            System.out.println("The equation has two roots: " + r1 + " and " + r2);
         }
         else if (disc == 0) {
             double r = (-b + Math.pow(disc, 0.5)) / (2 * a);
