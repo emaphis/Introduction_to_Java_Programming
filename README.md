@@ -2,7 +2,7 @@
 
 Repository for examples and exercises for "*Introduction to Java Programming (12th Edition)*" by Y. Daniel Liang
 
-I'm trying to complete all of the exercises, so far I've completed all the way to Chapter 5.
+I'm trying to complete all of the exercises, so far I have 7 chapters with 223 exercises completed. 
 
 Not all of the exercises include answers, so I'm not gaurenteeing the correctness of my code. My code may not be the best.
 
