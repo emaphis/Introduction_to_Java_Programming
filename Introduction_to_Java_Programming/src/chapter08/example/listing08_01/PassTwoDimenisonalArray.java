@@ -4,7 +4,7 @@
  *  When passing a two-dimensional array to a method, the reference of the array is
  *  passed to the method.
  */
-package chapter08.exercise;
+package chapter08.example.listing08_01;
 
 import java.util.Scanner;
 

@@ -30,9 +30,9 @@ public class Distances {
         }
         System.out.println();
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < distances.length; i++) {
             System.out.printf("%8s ", cities[i]);
-            for (int j = 0; j < 7; j++) {
+            for (int j = 0; j < distances[i].length; j++) {
                 System.out.printf("%8.1f ", distances[i][j]);
             }
             System.out.println();
