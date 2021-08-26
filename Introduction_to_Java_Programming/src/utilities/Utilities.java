@@ -35,4 +35,13 @@ public class Utilities {
         System.out.println();
     }
 
+    public static void printMatix(double[][] matrix) {
+        for (double[] row : matrix) {
+            for (double num : row) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }
