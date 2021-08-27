@@ -22,7 +22,7 @@ public class SumElements {
         final int ROWS = 3;
         final int COLS = 4;
 
-        System.out.println("Enter a " + ROWS +  "−by−4" + COLS +  " matrix row by row:");
+        System.out.println("Enter a " + ROWS +  "−by−" + COLS +  " matrix row by row:");
         double[][] matrix  = getMatrix(ROWS, COLS, input);
 
         for (int col = 0; col < matrix[0].length; col++) {

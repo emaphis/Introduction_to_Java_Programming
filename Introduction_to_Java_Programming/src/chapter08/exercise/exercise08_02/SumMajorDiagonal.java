@@ -35,7 +35,6 @@ public class SumMajorDiagonal {
         double sum = 0;
         for (int i = 0; i < m.length; i++) {
             sum += m[i][i];
-            //sum += m[i][m.length - i -];
         }
         return sum;
     }
