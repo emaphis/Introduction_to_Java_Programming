@@ -2,6 +2,7 @@
  * Exercise 8.17.
  * See book.
  */
+// TODO:  not calculating correct values.
 package chapter08.exercise.exercise08_17;
 
 import java.util.Arrays;
@@ -51,12 +52,20 @@ public class FinancialTsunami {
     // ***********************************
     private static double getAssets(int bankNo, double[][] bankInfo) {
         double sum = bankInfo[bankNo][0];// get balance.
+
+        // add loans made to other banks
+        for (int i = 2; i < bankInfo[bankNo].length; i += 2) {
+            //System.out.print(" - " + bankInfo[bankNo][i + 1]);
+            sum += bankInfo[bankNo][i + 1];
+        }
+
+        // subtract loans from other banks
         for (int i = 0; i < bankInfo.length; i++) {
             for (int j = 2; j < bankInfo[i].length ; j += 2) {
                 int bNo = (int)bankInfo[i][j];
                 if (bankNo == bNo) {
                     //System.out.print( bankNo + ", " + bankInfo[i][j + 1] + "");
-                    sum += bankInfo[i][j + 1];
+                    sum -= bankInfo[i][j + 1];
                 }
             }
         }
