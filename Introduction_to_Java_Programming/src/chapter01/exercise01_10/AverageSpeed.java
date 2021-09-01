@@ -14,7 +14,7 @@ public class AverageSpeed {
 
     public static void main(String[] args) {
         System.out.print("Average speed: ");
-        System.out.println((14 / 45.30) / 1.6);
+        System.out.println((14 / 1.6) / (45.5 / 60));
     }
 
 }
