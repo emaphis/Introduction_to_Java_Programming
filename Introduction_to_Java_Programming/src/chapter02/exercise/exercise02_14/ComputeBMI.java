@@ -14,7 +14,7 @@ import java.util.Scanner;
  * Calculate BMI given weight and height
  * @author emaph
  */
-public class CumputeBMI {
+public class ComputeBMI {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
