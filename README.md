@@ -17,3 +17,9 @@ I've include my answers to Check Points in source code to experiment and test my
 [Link to "Intro the Java 12e"](https://www.pearson.com/us/higher-education/program/Liang-Introduction-to-Java-Programming-and-Data-Structures-Comprehensive-Version-Plus-My-Lab-Programming-with-Pearson-e-Text-Access-Card-Package-12th-Edition/PGM2741922.html)
 
 [Student resources](https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/)
+
+[Check Exercises](https://liveexample.pearsoncmg.com/CheckExercise/faces/CheckExercise.xhtml)
+
+[Hints](https://liveexample.pearsoncmg.com/javarevel2e.html)
+
+[FAQ](https://liveexample.pearsoncmg.com/faq.html)
