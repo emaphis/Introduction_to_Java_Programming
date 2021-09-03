@@ -38,23 +38,23 @@ public class RowSorting {
         return out;
     }
 
-   private static double[] sortRow(double[] s1) {
-        double[] s = copy(s1);
-        for (int col = 0; col < s.length; col++) {
-            double min = s[col];
+   private static double[] sortRow(double[] aRow) {
+        double[] row = copy(aRow);
+        for (int col = 0; col < row.length; col++) {
+            double min = row[col];
             int idx = col;
-            for (int j = col + 1; j < s.length; j++) {
-                if (min > s[j]) {
-                    min = s[j];
+            for (int j = col + 1; j < row.length; j++) {
+                if (min > row[j]) {
+                    min = row[j];
                     idx = j;
                 }
             }
             if (idx != col) {
-                s[idx] = s[col];
-                s[col] = min;
+                row[idx] = row[col];
+                row[col] = min;
             }
         }
-        return s;
+        return row;
     }
 
    /** create a new array and copy array parameter to it */
