@@ -1,8 +1,10 @@
 /*
- * Listing 8.4
- *  8.7 Case Study: Sudoku
+ * Exercise 8.24
+ *  (Check Sudoku solution) Listing 8.4 checks whether a solution is valid by check-
+ *  ing whether every number is valid in the board. Rewrite the program by checking
+ *  whether every row, every column, and every small box has the numbers 1 to 9.
  */
-package chapter08.example.listing08_04;
+package chapter08.exercise.exercise08_24;
 
 import java.util.Scanner;
 
