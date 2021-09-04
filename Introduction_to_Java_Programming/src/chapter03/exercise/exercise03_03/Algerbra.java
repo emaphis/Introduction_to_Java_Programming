@@ -47,7 +47,7 @@ public class Algerbra {
 
 // test data:
 // 9.0 4.0 3.0 -5.0 -6.0 -21.0
-// solution
+// solution x is -2.0 y is 3.0
 
 // 1.0 2.0 2.0 4.0 4.0 5.0
 // no soluion

@@ -1,23 +1,23 @@
 /*
- * Exercise 8.28
- *  (Strictly identical arrays) The two-dimensional arrays m1 and m2 are strictly
- *  identical if their corresponding elements are equal. Write a method that returns
- *  true if m1 and m2 are strictly identical, using the following header:
+ * Exercise 8.29
+ *  (Identical arrays) The two-dimensional arrays m1 and m2 are identical if they
+ *  have the same contents. Write a method that returns true if m1 and m2 are iden-
+ *  tical, using the following header:
  *
  *      public static boolean equals(int[][] m1, int[][] m2)
  *
  *  Write a test program that prompts the user to enter two 3 * 3 arrays of integers
- *  and displays whether the two are strictly identical.
+ *  and displays whether the two are identical.
  */
-package chapter08.exercise.exercise08_28;
+package chapter08.exercise.exercise08_29;
 
 import java.util.Scanner;
 
 /**
- * Strictly identical arrays
+ * Identical arrays
  * @author emaph
  */
-public class StrictlyIdenticalArrays {
+public class IdenticalArrays {
     public static void main(String[] args) {
         final int SIZE = 3;
         Scanner input = new Scanner(System.in);
@@ -28,9 +28,9 @@ public class StrictlyIdenticalArrays {
         int[][] list2 = init(SIZE, input);
 
         if (equals(list1, list2))
-            System.out.println("The two arrays are strictly identical");
+            System.out.println("The two arrays are identical");
         else
-            System.out.println("The two arrays are not strictly identical");
+            System.out.println("The two arrays are not identical");
     }
 
     private static int[][] init(int size, Scanner input) {
@@ -50,10 +50,22 @@ public class StrictlyIdenticalArrays {
             if (m1[i].length != m2[i].length)
                 return false;
             for (int j = 0; j < m1[i].length; j++) {
-                if (m1[i][j] != m2[i][j])
+                int num = m1[i][j];
+                if (!find(num, m2))
                     return false;
             }
         }
         return true;
     }
+
+    /** Does m exist in the array? */
+    public static boolean find(int num, int[][] m) {
+        for (int i = 0; i < m.length; i++)
+            for (int j = 0; j < m[i].length; j++)
+                if (num == m[i][j])
+                    return true;
+
+        return false;
+    }
+
 }
