@@ -1,31 +1,25 @@
-
 // Program to run experiments
-
 package main;
 
 public class Flap {
 
-    static private void example() {
-        long l = 0;
-        long r = 0;
-        for (long i = 0; i < 1000_000; i++) {
-            if (bounce() == 1)
-                r++;
-            else
-                l++;
-        }
-        System.out.println("left " + l + ", right " + r);
-    }
-
-
-   private static int bounce() {
-       if (Math.random() > 0.5)
-           return 1;
-       else
-           return -1;
-   }
-
     public static void main(String[] args) {
-        example();
+        int[] carsCost = new int[5];
+        carsCost[0] = 50;
+        carsCost[1] = 455;
+        carsCost[2] = 65556;
+        carsCost[3] = 349;
+        carsCost[4] = 3467;
+
+        double sum = 0;
+        double mean = carsCost[0];
+        for (int i = 0; i < carsCost.length; i++) {
+            sum += carsCost[i];
+            if (i == carsCost.length - 1) {
+                mean = sum / carsCost.length;
+                System.out.println("The mean of the costs of the cars is : " + mean);
+            }
+        }
     }
+
 }
