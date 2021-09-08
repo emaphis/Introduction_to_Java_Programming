@@ -19,8 +19,8 @@ public class PolygonSubareas {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter x1, y1, x2, y2, x3, y3: ");
-        double [][] points = get4Veticies(input);
-        double areas[] = getTriangleAreas(points);
+        double[][] points = get4Veticies(input);
+        double[] areas = getTriangleAreas(points);
         selectionSort(areas);
         printAreas(areas);
     }
