@@ -24,6 +24,6 @@ For ULM diagrams, I'm using [PlantUML](https://plantuml.com/)
 
 [Hints](https://liveexample.pearsoncmg.com/javarevel2e.html)
 
-[Check Point Questins](https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/#checkpoints)
+[Check Point Questions](https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/#checkpoints)
 
 [FAQ](https://liveexample.pearsoncmg.com/faq.html)
