@@ -1,0 +1,17 @@
+@startuml
+class chapter09\example\TV.java
+{
+    channel: Integer
+    volumeLevel: Integer
+    on: Boolean
+    +TV()
+    +turnOn(): void
+    +turnOf f(): void
+    +setChannel(newChannel: int): void
+    +setVolume(newVolumeLevel: int): void
+    +channelUp(): void
+    +channelDown(): void
+    +volumeUp(): void
+    +volumeDown(): void
+}
+@enduml
