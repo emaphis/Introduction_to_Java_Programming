@@ -1,0 +1,22 @@
+@startuml
+class Account {
+    -id: int
+    -balance: double
+    -annualInterestRate: double
+    -dateCreated: Date
+
+    +Account()
+    +Account(newid: int, newBalance: double)
+    +setId(newId: int)
+    +setBalance(newBalance: double)
+    +setAnnualInterestRate(newAnnualInterestRate: double)
+    +getId(): int
+    +getBalance(): double
+    +getAnnualInterestRate(): double
+    +getDateCreated(): String
+    +getMonthlyInterestRate(): double
+    +getMonthlyInterest(): double
+    +withdraw(amount: double)
+    +deposit(amount: double)
+}
+@enduml

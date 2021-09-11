@@ -21,14 +21,14 @@ package chapter09.exercise.exercise09_06;
 public class TestStopWatch {
     public static void main(String[] args) {
         final int SIZE = 100_000;
-        StopWatch time = new StopWatch();
+        StopWatch timer = new StopWatch();
         int[] array = getArray(SIZE);
 
-        time.start();
+        timer.start();
         sort(array);
-        time.stop();
+        timer.stop();
 
-        System.out.println("Ellapsed time of the sort: " + time.getElapsedTime());
+        System.out.println("Ellapsed time of the sort: " + timer.getElapsedTime());
     }
 
     private static int[] getArray(int size) {

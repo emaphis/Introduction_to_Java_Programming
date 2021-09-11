@@ -1,0 +1,28 @@
+@startuml
+class Fan {
+   +SLOW: int
+   +MEDIUM: int
+   +FAST: int
+
+   -speed: int
+   -on: boolean
+   -radius: double
+   -color: String
+
+   +Fan()
+
+   +setSpeed(int)
+   +getSpeed(): String
+
+   +setOn(boolean)
+   +isOn(): boolean
+
+   +setRadius(double):
+   +getRadius(): double
+
+   +setColor(String):
+   +getColor(): String
+
+   +toString(): String
+}
+@enduml
