@@ -1,0 +1,17 @@
+@startuml
+class QuadraticEquation {
+    -a: double
+    -b: doulbe
+    -c: double
+
+    +QuadraticEquation(a: double, b: double, c:double)
+
+    +getA(): double
+    +getB(): double
+    +getC(): double
+
+    +getDiscriminant(): double
+    +getRoot1(): double
+    +getRoot2(): double
+}
+@enduml

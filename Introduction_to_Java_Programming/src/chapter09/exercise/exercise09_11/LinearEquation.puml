@@ -1,0 +1,25 @@
+@startuml
+class LinearEquation {
+    -a: double
+    -b: double
+    -c: double
+    -d: double
+    -e: double
+    -f: double
+
+    +LinearEquation(a: double, b: double, c: double,
+                    d: double, e: double, f: double)
+
+    +getA(): double
+    +getB(): double
+    +getC(): double
+    +getD(): double
+    +getE(): double
+    +getF(): double
+
+    +isSolvable(): boolean
+    +getX(): double
+    +getY(): double
+    -getDivisor(): double
+}
+@enduml
