@@ -1,0 +1,22 @@
+@startuml
+class Loan {
+    -annualInterestRate: double
+    -numberOfYears: int
+    -loanAmount: double
+    -loanDate: Date
+
+    +Loan()
+    +Loan(annualInterestRate: double, numberOfYears: int,
+         loanAmount:double)
+
+    +getAnnualInterestRate(): double
+    +getNumberOfYears(): int
+    +getLoanAmount(): double
+    +getLoanDate(): Date
+    +setAnnualInterestRate(annualInterestRate: double): void
+    +setNumberOfYears(umberOfYears: int): void
+    +setLoanAmount(loanAmount: double): void
+    +getMonthlyPayment(): double
+    +getTotalPayment(): double
+}
+@enduml
