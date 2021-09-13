@@ -1,0 +1,15 @@
+@startuml
+class BMI {
+    -name: String
+    -age: int
+    -weight: double
+    -height: double
+
+    +BMI(name: String, age: int, weight: double,
+             height: double)
+    +BMI(name: String, weight: double,
+            height: double)
+    +getBMI(): double
+    +getStatus(): String
+}
+@enduml

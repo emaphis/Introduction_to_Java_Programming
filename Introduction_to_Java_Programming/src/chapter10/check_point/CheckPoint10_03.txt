@@ -1,0 +1,7 @@
+// Check Point 10.3
+// Thinking in Objects
+
+// 10.3.1 Is the BMI class defined in Listing 10.4 immutable?
+// a. Yes.
+
+
