@@ -33,23 +33,23 @@ public class Circle {
     }
 
     /** Set a new radius for this circle */
-    void setRadius(double newRadius) {
+    public void setRadius(double newRadius) {
         radius = newRadius;
     }
 
 
     /** Return number of objects */
-    static int getNumberOfObjects() {
+    public static int getNumberOfObjects() {
         return numberOfObjects;
     }
 
     /** Return the area of this circle */
-    double getArea() {
+    public double getArea() {
         return radius * radius * Math.PI;
     }
 
     /** Return the perimeter of this circle */
-    double getPerimeter() {
+    public double getPerimeter() {
         return 2 * radius * Math.PI;
     }
 
