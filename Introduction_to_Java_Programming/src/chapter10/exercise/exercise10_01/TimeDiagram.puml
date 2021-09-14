@@ -1,0 +1,16 @@
+@startuml
+class Time {
+    -hour: long
+    -minute: long
+    -second: long
+
+    +Time()
+    +Time(elapseTime: long)
+    +Time(hour: long, minute: long, second: long)
+
+    +getHour(): long
+    +getMinute(): long
+    +getSecond(): long
+    +setTime(elapseTime: long)
+}
+@enduml

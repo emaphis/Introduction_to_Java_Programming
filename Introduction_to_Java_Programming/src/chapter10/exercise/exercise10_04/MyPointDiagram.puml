@@ -1,0 +1,13 @@
+@startuml
+class MyPoint {
+    -x: double
+    -y: double
+
+    +MyPoint()
+    +MyPoint(x: double, y: double)
+
+    +distance(point: MyPoint): double
+    +distance(x: double, y:double): double
+    +distance(point1: MyPoint, point2: MyPoint): double
+}
+@enduml

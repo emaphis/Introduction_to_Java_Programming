@@ -1,0 +1,18 @@
+@startuml
+class MyInteger {
+    -value: int
+
+    +MyInteger(data: int)
+    +getValue(): int
+    +isEven(): boolean
+    +isOdd(): boolean
+    +isPrime(): boolean
+    +isEven(value: MyInteger): boolean
+    +isOdd(value: MyInteger): boolean
+    +isPrime(value: MyInteger): boolean
+    +equals(value: int): boolean
+    +equals(value: MyInteger): boolean
+    +parseInt(value: String): MyInteger
+    +parseInt(values[] char[])
+}
+@enduml
