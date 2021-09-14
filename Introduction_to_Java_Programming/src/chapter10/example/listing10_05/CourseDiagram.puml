@@ -1,0 +1,14 @@
+@startuml
+title Case Study: Designing the Course Class
+class Course {
+    -courseName: String
+    -students: String[]
+    -numberOfStudents: int
+
+    +getCourseName(): String
+    +addStudent(student: String): void
+    +dropStudent(student: String): void
+    +getStudents(): String[]
+    +getNumberOfStudents(): int
+}
+@enduml

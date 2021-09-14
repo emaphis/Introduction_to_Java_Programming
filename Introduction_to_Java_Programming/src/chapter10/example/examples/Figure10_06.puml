@@ -1,0 +1,10 @@
+@startuml
+title Aggregation and Compostion
+left to right direction
+class Name
+class Student
+class Address
+Name"1"---*"1"Student : compostion
+Student "1,,3" o---"1"Address : aggregation
+
+@enduml

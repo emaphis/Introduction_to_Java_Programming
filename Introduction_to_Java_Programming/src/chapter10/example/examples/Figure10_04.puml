@@ -1,0 +1,12 @@
+@startuml
+title assotiation
+left to right direction
+together {
+    class Student
+    class Course
+    class Faculty
+}
+
+Student "5,60" -- "*" Course : Take >
+Course "3" -- "1" Faculty : Teach <
+@enduml

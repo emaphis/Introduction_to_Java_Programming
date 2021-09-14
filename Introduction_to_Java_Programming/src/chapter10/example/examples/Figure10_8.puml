@@ -1,0 +1,5 @@
+@startuml
+title A class may contain itself
+Person*--Persion
+class Person
+@enduml

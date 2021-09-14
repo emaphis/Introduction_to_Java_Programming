@@ -1,0 +1,22 @@
+Check Point 10.4
+Class Relationships
+
+
+10.4.1 What are common relationships among classes?
+a. association, aggregation, composition, extension
+
+
+10.4.2 What is association? What is aggregation? What is composition?
+a. Association - classes have some general relationship describing an activity.
+   Aggregation - class can contain groups of other classes.
+   Composition - Classes can be parts of other classes.
+
+
+10.4.3 What is UML notation of aggregation and composition?
+a.  Using PlantUML notation
+    Aggregation   Class1 o--- Class2  Empty diamond
+    Composition   Class1 *--- Class2  Solid diamond
+
+
+10.4.4 Why both aggregation and composition are together referred to as composition?
+a.  Both have the same function, so they don't hae much difference.

@@ -1,0 +1,15 @@
+@startuml
+title 10.6 Case Study: Designing a Class for Stacks
+class StackOfIntegers {
+    –elements: int[]
+    –size: int
+
+    +StackOfIntegers()
+    +StackOfIntegers(capacity: int)
+    +empty(): boolean
+    +peek(): int
+    +push(value: int): void
+    +pop(): int
+    +getSize(): int
+}
+@enduml
