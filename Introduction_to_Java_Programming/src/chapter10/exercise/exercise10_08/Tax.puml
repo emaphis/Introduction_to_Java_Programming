@@ -1,0 +1,28 @@
+@startuml
+class Tax {
+    {static} +SINGLE_FILER: int
+    {static} +MARRIED_JOINTLY_OR_QUALIFYING_WIDOW: int
+    {static} +MARRIED_SEPARATELY: int
+    {static} +HEAD_OF_HOUSEHOLD: int
+
+    -filingStatus: int
+
+    -brackets: int[][]
+    -rates: double[]
+    -taxableIncome: double
+     +Tax()
+    +Tax(filingStatus: int, brackets: int[][],
+         rates: double[], taxableIncome: double)
+
+    +getTax(): double
+
+    +getFilingStatus(): int
+    +setFilingStatus(status: int)
+    +getBrackets(): int[][]
+    +setBrackets(brackets: int[][])
+    +getRates(): int[]
+    +setRates(rates: int[])
+    +getTaxableIncome(): double
+    +setTaxableIncome(taxableIncome: double)
+}
+@enduml
