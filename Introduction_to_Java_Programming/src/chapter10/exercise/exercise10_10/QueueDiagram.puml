@@ -1,0 +1,11 @@
+@startuml
+class Queue {
+    -elements: int[]
+    -size: size
+    +Queue()
+    +enqueue(v: int): void
+    +dequeue(): int
+    +empty(): boolean
+    +getSize(): int
+}
+@enduml
