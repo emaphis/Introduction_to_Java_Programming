@@ -14,9 +14,7 @@ public class Circle2D {
     private double radius;
 
     public Circle2D() {
-        this.x = 0;
-        this.y = 0;
-        this.radius = 1;
+        this(0, 0, 1);
     }
 
     public Circle2D(double x, double y, double radius) {

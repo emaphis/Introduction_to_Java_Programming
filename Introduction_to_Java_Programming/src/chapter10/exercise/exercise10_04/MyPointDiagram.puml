@@ -6,8 +6,10 @@ class MyPoint {
     +MyPoint()
     +MyPoint(x: double, y: double)
 
+    +getX(): double
+    +gety(): double
     +distance(point: MyPoint): double
     +distance(x: double, y:double): double
-    +distance(point1: MyPoint, point2: MyPoint): double
+    {static} +distance(point1: MyPoint, point2: MyPoint): double
 }
 @enduml

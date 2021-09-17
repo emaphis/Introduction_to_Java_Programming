@@ -1,0 +1,18 @@
+@startuml
+class Triangle2D {
+    -p1: MyPoint
+    -p2: MyPoint
+    -p3: MyPoint
+
+    +Triangle2D()
+    +Triangle2D(p1: MyPoint, p2: MyPoint, p3: MyPoint)
+    +getP1(): double
+    +getP2(): double
+    +getP3(): double
+    +getArea(): double
+    +getPerimeter(): double
+    +contains(p: MyPoint): boolean
+    +contains(t: Triangle2D): boolean
+    +overlaps(t: Triangle2D): boolean
+}
+@enduml
