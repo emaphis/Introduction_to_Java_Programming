@@ -32,6 +32,9 @@ public class Triangle2D {
 
     /**
      * creates a triangle with the specified points.
+     * @param p1
+     * @param p2
+     * @param p3
      */
     public Triangle2D(MyPoint p1, MyPoint p2, MyPoint p3) {
         this.p1 = p1;
@@ -52,7 +55,8 @@ public class Triangle2D {
     }
 
     /**
-     * Returns the area of the triangle. See Exercise 2.19
+     * Returns the area of the triangle.See Exercise 2.19
+     * @return area of this triangle
      */
     public double getArea() {
         double side1 = p2.distance(p1);
@@ -65,6 +69,7 @@ public class Triangle2D {
 
     /**
      * returns the perimeter of the triangle.
+     * @return the perimeter of this triangle
      */
     public double getPerimeter() {
         double side1 = p2.distance(p1);
@@ -77,6 +82,8 @@ public class Triangle2D {
     /**
      * returns true if the specified point p is inside this triangle ΔABp + ΔACp
      * + ΔBCp == ΔABC
+     * @param the point to test
+     * @return true if point is inside this triangle
      */
     public boolean contains(MyPoint p) {
         double area1 = new Triangle2D(p, p1, p2).getArea();
@@ -88,6 +95,8 @@ public class Triangle2D {
 
     /**
      * returns true if the specified triangle is inside this triangle
+     * @param t triangle to test
+     * @return true if given triangle is contained by this triangle
      */
     public boolean contains(Triangle2D t) {
         return contains(t.getP1()) && contains(t.getP2()) && contains(t.getP3());
@@ -95,6 +104,8 @@ public class Triangle2D {
 
     /**
      * returns true if the specified triangle overlaps with this triangle
+     * @param t the given triangle
+     * @return true if the given triangle overlaps this triangle
      */
     public boolean overlaps(Triangle2D t) {
         return contains(t.getP1()) || contains(t.getP2()) || contains(t.getP3());
