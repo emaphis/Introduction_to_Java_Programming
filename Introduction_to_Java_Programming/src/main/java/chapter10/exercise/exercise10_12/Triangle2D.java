@@ -82,7 +82,7 @@ public class Triangle2D {
     /**
      * returns true if the specified point p is inside this triangle ΔABp + ΔACp
      * + ΔBCp == ΔABC
-     * @param the point to test
+     * @param p point to test
      * @return true if point is inside this triangle
      */
     public boolean contains(MyPoint p) {
