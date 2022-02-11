@@ -11,7 +11,7 @@
 package chapter01.exercise01_08;
 
 /**
- * Calculate area abd circumference of a circle
+ * Calculate area and circumference of a circle
  *
  * @author emaph
  */

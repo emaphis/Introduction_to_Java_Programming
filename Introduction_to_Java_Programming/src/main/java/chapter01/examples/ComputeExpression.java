@@ -4,7 +4,7 @@
 package chapter01.examples;
 
 /**
- * Performing mathematical computions
+ * Performing mathematical computations
  * @author emaph
  */
 public class ComputeExpression {

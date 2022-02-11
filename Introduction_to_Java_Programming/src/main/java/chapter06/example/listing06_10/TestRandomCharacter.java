@@ -15,7 +15,7 @@ public class TestRandomCharacter {
 
         // Print random characters between 'a' and 'z', 25 chars per line
         for (int i = 0; i < NUMBER_OF_CHARS; i++) {
-            char ch = Randomcharacter.getRandomLowerCaseLetter();
+            char ch = RandomCharacter.getRandomLowerCaseLetter();
             if ((i + 1) % CHARS_PER_LINE == 0)
                 System.out.println(ch);
             else

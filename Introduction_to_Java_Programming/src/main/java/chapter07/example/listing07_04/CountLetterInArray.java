@@ -6,7 +6,7 @@
  */
 package chapter07.example.listing07_04;
 
-import chapter06.example.listing06_10.Randomcharacter;
+import chapter06.example.listing06_10.RandomCharacter;
 
 /**
  *
@@ -40,7 +40,7 @@ public class CountLetterInArray {
 
         // Create lowercase letters randomly and assign them to the array
         for (int i = 0; i < chars.length; i++)
-            chars[i] = Randomcharacter.getRandomLowerCaseLetter();
+            chars[i] = RandomCharacter.getRandomLowerCaseLetter();
 
         return chars;
     }

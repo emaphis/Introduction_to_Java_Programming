@@ -26,7 +26,7 @@ public class TestRandomCharacter {
     /** print table of uppercase chars */
     public static void upperCaseTable(int numChars, int charsPerLine) {
         for (int i = 0; i < numChars; i++) {
-            char ch = Randomcharacter.getRandomUpperCaseLetter();
+            char ch = RandomCharacter.getRandomUpperCaseLetter();
             if ((i + 1) % charsPerLine == 0)
                 System.out.println(ch);
             else
@@ -38,7 +38,7 @@ public class TestRandomCharacter {
     /** print table of digits */
     public static void digitsTable(int numChars, int charsPerLine) {
         for (int i = 0; i < numChars; i++) {
-            char ch = Randomcharacter.getRandomDigitCaseCharacter();
+            char ch = RandomCharacter.getRandomDigitCaseCharacter();
             if ((i + 1) % charsPerLine == 0)
                 System.out.println(ch);
             else
