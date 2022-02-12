@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="152px" preserveAspectRatio="none" style="width:208px;height:152px;" version="1.1" viewBox="0 0 208 152" width="208px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="fndhrx687w66p" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <!--MD5=[a7f9118cae7621dd25d25149752faef0]
+class Circle-->
+        <rect codeLine="1" fill="#FEFECE" filter="url(#fndhrx687w66p)" height="131.0156" id="Circle" style="stroke:#A80036;stroke-width:1.5;" width="187" x="7" y="7"/>
+        <ellipse cx="80.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M83.0156,18.875 Q83.1719,18.6563 83.3594,18.5469 Q83.5469,18.4375 83.7656,18.4375 Q84.1406,18.4375 84.375,18.7031 Q84.6094,18.9531 84.6094,19.5625 L84.6094,21.0156 Q84.6094,21.625 84.375,21.8906 Q84.1406,22.1563 83.7656,22.1563 Q83.4219,22.1563 83.2188,21.9531 Q83.0156,21.7656 82.9063,21.25 Q82.8594,20.8906 82.6719,20.7031 Q82.3438,20.3281 81.7344,20.1094 Q81.125,19.8906 80.5,19.8906 Q79.7344,19.8906 79.0938,20.2188 Q78.4688,20.5469 77.9688,21.2969 Q77.4844,22.0469 77.4844,23.0781 L77.4844,24.1719 Q77.4844,25.4063 78.375,26.2344 Q79.2656,27.0469 80.8594,27.0469 Q81.7969,27.0469 82.4531,26.7969 Q82.8438,26.6406 83.2656,26.2031 Q83.5313,25.9375 83.6719,25.8594 Q83.8281,25.7813 84.0313,25.7813 Q84.3594,25.7813 84.6094,26.0469 Q84.875,26.2969 84.875,26.6406 Q84.875,26.9844 84.5313,27.3906 Q84.0313,27.9688 83.2344,28.2969 Q82.1563,28.75 80.8594,28.75 Q79.3438,28.75 78.1406,28.125 Q77.1563,27.625 76.4688,26.5625 Q75.7813,25.4844 75.7813,24.2031 L75.7813,23.0469 Q75.7813,21.7188 76.3906,20.5781 Q77.0156,19.4219 78.1094,18.8125 Q79.2031,18.1875 80.4375,18.1875 Q81.1719,18.1875 81.8125,18.3594 Q82.4688,18.5156 83.0156,18.875 Z " fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="32" x="100.75" y="27.9102">Circle</text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="193" y1="39" y2="39"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="68" x="13" y="54.4189">radius: double</text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="193" y1="60.8359" y2="60.8359"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="35" x="13" y="76.2549">Circle()</text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="13" y="90.0908">Circle(newRadius: double)</text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="13" y="103.9268">getArea(): double</text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="13" y="117.7627">getPerimeter(): double</text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="175" x="13" y="131.5986">setRadius(newRadius: double): void</text>
+        <!--MD5=[70a1c7944ae8c2ea1902242db64e88d7]
+@startuml
+class Circle {
+    radius: double
+
+    Circle()
+    Circle(newRadius: double)
+    getArea(): double
+    getPerimeter(): double
+    setRadius(newRadius: double): void
+}
+@enduml
+
+PlantUML version 1.2021.3(Mon Mar 22 12:53:19 EDT 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+-->
+    </g>
+</svg>

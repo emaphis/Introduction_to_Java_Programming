@@ -1,0 +1,11 @@
+@startuml
+class Circle {
+    radius: double
+
+    Circle()
+    Circle(newRadius: double)
+    getArea(): double
+    getPerimeter(): double
+    setRadius(newRadius: double): void
+}
+@enduml
