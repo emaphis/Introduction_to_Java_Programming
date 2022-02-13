@@ -41,3 +41,15 @@ public class TestCircle {
 
     }
 }
+
+/*
+Before creating objects
+The number of Circle objects is 0
+
+After creating c1
+c1: radius (1.0) and number of Circle objects (1)
+
+After creating c2 and modifying c1
+c1: radius (9.0) and number of Circle objects (2)
+c2: radius (5.0) and number of Circle objects (2)
+*/

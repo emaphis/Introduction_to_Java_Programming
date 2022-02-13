@@ -38,15 +38,15 @@ class TestF {
 class Test2 {
     int count;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {  // need static.
         //...
     }
 
-    public int getCount() {
+    public int getCount() {   // don't need static
         return count;
     }
 
-    public static int factorial(int n) {
+    public static int factorial(int n) {  // need static
         int result = 1;
         for (int i = 1; i <= n; i++)
             result *= i;
@@ -83,6 +83,8 @@ class C2 {
 public class CheckPoint09_07 {
     public static void main(String[] args) {
         TestF f = new TestF();
-        f.testF();;
+        f.testF();
+
+        System.out.println("factorial(6) is " + Test2.factorial(6));
     }
 }

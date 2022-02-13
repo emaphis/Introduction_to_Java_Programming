@@ -65,6 +65,6 @@ class A2 {
  */
 public class CheckPoint09_05 {
     public static void main(String[] args) {
-
+        A2.main(null);
     }
 }

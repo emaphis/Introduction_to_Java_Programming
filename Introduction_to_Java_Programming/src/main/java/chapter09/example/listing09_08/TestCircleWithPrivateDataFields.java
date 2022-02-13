@@ -27,3 +27,9 @@ public class TestCircleWithPrivateDataFields {
 
     }
 }
+
+/*
+The area of the circle of radius 5.0 is 78.53981633974483
+The area of the circle of radius 5.5 is 95.03317777109125
+The number of objects created is 1
+*/

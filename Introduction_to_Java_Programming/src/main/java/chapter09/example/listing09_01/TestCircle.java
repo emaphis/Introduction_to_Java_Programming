@@ -64,3 +64,10 @@ class Circle {
         radius = newRadius;
     }
 }
+
+/*
+he area of the circle of radius 1.0 is 3.141592653589793
+The area of the circle of radius 25.0 is 1963.4954084936207
+The area of the circle of radius 125.0 is 49087.385212340516
+The area of the circle of radius 100.0 is 31415.926535897932
+*/

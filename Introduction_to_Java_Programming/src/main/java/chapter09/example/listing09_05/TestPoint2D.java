@@ -32,3 +32,12 @@ public class TestPoint2D {
                     p1.midpoint(p2).toString());
     }
 }
+
+/*
+Enter point1's x-, y–coordinates: 1.5 5.5
+Enter point2's x-, y–coordinates: -5.3 -4.4
+p1 is Point2D [x = 1.5, y = 5.5]
+p2 is Point2D [x = -5.3, y = -4.4]
+The distance between p1 and p2 is 12.010412149464313
+The midpoint between p1 and p2 is Point2D [x = -1.9, y = 0.5499999999999998]
+*/

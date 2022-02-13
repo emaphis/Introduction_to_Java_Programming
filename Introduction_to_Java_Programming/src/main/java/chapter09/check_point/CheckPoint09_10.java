@@ -9,7 +9,7 @@ import java.util.Date;
 // 9.10.1 Describe the difference between passing a parameter of a primitive type and passing
 //        a parameter of a reference type. Show the output of the following programs:
 // a. Primitive parameters are passed by value, a copy is passed
-//    Objects are passed by referene. The ojbect is shared.
+//    Objects are passed by referene. The object is shared.
 
 // Show the output of the following programs:
 // a.

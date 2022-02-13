@@ -9,12 +9,12 @@ package chapter09.check_point;
 // a.  Method that acceses a class property
 //     Mutator method sets a property of a class to
 //     Accessor methods have name of the property prepended with 'get'
-//     Mutator methods have
+//     Mutator methods have the name of the property prepended with 'set'
 
 
 // 9.9.2 What are the benefits of data field encapsulation?
 // a. Data cant be tampered with except through the defined interface
-//    Data representation can be changes.
+//    Data representation can be changed.
 
 
 // 9.9.3 In the following code, radius is private in the Circle class, and myCircle is an object
@@ -38,6 +38,7 @@ class Circle1 {
 public class CheckPoint09_09 {
     public static void main(String[] args) {
         Circle1 myCircle = new Circle1();
-        //System.out.println("Radius is " + myCircle.radius);  // error
+        //System.out.println("Radius is " + myCircle.radius);  // error can't acces private member
+        System.out.println("Area is " + myCircle.getArea());
     }
 }

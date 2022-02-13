@@ -26,9 +26,14 @@ public class TestTV {
        tv2.volumeUp();
 
         System.out.println("tv1's channel is " + tv1.channel
-            + " and vaolume level is " + tv1.volumeLevel);
+            + " and volume level is " + tv1.volumeLevel);
 
         System.out.println("tv2's channel is " + tv2.channel
-            + " and vaolume level is " + tv2.volumeLevel);
+            + " and volume level is " + tv2.volumeLevel);
     }
 }
+
+/*
+tv1's channel is 30 and volume level is 3
+tv2's channel is 3 and volume level is 2
+*/
