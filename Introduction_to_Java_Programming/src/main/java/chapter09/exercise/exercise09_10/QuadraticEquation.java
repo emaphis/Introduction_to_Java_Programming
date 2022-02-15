@@ -37,16 +37,16 @@ public class QuadraticEquation {
 
    public double getRoot1() {
         double disc = getDiscriminant();
-        if (disc > 0)
-            return (-b + Math.pow(disc, 0.5)) / (2 * a);
+        if (disc >= 0)
+            return (-b + Math.sqrt(disc)) / (2 * a);
         else
             return 0;
    }
 
    public double getRoot2() {
         double disc = getDiscriminant();
-        if (disc > 0)
-            return (-b - Math.pow(disc, 0.5)) / (2 * a);
+        if (disc >= 0)
+            return (-b - Math.sqrt(disc)) / (2 * a);
         else
             return 0;
     }

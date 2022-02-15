@@ -28,6 +28,7 @@ public class Account {
         id = newid;
         balance = newBalance;
         dateCreated = new Date();
+        annualInterestRate = 0;
     }
 
     public void setId(int newId) {

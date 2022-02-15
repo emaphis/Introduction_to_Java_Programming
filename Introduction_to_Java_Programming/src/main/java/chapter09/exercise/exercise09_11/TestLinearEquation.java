@@ -43,7 +43,7 @@ public class TestLinearEquation {
         if (eq.isSolvable()) {
             double x = eq.getX();
             double y = eq.getY();
-            System.out.println("x is " + x + " y is " + y);
+            System.out.println("x is " + x + " and y is " + y);
         }
         else
             System.out.println("The equation has no solution.");

@@ -21,7 +21,31 @@ public class Stock {
 
     /** return the percentage of price change */
     public double getChangePercent() {
-        return ((currentPrice - previousClosingPrice) /
-                previousClosingPrice) * 100;
+        return ((currentPrice - previousClosingPrice) / currentPrice) * 100;
     }
+
+    public void setCurrentPrice(double newCurrentPrice) {
+        currentPrice = newCurrentPrice;
+    }
+
+    public void setPreviousClosingPrice(double newPreviousClosingPrice) {
+        this.previousClosingPrice = newPreviousClosingPrice;
+    }
+
+    public double getPreviousClosingPrice() {
+        return previousClosingPrice;
+    }
+
+    public double getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSymbol() {
+        return symbol;
+    }
+
 }

@@ -49,3 +49,14 @@ public class QuadraticEquation {
 
     }
 }
+
+/*
+Enter a, b, c: 1.0 3 1
+The equation has two roots: -0.3819660112501051 and -2.618033988749895
+
+Enter a, b, c: 1 2.0 1
+The equation has one root: -1.0
+
+Enter a, b, c: 1 2 3
+The equation has no real roots
+*/

@@ -1,5 +1,5 @@
 /*
- * Exercise 9.14
+ * Exercise 9.13
  */
 package chapter09.exercise.exercise09_13;
 
@@ -10,7 +10,7 @@ package chapter09.exercise.exercise09_13;
 public class Location {
     public int row = 0;
     public int column = 0;
-    public double maxValue = 0;
+    public double maxValue = -9999999;
 
     public boolean setMax(int newRow, int newColumn, double[][] array) {
         double value = array[newRow][newColumn];

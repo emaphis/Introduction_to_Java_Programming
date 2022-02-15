@@ -35,10 +35,10 @@ public class Algerbra {
         // Calculate the divisor
         double div = a * d - b * c;
 
-        if (div != 0) {
+        if (div > 0.000000001) {
             double x = (e * d - b * f) / div;
             double y = (a * f - e * c) / div;
-            System.out.println("x is " + x + " y is " + y);
+            System.out.println("x is " + x + " and y is " + y);
         }
         else
             System.out.println("The equation has no solution.");

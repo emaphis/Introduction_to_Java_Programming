@@ -36,3 +36,8 @@ public class UseGregorianCalendar {
         System.out.println("Date = " + day + "/" + month + "/" + year);
     }
 }
+
+/*
+Date = 14/1/2022
+Date = 13/1/2009
+*/

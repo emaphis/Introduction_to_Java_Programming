@@ -28,15 +28,14 @@ public class SolveLinearEquations {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter a00, a01, a10, a11");
+        System.out.print("Enter a00, a01, a10, a11, b0, b1: ");
         double a[][] = getArrayA(input);
-        System.out.println("Enter b0, b1");
         double b[] = getArrayB(input);
 
         double[] out = linearEquation(a, b);
 
         if (out != null)
-            System.out.println("x is " + out[0] + " y is " + out[1]);
+            System.out.println("x is " + out[0] + " and y is " + out[1]);
         else
             System.out.println("The equation has no solution.");
 
@@ -50,6 +49,7 @@ public class SolveLinearEquations {
         double[] solution = new double[2];
         solution[0] = (b[0] * a[1][1] - b[1] * a[0][1]) / desc;
         solution[1] = (b[1] * a[0][0] - b[0] * a[1][0]) / desc;
+
         return solution;
     }
 
@@ -71,10 +71,8 @@ public class SolveLinearEquations {
 }
 
 // test data:
-// 9.0 4.0 3.0 -5.0
-// -6.0 -21.0
+// 9.0 4.0 3.0 -5.0 -6.0 -21.0
 // solution x = -2.0 and y = 3.0
 
-// 1.0 2.0 2.0 4.0
-// 4.0 5.0
+// 1.0 2.0 2.0 4.0 4.0 5.0
 // no soluion

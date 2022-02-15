@@ -46,3 +46,8 @@ public class TestFan {
         System.out.println(fan2);
     }
 }
+
+/*
+speed= Fast, color= yellow, radius= 10.0
+color= blue, radius= 5.0, fan is off
+*/

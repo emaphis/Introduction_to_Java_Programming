@@ -26,10 +26,16 @@ package chapter09.exercise.exercise09_02;
  */
 public class TestStock {
     public static void main(String[] args) {
-        Stock stock = new Stock("ORCL", "Oracle");
-        stock.previousClosingPrice = 34.5;
-        stock.currentPrice = 34.35;
+        Stock stock = new Stock("ORCL", "Oracle Corporation");
+        stock.setPreviousClosingPrice(34.5);
+        stock.setCurrentPrice(34.35);
+
         double change = stock.getChangePercent();
-        System.out.printf("Percent change: %.2f\n", change);
+        System.out.printf("Percent change of stock price for: %s - %s is %.2f\n",
+                stock.getSymbol(), stock.getName(), change);
     }
 }
+
+/*
+Percent change of stock price for: ORCL - Oracle Corporation is -0.44
+*/

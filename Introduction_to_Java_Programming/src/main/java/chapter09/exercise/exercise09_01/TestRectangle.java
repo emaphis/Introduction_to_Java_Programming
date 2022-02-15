@@ -33,7 +33,14 @@ public class TestRectangle {
     }
 
     private static void displayRectangle(Rectangle rect) {
-        System.out.printf("width: %.2f\nheight: %.2f\narea: %.2f\nperimeter: %.2f\n\n",
+        System.out.printf("width: %.2f height: %.2f area: %.2f perimeter: %.2f\n",
                 rect.width, rect.height, rect.getArea(), rect.getPerimeter());
     }
 }
+
+/*
+Rectangle 1
+width: 4.00 height: 40.00 area: 160.00 perimeter: 88.00
+Rectangle 2
+width: 3.50 height: 35.90 area: 125.65 perimeter: 78.80
+*/

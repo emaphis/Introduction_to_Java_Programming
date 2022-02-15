@@ -25,3 +25,14 @@ public class UseDateClass {
         }
     }
 }
+
+/*
+Wed Dec 31 19:00:10 EST 1969
+Wed Dec 31 19:01:40 EST 1969
+Wed Dec 31 19:16:40 EST 1969
+Wed Dec 31 21:46:40 EST 1969
+Thu Jan 01 22:46:40 EST 1970
+Mon Jan 12 08:46:40 EST 1970
+Sun Apr 26 13:46:40 EDT 1970
+Sat Mar 03 04:46:40 EST 1973
+*/
