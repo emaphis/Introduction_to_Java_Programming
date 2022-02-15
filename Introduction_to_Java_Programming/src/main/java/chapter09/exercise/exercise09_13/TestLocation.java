@@ -38,19 +38,10 @@ public class TestLocation {
         System.out.println("Enter the array: ");
         double[][] array = getArray(row, col, input);
 
-        Location location = locateLargest(array);
+        Location location = Location.locateLargest(array);
         printLocation(location);
     }
 
-    public static Location locateLargest(double[][] a) {
-        Location location = new Location();
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-                location.setMax(i, j, a);
-            }
-        }
-        return location;
-    }
 
     private static double[][] getArray(int row, int col, Scanner input) {
         double[][] array = new double[row][col];
@@ -67,3 +58,12 @@ public class TestLocation {
                   + " at (" + location.row + ", " + location.column + ")");
     }
 }
+
+/*
+Enter the number of rows and columns in the array: 3 4
+Enter the array:
+23.5 35 2 10
+4.5 3 45 3.5
+35 44 5.5 9.6
+The location of the largest element is 45.0 at (1, 2)
+*/

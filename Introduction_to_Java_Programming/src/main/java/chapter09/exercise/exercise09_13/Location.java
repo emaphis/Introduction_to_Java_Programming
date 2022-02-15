@@ -12,16 +12,20 @@ public class Location {
     public int column = 0;
     public double maxValue = -9999999;
 
-    public boolean setMax(int newRow, int newColumn, double[][] array) {
-        double value = array[newRow][newColumn];
-        if (value > maxValue) {
-            row = newRow;
-            column = newColumn;
-            maxValue = value;
-            return true;
+    public static Location locateLargest(double[][] a) {
+        Location location = new Location();
+        location.maxValue = a[0][0];
+        for (int row = 0; row < a.length; row++) {
+            for (int col = 0; col < a[row].length; col++) {
+                double value = a[row][col];
+                if (value > location.maxValue) {
+                    location.maxValue = value;
+                    location.column = col;
+                    location.row = row;
+                }
+            }
         }
-        else
-            return false;
+        return location;
     }
 
 }
