@@ -32,3 +32,9 @@ public class TestCourse {
             + course2.getNumberOfStudents());
     }
 }
+
+/*
+Number of students in course1: 3
+Peter Jones Kim Smith Anne Kennedy
+Numner of students in cours2: 2
+*/

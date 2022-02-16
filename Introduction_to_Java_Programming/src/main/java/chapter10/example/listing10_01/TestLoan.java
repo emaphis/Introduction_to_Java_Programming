@@ -37,3 +37,12 @@ public class TestLoan {
 
     }
 }
+
+/*
+Enter annual interest rate, for example, 8.25: 2.5
+Enter number of years as an integer: 5
+Enter loan amount, for example, 120000.95: 1000
+The loan was created on Tue Feb 15 15:30:25 EST 2022
+The monthly payment is 17.75
+The total payment is 1064.84
+*/

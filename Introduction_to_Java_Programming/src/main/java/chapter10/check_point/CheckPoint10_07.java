@@ -5,11 +5,7 @@
 package chapter10.check_point;
 
 // 10.7.1  Describe primitive-type wrapper classes.
-// a. They wrop primative values to give them the behavour of regular classes
-
-
-
-
+// a. They wrap primative values to give them the behavour of regular classes
 public class CheckPoint10_07 {
 
     // 10.7.2  Can each of the following statements be compiled?
@@ -28,7 +24,6 @@ public class CheckPoint10_07 {
 
         // e.  Bad, must have a paremeter
         // Double d = new Double();
-
         // f.  ok
         Double e = Double.valueOf("23.45");
 
@@ -58,15 +53,25 @@ public class CheckPoint10_07 {
     // a.
     //  3
     //  -1
-    static class Test07_04 {
-        public static void main(String[] args) {
-            Integer x = Integer.valueOf(3);
-            System.out.println(x.intValue());
-            System.out.println(x.compareTo(4));
-        }
+    static void ex10_7_4() {
+        Integer x = Integer.valueOf(3);
+        System.out.println(x.intValue());
+        System.out.println(x.compareTo(4));
     }
 
-    public static void main(String[] args) {
+    // 10.7.5 What is the output of the following code?
+    static void ex10_7_5() {
+        System.out.println(Integer.parseInt("10"));
+        System.out.println(Integer.parseInt("10", 10));
+        System.out.println(Integer.parseInt("10", 16));
+        System.out.println(Integer.parseInt("11"));
+        System.out.println(Integer.parseInt("11", 10));
+        System.out.println(Integer.parseInt("11", 16));
+    }
 
+
+    public static void main(String[] args) {
+        ex10_7_4();
+        ex10_7_5();
     }
 }

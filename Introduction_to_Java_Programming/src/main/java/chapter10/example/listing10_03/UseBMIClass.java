@@ -19,3 +19,8 @@ public class UseBMIClass {
             + bmi2.getBMI() + " " + bmi2.getStatus());
     }
 }
+
+/*
+The BMI for Kim Yang is 20.81 Normal
+The BMI for Susan King is 30.85 Obese
+*/

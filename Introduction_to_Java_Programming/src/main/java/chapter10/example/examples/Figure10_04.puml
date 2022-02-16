@@ -2,9 +2,22 @@
 title assotiation
 left to right direction
 together {
-    class Student
-    class Course
-    class Faculty
+    class Student {
+        -courseList: Course[]
+        + addCourse(c: Course): void
+    }
+    
+    class Course { 
+        -classList: Student[]
+        -faculty: Faculty
+        +addStudent(s: Student): void
+        +setFaculty(faculty: Faculty): void
+    }
+    
+    class Faculty {
+        -courseList: Course[]
+        +addCourse(c: Course): void
+    }
 }
 
 Student "5,60" -- "*" Course : Take >

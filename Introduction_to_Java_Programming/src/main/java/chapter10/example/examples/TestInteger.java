@@ -7,7 +7,7 @@ package chapter10.example.examples;
  * Exercise the built in Integer class.
  */
 public class TestInteger {
-    public static void constructorExeamples() {
+    public static void constructorExamples() {
         Integer x1 = new Integer("32");
         Integer x2 = new Integer("32");
         Integer x3 = Integer.valueOf("32");
@@ -19,7 +19,7 @@ public class TestInteger {
         System.out.println("x3 == x5 is " + (x3 == x5)); // Display true
     }
 
-    public static void frequenlyUsed() {
+    public static void frequentlyUsed() {
         Integer x1 = Integer.valueOf("128");
         Integer x2 = Integer.valueOf("128");
         System.out.println("x1 == x2 is " + (x1 == x2)); // Display false
@@ -39,10 +39,9 @@ public class TestInteger {
     }
 
 
-
     public static void main(String[] args) {
-        constructorExeamples();
-        frequenlyUsed();
+        constructorExamples();
+        frequentlyUsed();
         maxValues();
         compareToTest();
     }

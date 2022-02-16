@@ -29,3 +29,8 @@ public class CheckPoint10_05 {
         System.out.println();
     }
 }
+
+/*
+Number of students in course1: 3
+Peter Jones, Kim Smith, Anne Kennedy
+*/

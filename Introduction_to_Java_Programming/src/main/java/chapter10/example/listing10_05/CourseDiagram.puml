@@ -5,6 +5,7 @@ class Course {
     -students: String[]
     -numberOfStudents: int
 
+    +Course(courseName: String)
     +getCourseName(): String
     +addStudent(student: String): void
     +dropStudent(student: String): void
