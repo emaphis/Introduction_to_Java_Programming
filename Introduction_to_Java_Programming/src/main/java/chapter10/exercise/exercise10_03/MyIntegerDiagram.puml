@@ -4,15 +4,19 @@ class MyInteger {
 
     +MyInteger(data: int)
     +getValue(): int
+
     +isEven(): boolean
     +isOdd(): boolean
     +isPrime(): boolean
-    +isEven(value: MyInteger): boolean
-    +isOdd(value: MyInteger): boolean
-    +isPrime(value: MyInteger): boolean
+
+    +{static} isEven(value: MyInteger): boolean
+    +{static} isOdd(value: MyInteger): boolean
+    +{static} isPrime(value: MyInteger): boolean
+
     +equals(value: int): boolean
     +equals(value: MyInteger): boolean
+
     +parseInt(value: String): MyInteger
-    +parseInt(values[] char[])
+    +parseInt(values[] char[]) : MyInteger
 }
 @enduml

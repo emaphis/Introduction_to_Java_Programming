@@ -33,3 +33,9 @@ public class TestMyPoint {
         System.out.println("Distance= " + MyPoint.distance(point1, point2));
     }
 }
+
+/*
+Distance= 32.09750769140807
+Distance= 32.09750769140807
+Distance= 32.09750769140807
+*/

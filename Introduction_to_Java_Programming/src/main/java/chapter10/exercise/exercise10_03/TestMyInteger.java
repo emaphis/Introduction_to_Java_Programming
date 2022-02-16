@@ -30,19 +30,34 @@ package chapter10.exercise.exercise10_03;
  */
 public class TestMyInteger {
     public static void main(String[] args) {
-        MyInteger mInt = new MyInteger(123);
-        System.out.println("The value of MyInteger(123) is " + mInt.getValue());
-        System.out.println("MyInteger(123) is even: " + mInt.isEven());
-        System.out.println("MyInteger(123) is odd: " + mInt.isOdd());
-        System.out.println("MyInteger(123) is prime: " + mInt.isPrime());
-        System.out.println("MyInteger(13) is prime " + new MyInteger(13).isPrime());
-        System.out.println("MyInteger(123) equals 123: " + mInt.equals(123));
-        System.out.println("MyInteger(123) equals MyIntger(321): " + mInt.equals(new MyInteger(321)));
+        MyInteger n1 = new MyInteger(5);
+        System.out.println("n1 is even? " + n1.isEven());
+        System.out.println("n1 is prime? " + n1.isPrime());
+        System.out.println("15 is prime? " + MyInteger.isPrime(15));
 
-        char[] number = new char[] { '1', '2', '3' };
-        int num = MyInteger.parseInt(number);
-        System.out.println(num);
+        char[] number = new char[] { '3', '5', '3', '9' };
+        int num_a = MyInteger.parseInt(number);
+        System.out.println(num_a);
+        int  num_b = MyInteger.parseInt("3539");
+        System.out.println(num_b);
 
+        MyInteger n2 = new MyInteger(12);
+        System.out.println("n2 is odd? " + n2.isOdd());
+        System.out.println("45 is odd? " + MyInteger.isOdd(45));
+        System.out.println("n1 is equal to n2? " + n1.equals(n2));
+        System.out.println("n1 is equal to 5? " + n1.equals(5));
     }
 
 }
+
+/*
+n1 is even? false
+n1 is prime? true
+15 is prime? false
+3539
+3539
+n2 is odd? false
+45 is odd? true
+n1 is equal to n2? false
+n1 is equal to 5? true
+*/

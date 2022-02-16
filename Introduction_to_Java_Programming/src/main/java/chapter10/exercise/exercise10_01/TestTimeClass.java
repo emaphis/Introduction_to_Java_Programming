@@ -47,3 +47,9 @@ public class TestTimeClass {
                 + time.getSecond() + " GMT");
     }
 }
+
+/*
+16:56:15 GMT
+10:19:10 GMT
+5:23:55 GMT
+*/

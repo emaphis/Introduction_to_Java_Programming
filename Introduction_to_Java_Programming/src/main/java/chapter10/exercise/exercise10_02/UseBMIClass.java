@@ -9,20 +9,23 @@
  */
 package chapter10.exercise.exercise10_02;
 
-
 /**
  * Exercise BMI class
+ *
  * @author emaph
  */
 public class UseBMIClass {
     public static void main(String[] args) {
         BMI bmi1 = new BMI("Kim Yang", 18, 145, 5, 10);
-        System.out.println("The BMI for " + bmi1.getName() + " is "
-            + bmi1.getBMI() + " " + bmi1.getStatus());
+        printBMI(bmi1);
 
         BMI bmi2 = new BMI("Susan King", 215, 5, 10);
-        System.out.println("The BMI for " + bmi2.getName() + " is "
-            + bmi2.getBMI() + " " + bmi2.getStatus());
+        printBMI(bmi2);
+    }
+
+    static void printBMI(BMI bmi) {
+        System.out.println("The BMI for " + bmi.getName() + " is "
+                + bmi.getBMI() + " " + bmi.getStatus());
     }
 }
 
