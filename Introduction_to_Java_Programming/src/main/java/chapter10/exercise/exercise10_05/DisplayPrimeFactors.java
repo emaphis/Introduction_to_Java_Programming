@@ -24,11 +24,13 @@ public class DisplayPrimeFactors {
 
         StackOfIntegers stack = getPrimeFactors(number);
 
+        // display stack in reverse order
         while (!stack.empty()) {
             System.out.print(stack.pop() + (stack.empty() ? " " : ", "));
         }
     }
 
+    /** return a stack of prime factors given a number to factor */
     private static StackOfIntegers getPrimeFactors(int number) {
         StackOfIntegers stack = new StackOfIntegers();
         int guess = number;
@@ -45,3 +47,12 @@ public class DisplayPrimeFactors {
     }
 
 }
+
+/*
+Enter a positive integers: 120
+5, 3, 2, 2, 2
+
+
+Enter a positive integers: 345
+23, 5, 3
+*/

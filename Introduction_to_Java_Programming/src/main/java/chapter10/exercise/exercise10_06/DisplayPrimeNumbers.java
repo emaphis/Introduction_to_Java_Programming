@@ -15,9 +15,9 @@ import chapter10.example.listing10_07.StackOfIntegers;
  */
 public class DisplayPrimeNumbers {
     public static void main(String[] args) {
-        final int NUM = 120;
+        final int LIMIT = 120;
 
-        StackOfIntegers stack = getPrimeNumbers(NUM);
+        StackOfIntegers stack = getPrimeNumbers(LIMIT);
 
         while (!stack.empty()) {
             System.out.print(stack.pop() + (stack.empty() ? " " : ", "));
@@ -25,12 +25,11 @@ public class DisplayPrimeNumbers {
     }
 
     /* find prime numbers of a given number */
-    public static StackOfIntegers getPrimeNumbers(int number) {
+    public static StackOfIntegers getPrimeNumbers(int limit) {
         StackOfIntegers stack = new StackOfIntegers();
-        while (number >= 2) {
+        for (int number = 2; number <= limit; number++) {
             if (isPrime(number))
                 stack.push(number);
-            number--;
         }
         return stack;
     }
@@ -44,3 +43,5 @@ public class DisplayPrimeNumbers {
         return true;   // Number is prime
     }
 }
+
+// 113, 109, 107, 103, 101, 97, 89, 83, 79, 73, 71, 67, 61, 59, 53, 47, 43, 41, 37, 31, 29, 23, 19, 17, 13, 11, 7, 5, 3, 2
