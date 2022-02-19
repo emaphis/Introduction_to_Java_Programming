@@ -33,14 +33,14 @@ public class PrintTaxTables {
 
     public static void main(String[] args) {
 
-        Tax tax2001 = createTax2001(0, 5000);
+        Tax tax2001 = createTax2009(0, 5000);
         printTable(tax2001, "2001");
 
         Tax tax2002 = createTax2002(0, 50000);
         printTable(tax2002, "2002");
     }
 
-    static Tax createTax2002(int filingStatus, double taxableIncome) {
+    static Tax createTax2001(int filingStatus, double taxableIncome) {
         double[] rates = {0.10, 0.15, 0.25, 0.28, 0.33, 0.35};
         int[][] brackets = {
             {8350, 33950, 82250, 171550, 372950},  // Single filer
@@ -54,14 +54,27 @@ public class PrintTaxTables {
         return tax;
     }
 
-    static Tax createTax2001(int filingStatux, double taxableIncome) {
-        double[] rates = {0.15, 0.275, 0.305, 0.355, 0.391};
+    static Tax createTax2009(int filingStatus, double taxableIncome) {
+        double[] rates = {0.10, 0.15, 0.25, 0.28, 0.33, 0.35};
         int[][] brackets = {
-            {27050, 65550, 136750, 297350, 297350},  // Single filer
-            {45200, 109250, 166500, 297350, 297350}, // Married jointly
-                                                     // -or qualifying widow(er)
-            {22600, 54625, 83250, 148675, 148675},   // Married separately
-            {36250, 93650, 151650, 297350, 297350}   // Head of househol
+            {8350, 33950, 82250, 171550, 372950},  // Single filer
+            {16700, 67900, 137050, 20885, 372950}, // Married jointly
+                                                   // −or qualifying widow(er)
+            {8350, 33950, 68525, 104425, 186475},  // Married separately
+            {11950, 45500, 117450, 190200, 372950} // Head of household
+        };
+
+        Tax tax = new Tax(filingStatus, brackets, rates, taxableIncome);
+        return tax;
+    }
+
+    static Tax createTax2002(int filingStatux, double taxableIncome) {
+        double[] rates = {0.1, 0.15, 0.27, 0.30, 0.35, 0.386};
+        int[][] brackets = {
+            {6000, 27950, 67700, 141250, 307050}, // Single filer
+            {12000 , 46700, 112850, 171950, 307050}, // married filing jointly
+            {6000, 23350, 56425, 85975, 153525}, // married filing separately
+            {10000, 37450, 96700, 156600, 307050} // head of household
         };
 
         Tax tax = new Tax(filingStatux, brackets, rates, taxableIncome);
