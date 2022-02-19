@@ -40,9 +40,8 @@ public class PrintTaxTables {
         printTable(tax2002, "2002");
     }
 
-    static Tax createTax2001(int filingStatus, double taxableIncome) {
+    static Tax createTax2002(int filingStatus, double taxableIncome) {
         double[] rates = {0.10, 0.15, 0.25, 0.28, 0.33, 0.35};
-
         int[][] brackets = {
             {8350, 33950, 82250, 171550, 372950},  // Single filer
             {16700, 67900, 137050, 20885, 372950}, // Married jointly
@@ -55,7 +54,8 @@ public class PrintTaxTables {
         return tax;
     }
 
-    static Tax createTax2002(int filingStatux, double taxableIncome) {
+    static Tax createTax2001(int filingStatux, double taxableIncome) {
+        double[] rates = {0.15, 0.275, 0.305, 0.355, 0.391};
         int[][] brackets = {
             {27050, 65550, 136750, 297350, 297350},  // Single filer
             {45200, 109250, 166500, 297350, 297350}, // Married jointly
@@ -63,7 +63,6 @@ public class PrintTaxTables {
             {22600, 54625, 83250, 148675, 148675},   // Married separately
             {36250, 93650, 151650, 297350, 297350}   // Head of househol
         };
-        double[] rates  = {0.15, 0.275, 0.305, 0.355, 0.391, 0.391};
 
         Tax tax = new Tax(filingStatux, brackets, rates, taxableIncome);
         return tax;
@@ -71,8 +70,8 @@ public class PrintTaxTables {
 
     static void printTable(Tax taxFor2002, String year) {
         System.out.println(year + " Tax Table");
-        System.out.println("taxable\tSingle\tMarried\tMarried\t\tHead of");
-        System.out.println("Income\tSingle\tJoint\tSeparate\ta House");
+        System.out.println("taxable\tSingle\tMarried\tMarried\t Head of");
+        System.out.println("Income\tSingle\tJoint\tSeparate\t a House");
         for (int taxableIncome = 50000; taxableIncome <= 60000; taxableIncome += 1000) {
           taxFor2002.setTaxableIncome(taxableIncome);
           taxFor2002.setFilingStatus(0);
@@ -84,7 +83,7 @@ public class PrintTaxTables {
           taxFor2002.setFilingStatus(3);
           int taxForStatus3 = (int)taxFor2002.findTax();
           System.out.println(taxableIncome + "\t" + taxForStatus0 + "\t" +
-            taxForStatus1 + "\t" + taxForStatus2 + "\t\t" +
+            taxForStatus1 + "\t" + taxForStatus2 + "\t " +
             taxForStatus3);
         }
         System.out.println();

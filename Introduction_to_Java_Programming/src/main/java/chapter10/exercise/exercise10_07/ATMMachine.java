@@ -1,7 +1,7 @@
 /*
  * Exercise 10.7
  *  (Game: ATM machine) Use the Account class created in Programming Exer-
- * cise 9.7 to simulate an ATM machine. Create 10 accounts in an array with id
+ *  cise 9.7 to simulate an ATM machine. Create 10 accounts in an array with id
  *  0, 1, . . . , 9, and an initial balance of $100. The system prompts the user to
  *  enter an id. If the id is entered incorrectly, ask the user to enter a correct id.
  *  Once an id is accepted, the main menu is displayed as shown in the sample
@@ -82,3 +82,58 @@ public class ATMMachine {
     }
 
 }
+
+/*
+// Example run matching the book example:
+
+Enter an id: 4
+
+Main menu
+1: check balance
+2: withdraw
+3: deposit
+4: exit
+Enter a choice: 1
+The balance is 100.00
+
+Main menu
+1: check balance
+2: withdraw
+3: deposit
+4: exit
+Enter a choice: 2
+Enter an amount to withdraw: 3
+
+Main menu
+1: check balance
+2: withdraw
+3: deposit
+4: exit
+Enter a choice: 1
+The balance is 97.00
+
+Main menu
+1: check balance
+2: withdraw
+3: deposit
+4: exit
+Enter a choice: 3
+Enter an amount to deposit: 10
+
+Main menu
+1: check balance
+2: withdraw
+3: deposit
+4: exit
+Enter a choice: 1
+The balance is 107.00
+
+Main menu
+1: check balance
+2: withdraw
+3: deposit
+4: exit
+Enter a choice: 4
+
+Enter an id:
+*/

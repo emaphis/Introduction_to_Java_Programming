@@ -64,3 +64,11 @@ public class ComputeTax {
         System.out.println("Tax is " + (int) (tax * 100) / 100.0);
     }
 }
+
+/*
+(0-single filer, 1-married jointly or qualifying widow(er),
+2-married separately, 3-head of household)
+Enter the filing status: 0
+Enter the taxable income: 400000
+Tax is 117683.5
+*/

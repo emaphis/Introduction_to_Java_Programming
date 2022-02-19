@@ -44,11 +44,6 @@ import java.util.Scanner;
  */
 public class ComputeTax {
 
-    static final int SINGLE = 0;
-    static final int MAR_JOINT = 1;
-    static final int MAR_SEPARATE = 2;
-    static final int HEAD_HOUSEHOLD = 3;
-
     public static void main(String[] args) {
         // Create a Scanner
         Scanner input = new Scanner(System.in);
@@ -68,6 +63,11 @@ public class ComputeTax {
                 + "\n2-married separately, 3-head of household)\n"
                 + "Enter the filing status: ");
         int status = input.nextInt();
+
+        if (status < 0 || status > 3) {
+            System.out.println("Error: invalid input");
+            return;
+        }
 
         // Prompt the user to enter taxable income
         System.out.print("Enter the taxable income: ");
