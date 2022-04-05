@@ -36,7 +36,7 @@ public class TestCircle2d {
         System.out.println("Perimeter of c1: " + c1.getPerimeter());
 
         System.out.println("C1 contains point(3,3): " + c1.contains(3, 3));
-        System.out.println("C! contains Circle2D(4, 5, 10.5): " +
+        System.out.println("C1 contains Circle2D(4, 5, 10.5): " +
                 c1.contains(new Circle2D(4, 5, 10.5)));
         System.out.println("C1 overlaps Circle2D(3, 5, 2.3): " +
                 c1.overlaps(new Circle2D(3, 5, 2.3)));

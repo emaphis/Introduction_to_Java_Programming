@@ -1,25 +1,26 @@
 // Program to run experiments
 package main;
 
+import java.util.function.Supplier;
+
 public class Flap {
 
-    public static void main(String[] args) {
-        int[] carsCost = new int[5];
-        carsCost[0] = 50;
-        carsCost[1] = 455;
-        carsCost[2] = 65556;
-        carsCost[3] = 349;
-        carsCost[4] = 3467;
+    static void what() {
+        int max = 100;
+        int min = 0;
+        var dumb=  min >  min;
+    }
 
-        double sum = 0;
-        double mean = carsCost[0];
-        for (int i = 0; i < carsCost.length; i++) {
-            sum += carsCost[i];
-            if (i == carsCost.length - 1) {
-                mean = sum / carsCost.length;
-                System.out.println("The mean of the costs of the cars is : " + mean);
-            }
-        }
+    public static void main(String[] args) {
+        Supplier<String> s = () -> {
+            String[] names = {"Derby", "Arya", "Celest", "Mirage"};
+            int idx = (int)(Math.random() * names.length);
+            System.out.println("idx: " + idx);
+            String randomName = names[idx];
+            StringBuffer sb = new StringBuffer(randomName);
+            return sb.reverse().toString();
+        };
+        System.out.println(s.get());
     }
 
 }

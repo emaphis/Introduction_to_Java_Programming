@@ -31,13 +31,13 @@ public class TestQueue {
         Queue q = new Queue();
         System.out.println("Queue size " + q.getSize());
 
-        for (int i = 1; i <= 20; i++)
+        for (int i = 0; i <= 20; i++)
             q.enqueue(i);
 
         System.out.println("Queue size " + q.getSize());
 
         while (!q.empty())
-            System.out.println(q.dequeue() + " ");
+            System.out.print(q.dequeue() + " ");
 
         System.out.println("Queue size " + q.getSize());
     }
