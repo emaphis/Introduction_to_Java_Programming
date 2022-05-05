@@ -1,5 +1,5 @@
 /*
- * Listng 6.10
+ * Listing 6.10
  *  Case Study: Generating Random Characters
  */
 package chapter06.example.listing06_10;
