@@ -20,12 +20,13 @@ public class BMI {
     private double height;
     public static final double KILOGRAMS_PER_POUND = 0.45359237;
     public static final double METERS_PER_INCH = 0.0254;
+    public static final int INCHS_PER_FOOT = 12;
 
     /** Construct a BMI with the specified name, age, weight,
      * feet, and inches
      */
     public BMI(String name, int age, double weight, double feet, double inches) {
-        this(name, age, weight, inches + feet * 12);
+        this(name, age, weight, inches + (feet * INCHS_PER_FOOT));
     }
 
     public BMI(String name, int age, double weight, double  height) {

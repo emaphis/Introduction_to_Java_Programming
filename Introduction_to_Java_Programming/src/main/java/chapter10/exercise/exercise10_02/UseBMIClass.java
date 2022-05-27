@@ -19,8 +19,12 @@ public class UseBMIClass {
         BMI bmi1 = new BMI("Kim Yang", 18, 145, 5, 10);
         printBMI(bmi1);
 
-        BMI bmi2 = new BMI("Susan King", 215, 5, 10);
+        BMI bmi2 = new BMI("Susan King", 215, 70);
         printBMI(bmi2);
+
+        // Use new constructor
+        BMI bmi3 = new BMI("Susan King", 20, 215, 5, 10);
+        printBMI(bmi3);
     }
 
     static void printBMI(BMI bmi) {
@@ -30,4 +34,5 @@ public class UseBMIClass {
 }
 
 // he BMI for Kim Yang is 20.81 Normal
+// The BMI for Susan King is 30.85 Obese
 // The BMI for Susan King is 30.85 Obese
