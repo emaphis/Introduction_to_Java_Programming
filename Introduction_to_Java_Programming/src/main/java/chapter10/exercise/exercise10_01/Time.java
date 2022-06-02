@@ -14,12 +14,18 @@ public final class Time {
     private long minute;
     private long second;
 
+    /** A default constructor that constructs a time object (Now) */
     public Time() {
         long time = System.currentTimeMillis();
         this.setTime(time);
     }
 
 
+    /**
+     * A constructor that constructs a Time object with a specified elapsed time
+     * since midnight, January 1, 1970, in milliseconds. (The values of the data
+     * fields will represent this time.)
+     */
     public Time(long elapseTime) {
         setTime(elapseTime);
     }
@@ -31,15 +37,17 @@ public final class Time {
         this.second = second;
     }
 
-
+    /** Return hour */
     long getHour() {
         return hour;
     }
 
+    /** Return minute */
     public long getMinute() {
         return minute;
     }
 
+    /** Return second */
     public long getSecond() {
         return second;
     }

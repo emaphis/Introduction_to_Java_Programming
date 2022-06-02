@@ -30,11 +30,34 @@ package chapter10.exercise.exercise10_03;
  */
 public class TestMyInteger {
     public static void main(String[] args) {
-        MyInteger n1 = new MyInteger(5);
-        System.out.println("n1 is even? " + n1.isEven());
-        System.out.println("n1 is prime? " + n1.isPrime());
-        System.out.println("15 is prime? " + MyInteger.isPrime(15));
 
+        System.out.println("Test MyInteger.isEven(), MyInteger.isOdd(), and MyInteger.isPrime()");
+        for (int i = 0; i <= 20; i++) {
+            MyInteger num = new MyInteger(i);
+            System.out.println("num: " + num.getValue() +
+                               "  is even: " + num.isEven() +
+                               ", is odd: " + num.isOdd() +
+                               ", is prime: " + num.isPrime());
+        }
+
+        System.out.println("\nTest static MyInteger(), isEven(MyInteger), isOdd(MyInteger), isPrime(MyInteger)");
+        for (int i = 0; i <= 20; i++) {
+            MyInteger num = new MyInteger(i);
+            System.out.println("num: " + i +
+                               "  is even: " + MyInteger.isEven(num) +
+                               ", is odd: " + MyInteger.isOdd(num) +
+                               ", is prime: " + MyInteger.isPrime(num));
+        }
+
+        System.out.println("\nTest static MyInteger(), isEven(i), isOdd(), isPrime(i) and getValue(i)");
+        for (int i = 0; i <= 20; i++) {
+            System.out.println("num: " + i +
+                               "  is even: " + MyInteger.isEven(i) +
+                               ", is odd: " + MyInteger.isOdd(i) +
+                               ", is prime: " + MyInteger.isPrime(i));
+        }
+
+        System.out.println("\nTest parseInt and equals");
         char[] number = new char[] { '3', '5', '3', '9' };
         int num_a = MyInteger.parseInt(number);
         System.out.println(num_a);
@@ -42,10 +65,8 @@ public class TestMyInteger {
         System.out.println(num_b);
 
         MyInteger n2 = new MyInteger(12);
-        System.out.println("n2 is odd? " + n2.isOdd());
-        System.out.println("45 is odd? " + MyInteger.isOdd(45));
-        System.out.println("n1 is equal to n2? " + n1.equals(n2));
-        System.out.println("n1 is equal to 5? " + n1.equals(5));
+        System.out.println("n1 is equal to n2? " + n2.equals(n2));
+        System.out.println("n1 is equal to 5? " + n2.equals(5));
     }
 
 }
