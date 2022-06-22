@@ -14,6 +14,7 @@ public class Course {
     private int numberOfStudents;
     private String[] students = new String[100];
 
+    /** Create a course */
     public Course(String courseName) {
         this.courseName = courseName;
         this.numberOfStudents = 0;
@@ -24,14 +25,17 @@ public class Course {
         numberOfStudents++;
     }
 
+    /** return students array */
     public String[] getStudensts() {
         return students;
     }
 
+    /** number of students */
     public int getNumberOfStudents() {
         return numberOfStudents;
     }
 
+    /** return course name */
     public String getCourseName() {
         return courseName;
     }

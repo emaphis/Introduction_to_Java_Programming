@@ -1,7 +1,7 @@
 /*
  * Check Point 3.10
  */
-package chapter03;
+package chapter03.check_point;
 
 import java.util.Scanner;
 

@@ -20,7 +20,7 @@
 package chapter10.exercise.exercise10_04;
 
 /**
- *
+ * Exercise MyPointClass
  * @author emaph
  */
 public class TestMyPoint {
