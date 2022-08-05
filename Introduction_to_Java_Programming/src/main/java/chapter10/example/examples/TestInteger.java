@@ -8,8 +8,10 @@ package chapter10.example.examples;
  */
 public class TestInteger {
     public static void constructorExamples() {
-        Integer x1 = new Integer("32");
-        Integer x2 = new Integer("32");
+        //Integer x1 = new Integer("32"); // Deprecated in JDK 9, use .valueOf(i) instesd
+        //Integer x2 = new Integer("32");
+        Integer x1 = Integer.valueOf("32");
+        Integer x2 = Integer.valueOf("32");
         Integer x3 = Integer.valueOf("32");
         Integer x4 = Integer.valueOf("32");
         Integer x5 = 32;

@@ -10,11 +10,13 @@ public class CheckPoint10_07 {
 
     // 10.7.2  Can each of the following statements be compiled?
     static void testWrapperClasses() {
-        // a.  ok, but depricated
-        Integer h = new Integer("23");
+        // a.  ok, but depricated in JDK9 user static constructor .valueOf(i) insetead.
+        //Integer h = new Integer("23");
+        Integer h = Integer.valueOf("23");
 
-        // b.  ok, but depricated
-        Integer i = new Integer(23);
+        // b.  ok, but depricated in JDK9 user static constructor .valueOf(i) insetead.
+        //Integer i = new Integer(23);
+        Integer i = Integer.valueOf(23);
 
         // c.  ok
         Integer j = Integer.valueOf("23");
