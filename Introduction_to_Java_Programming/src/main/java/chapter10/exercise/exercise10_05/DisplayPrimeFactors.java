@@ -19,7 +19,7 @@ public class DisplayPrimeFactors {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a positive integers: ");
+        System.out.print("Enter a positive integer: ");
         int number = input.nextInt();
 
         StackOfIntegers stack = getPrimeFactors(number);
@@ -28,6 +28,8 @@ public class DisplayPrimeFactors {
         while (!stack.empty()) {
             System.out.print(stack.pop() + (stack.empty() ? " " : ", "));
         }
+
+        input.close();
     }
 
     /** return a stack of prime factors given a number to factor */

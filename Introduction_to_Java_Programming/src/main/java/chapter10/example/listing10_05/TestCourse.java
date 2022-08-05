@@ -28,7 +28,7 @@ public class TestCourse {
             System.out.print(students[i] + " ");
         System.out.println();
 
-        System.out.println("Numner of students in cours2: "
+        System.out.println("Number of students in course2: "
             + course2.getNumberOfStudents());
     }
 }
@@ -36,5 +36,5 @@ public class TestCourse {
 /*
 Number of students in course1: 3
 Peter Jones Kim Smith Anne Kennedy
-Numner of students in cours2: 2
+Number of students in cours2: 2
 */
