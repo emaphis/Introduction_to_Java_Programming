@@ -22,8 +22,8 @@ package chapter05.exercise.exercise05_23;
 public class CancellationErrors {
     public static void main(String[] args) {
         final int END = 50000;
-        float sumL2R = 0;
-        float sumR2L = 0;
+        double sumL2R = 0;
+        double sumR2L = 0;
 
         // Sumation from large to small - left to right
         for (int i = 1; i <= END;  i++)
@@ -34,14 +34,16 @@ public class CancellationErrors {
         for (int i = END; i >= 1; i--)
             sumR2L += 1.0 / i;
 
-        System.out.println("Large to small summation: " + sumL2R);
         System.out.println("Small to large summation: " + sumR2L);
+        System.out.println("Large to small summation: " + sumL2R);
+        System.out.println("The difference is: " + (sumR2L - sumL2R));
     }
 }
 
 // double
-// arge to small summation: 11.397003949278504
 // Small to large summation: 11.397003949278519
+// Large to small summation: 11.397003949278504
+// The difference is: 1.4210854715202004E-14//
 
 // float
 // Large to small summation: 11.396922
