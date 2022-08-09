@@ -12,7 +12,8 @@ I've included all of code listings, it's important to experiment with code to le
 
 I've include my answers to Check Points in source code to experiment and test my answers.
 
-For ULM diagrams, I'm using [PlantUML](https://plantuml.com/)  The notation used in the book is the same as PlantUML's source code, so direct translation is easy
+For UML diagrams, I'm using [PlantUML](https://plantuml.com/)
+The notation used in the book is the same as PlantUML's source code, so direct translation is easy.
 
 ## Some resources
 

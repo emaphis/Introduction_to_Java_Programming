@@ -1,36 +1,24 @@
 /*
- * Listing 9.6
- * 9.7 Static Variables, Constants, and Methods
+ * Listing 9.1
+ *  9.3 Example: Defining Classes and Creating Objects
  */
-package chapter09.example.listing09_06;
-
+package chapter09.example.listing09_01;
 
 /**
- * Circle class with static members
+ * This Circle class
  * @author emaph
  */
-public class Circle {
-    /** The radius of the circle */
-    double radius;
+//.Define the circle class wtih two constructors
+class Circle {
+    double radius = 1;
 
-    /** The number of objects created */
-    static int numberOfObjects = 0;
-
-    /** Construct a circle with a radius of 1 */
+    /** Construct a circle with a radius */
     public Circle() {
-        radius = 1;
-        numberOfObjects++;
     }
 
     /** Construct a circle with a specified radius */
     public Circle(double newRadius) {
         this.radius = newRadius;
-        numberOfObjects++;
-    }
-
-    /** Return number of objects */
-    static int getNumberOfObjects() {
-        return numberOfObjects;
     }
 
     /** Return the area of this circle */

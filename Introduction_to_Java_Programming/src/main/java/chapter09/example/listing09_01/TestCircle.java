@@ -35,36 +35,6 @@ public class TestCircle {
 }
 
 
-//.Define the circle class wtih two constructors
-class Circle {
-    double radius;
-
-    /** Construct a circle with a radius */
-    public Circle() {
-        radius = 1;
-    }
-
-    /** Construct a circle with a specified radius */
-    public Circle(double newRadius) {
-        this.radius = newRadius;
-    }
-
-    /** Return the area of this circle */
-    double getArea() {
-        return radius * radius * Math.PI;
-    }
-
-    /** Return the perimeter of this circle */
-    double getPerimeter() {
-        return 2 * radius * Math.PI;
-    }
-
-    /** Set a new radius for this circle */
-    void setRadius(double newRadius) {
-        radius = newRadius;
-    }
-}
-
 /*
 he area of the circle of radius 1.0 is 3.141592653589793
 The area of the circle of radius 25.0 is 1963.4954084936207

@@ -5,7 +5,7 @@
 package chapter09.example.listing09_03;
 
 /**
- *
+ * Test the TV class
  * @author emaph
  */
 public class TestTV {

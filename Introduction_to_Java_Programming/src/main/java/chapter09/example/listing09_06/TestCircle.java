@@ -5,7 +5,7 @@
 package chapter09.example.listing09_06;
 
 /**
- * Exercise the Circle class
+ * Exercise the Circle class with static members
  * @author emaph
  */
 public class TestCircle {
