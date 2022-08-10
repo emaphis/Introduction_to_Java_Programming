@@ -22,7 +22,7 @@ import java.util.GregorianCalendar;
  */
 public class UseGregorianCalendar {
     public static void main(String[] args) {
-        GregorianCalendar calendar = new GregorianCalendar();
+        GregorianCalendar calendar = new GregorianCalendar();  // today
         displayDate(calendar);
 
         calendar.setTimeInMillis(1234567898765L);

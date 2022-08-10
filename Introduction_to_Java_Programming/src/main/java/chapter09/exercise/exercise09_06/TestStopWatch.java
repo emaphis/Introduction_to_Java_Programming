@@ -20,9 +20,12 @@ package chapter09.exercise.exercise09_06;
  */
 public class TestStopWatch {
     public static void main(String[] args) {
+        // Create random int array
         final int SIZE = 100_000;
-        StopWatch timer = new StopWatch();
         int[] array = getArray(SIZE);
+
+        // Create Stopwath
+        StopWatch timer = new StopWatch();
 
         timer.start();
         sort(array);
@@ -31,6 +34,7 @@ public class TestStopWatch {
         System.out.println("Ellapsed time of the sort: " + timer.getElapsedTime());
     }
 
+    /** Create array of random integers to sort */
     private static int[] getArray(int size) {
         int[] array = new int[size];
 

@@ -6,13 +6,13 @@ package chapter09.exercise.exercise09_07;
 import java.util.Date;
 
 /**
- *
+ * The Account class
  * @author emaph
  */
 public class Account {
     private int id;
     private double balance;
-    private static double annualInterestRate;
+    private double annualInterestRate;
     final private Date dateCreated;
 
     /** default constructor */
@@ -55,24 +55,29 @@ public class Account {
         return annualInterestRate;
     }
 
+    /**  accessor method for dateCreated. */
     public String getDateCreated() {
         return dateCreated.toString();
     }
 
+    /**  returns the monthly interest rate */
     public double getMonthlyInterestRate() {
         return annualInterestRate / 12;
     }
 
-    /** Calculate and return interest amount */
+    /** Calculate and return monthly interest amount */
     public double getMonthlyInterest() {
         return balance * (getMonthlyInterestRate() / 100.0);
     }
 
+    /** withdraws a specified amount from the account */
     public  void withdraw(double amount) {
-        balance -= amount;
+        double newBalance = balance - amount;
+        if (newBalance >= 0)
+            balance = newBalance;
     }
 
-
+    /** deposits a specified amount to the account.*/
     public void deposit(double amount) {
         balance += amount;
     }

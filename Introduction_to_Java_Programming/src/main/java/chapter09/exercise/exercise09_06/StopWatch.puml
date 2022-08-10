@@ -6,7 +6,7 @@ class StopWatch {
     +start(): void
     +stop(): void
     +getElapsedTime(): long
-    +getStratTime(): long
+    +getStartTime(): long
     +getEndTime(): long
 }
 @enduml

@@ -1,12 +1,12 @@
 @startuml
 class Circle {
     -radius: double
-    -numberOfObjects: int
+    -{static}numberOfObjects: int
     +Circle()
-    +Circle(radius: double): double
-    +getArea(): double
-    +getNumberOfObjects(): int
+    +Circle(radius: double)
     +setRadius(radius: double): void
     +getRadius(): double
+    +{static}getNumberOfObjects(): int
+    +getArea(): double
 }
 @enduml

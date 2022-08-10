@@ -43,3 +43,5 @@ hs_err_pid*
 /Introduction_to_Java_Programming/build/
 /Introduction_to_Java_Programming/dist/
 /Introduction_to_Java_Programming/target/
+
+.fake

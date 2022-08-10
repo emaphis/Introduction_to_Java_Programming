@@ -26,13 +26,18 @@ package chapter09.exercise.exercise09_02;
  */
 public class TestStock {
     public static void main(String[] args) {
-        Stock stock = new Stock("ORCL", "Oracle Corporation");
-        stock.setPreviousClosingPrice(34.5);
-        stock.setCurrentPrice(34.35);
+        Stock stock = new Stock("SUNW", "Sun MicroSystems Inc.");
+        stock.previousClosingPrice = 100;
+        stock.currentPrice = 90;
 
         double change = stock.getChangePercent();
-        System.out.printf("Percent change of stock price for: %s - %s is %.2f\n",
-                stock.getSymbol(), stock.getName(), change);
+        // Display stock info
+        System.out.println("Previous Closing Price: " +
+          stock.previousClosingPrice);
+        System.out.println("Current Price: " +
+          stock.currentPrice);
+        System.out.println("Price Change: " +
+         (change * 100) + "%");
     }
 }
 

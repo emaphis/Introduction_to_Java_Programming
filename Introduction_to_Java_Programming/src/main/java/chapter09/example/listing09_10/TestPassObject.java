@@ -20,7 +20,7 @@ public class TestPassObject {
         int n = 5;
         printAreas(myCircle, n);
 
-        // // See myCircle.radius and times
+        /**  See myCircle.radius and times */
         System.out.println("\n" + "Radius is " + myCircle.getRadius());
         System.out.println("n is " + n);
     }
