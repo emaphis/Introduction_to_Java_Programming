@@ -12,7 +12,7 @@ public class LinearEquation {
 
     private final double a;
     private final double b;
-    private final  double c;
+    private final double c;
     private final double d;
     private final double e;
     private final double f;
@@ -52,7 +52,7 @@ public class LinearEquation {
     }
 
     public boolean isSolvable() {
-        return getDivisor() != 0;
+        return Math.abs(getDivisor()) > 0.000000001;
     }
 
     public double getX() {

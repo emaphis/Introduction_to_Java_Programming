@@ -13,6 +13,7 @@ public class QuadraticEquation {
     private final double b;
     private final double c;
 
+    /*** Create a Quadratic Equation */
     public QuadraticEquation(double newA, double newB, double newC) {
         a = newA;
         b = newB;
@@ -31,10 +32,12 @@ public class QuadraticEquation {
         return c;
     }
 
+    /** calculate and return discriminant */
     public double getDiscriminant() {
         return (b * b) - (4 * a * c);
     }
 
+    /** get first root */
    public double getRoot1() {
         double disc = getDiscriminant();
         if (disc >= 0)
@@ -43,6 +46,7 @@ public class QuadraticEquation {
             return 0;
    }
 
+   /** get second root */
    public double getRoot2() {
         double disc = getDiscriminant();
         if (disc >= 0)

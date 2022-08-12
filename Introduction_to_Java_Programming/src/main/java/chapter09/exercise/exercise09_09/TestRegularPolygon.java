@@ -48,13 +48,13 @@ public class TestRegularPolygon {
     }
 
     private static void printPolygon(RegularPolygon polygon) {
-        System.out.printf("Perimeter: %.2f, Area: %.2f\n",
+        System.out.printf("Perimeter: %.2f, Area: %.3f\n",
                 polygon.getPerimeter(), polygon.getArea());
     }
 }
 
 /*
-Perimeter: 3.00, Area: 0.43
-Perimeter: 24.00, Area: 41.57
-Perimeter: 40.00, Area: 123.11
+Perimeter: 3.00, Area: 0.433
+Perimeter: 24.00, Area: 41.569
+Perimeter: 40.00, Area: 123.107
 */
