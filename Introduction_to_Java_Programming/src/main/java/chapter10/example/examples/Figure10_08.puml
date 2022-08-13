@@ -1,5 +1,5 @@
 @startuml
 title A class may contain itself
-Person*--Persion
+Person o-- Persion
 class Person
 @enduml

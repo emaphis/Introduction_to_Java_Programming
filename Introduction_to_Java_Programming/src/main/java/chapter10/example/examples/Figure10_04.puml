@@ -1,5 +1,5 @@
 @startuml
-title assotiation
+title Figure 10.4 Association
 left to right direction
 together {
     class Student {
@@ -20,6 +20,6 @@ together {
     }
 }
 
-Student "5,60" -- "*" Course : Take >
-Course "3" -- "1" Faculty : Teach <
+Student "5..60" -- "*" Course : Take >
+Course "0..3" -- "Teacher" Faculty : Teach <
 @enduml

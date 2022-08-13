@@ -15,6 +15,8 @@ I've include my answers to Check Points in source code to experiment and test my
 For UML diagrams, I'm using [PlantUML](https://plantuml.com/)
 The notation used in the book is the same as PlantUML's source code, so direct translation is easy.
 
+/Notes - Directory holds useful notes, including notes on PlantUML
+
 ## Some resources
 
 [Link to "Intro the Java 12e"](https://www.pearson.com/us/higher-education/program/Liang-Introduction-to-Java-Programming-and-Data-Structures-Comprehensive-Version-Plus-My-Lab-Programming-with-Pearson-e-Text-Access-Card-Package-12th-Edition/PGM2741922.html)
