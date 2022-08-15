@@ -1,4 +1,5 @@
-@startuml
+@startuml exer10.1
+title Exercise 10.1
 class Time {
     -hour: long
     -minute: long

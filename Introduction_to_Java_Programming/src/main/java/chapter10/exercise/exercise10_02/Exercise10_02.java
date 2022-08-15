@@ -14,7 +14,7 @@ package chapter10.exercise.exercise10_02;
  *
  * @author emaph
  */
-public class UseBMIClass {
+public class Exercise10_02 {
     public static void main(String[] args) {
         BMI bmi1 = new BMI("Kim Yang", 18, 145, 5, 10);
         printBMI(bmi1);
@@ -23,8 +23,8 @@ public class UseBMIClass {
         printBMI(bmi2);
 
         // Use new constructor
-        BMI bmi3 = new BMI("Susan King", 20, 215, 5, 10);
-        printBMI(bmi3);
+        BMI bmi3 = new BMI("Joe Jones", 25, 185, 6, 10);
+        printBMI(bmi3);// Normal
     }
 
     static void printBMI(BMI bmi) {
@@ -35,4 +35,4 @@ public class UseBMIClass {
 
 // he BMI for Kim Yang is 20.81 Normal
 // The BMI for Susan King is 30.85 Obese
-// The BMI for Susan King is 30.85 Obese
+// The BMI for Joe Jones is 19.34 Normal

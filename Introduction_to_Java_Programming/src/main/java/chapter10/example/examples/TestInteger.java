@@ -27,11 +27,18 @@ public class TestInteger {
         System.out.println("x1 == x2 is " + (x1 == x2)); // Display false
     }
 
+    /** constants */
     public static void maxValues() {
         System.out.println("The maximum integer is " + Integer.MAX_VALUE);
         System.out.println("The minimum positive float is " +Float.MIN_VALUE);
         System.out.println("The maximum double-precision floating-point number is " +
                         Double.MAX_VALUE);
+    }
+
+    public static void conversionMethods() {
+        int val1 = Double.valueOf(12.4).intValue(); // returns 12
+        double val2 = Integer.valueOf(12).doubleValue(); // returns 12.0
+        System.out.println("Values = "  + val1 + ", " + val2);
     }
 
     public static void compareToTest() {
@@ -40,11 +47,20 @@ public class TestInteger {
         System.out.println(Double.valueOf(12.3).compareTo(Double.valueOf(12.51))); // returns –1;
     }
 
+    public static void parsing() {
+        int i1 = Integer.parseInt("11", 2); // returns 3;
+        int i2 = Integer.parseInt("12", 8); // returns 10;
+        int i3 = Integer.parseInt("13", 10); // returns 13;
+        int i4 = Integer.parseInt("1A", 16); //  returns 26;
+        System.out.println("integers = " + i1 + ", " + i2 + ", " + i3 + ", " + i4);
+    }
 
     public static void main(String[] args) {
         constructorExamples();
         frequentlyUsed();
         maxValues();
+        conversionMethods();
+        parsing();
         compareToTest();
     }
 }

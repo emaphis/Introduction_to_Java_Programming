@@ -1,4 +1,5 @@
-@startuml
+@startuml exercise10.3
+title Exercise 10.3 MyInteger
 class MyInteger {
     -value: int
 
@@ -9,6 +10,10 @@ class MyInteger {
     +isOdd(): boolean
     +isPrime(): boolean
 
+    +{static} isEven(value: int): boolean
+    +{static} isOdd(value: int): boolean
+    +{static} isPrime(value: int): boolean
+
     +{static} isEven(value: MyInteger): boolean
     +{static} isOdd(value: MyInteger): boolean
     +{static} isPrime(value: MyInteger): boolean
@@ -16,7 +21,7 @@ class MyInteger {
     +equals(value: int): boolean
     +equals(value: MyInteger): boolean
 
-    +parseInt(value: String): MyInteger
-    +parseInt(values[] char[]) : MyInteger
+    +{static}parseInt(value: String): MyInteger
+    +{static}parseInt(values[] char[]) : MyInteger
 }
 @enduml

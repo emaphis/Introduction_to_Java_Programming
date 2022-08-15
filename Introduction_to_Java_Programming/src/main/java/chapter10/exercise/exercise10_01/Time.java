@@ -8,7 +8,7 @@ package chapter10.exercise.exercise10_01;
  * Time class
  * @author emaph
  */
-public final class Time {
+public class Time {
 
     private long hour;
     private long minute;
@@ -53,6 +53,7 @@ public final class Time {
     }
 
     // see Exercise 3.30 and Listing 2.7
+    /** Set new time given eleapsed time */
     public void setTime(long elapseTime) {
         long totalSeconds = elapseTime / 1000;
         this.second = totalSeconds % 60;

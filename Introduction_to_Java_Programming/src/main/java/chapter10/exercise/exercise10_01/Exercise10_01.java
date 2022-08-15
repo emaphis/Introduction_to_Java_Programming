@@ -31,7 +31,7 @@ package chapter10.exercise.exercise10_01;
  * Exercise the Time class
  * @author emaph
  */
-public class TestTimeClass {
+public class Exercise10_01 {
     public static void main(String[] args) {
         Time time0 = new Time();
         Time time1 = new Time(555550000);  // eleapsed time
