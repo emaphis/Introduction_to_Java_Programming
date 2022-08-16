@@ -1,4 +1,5 @@
-@startuml
+@startuml exercise10.8
+title Exercise 10.8 Tax Tables
 class Tax {
     {static} +SINGLE_FILER: int
     {static} +MARRIED_JOINTLY_OR_QUALIFYING_WIDOW: int

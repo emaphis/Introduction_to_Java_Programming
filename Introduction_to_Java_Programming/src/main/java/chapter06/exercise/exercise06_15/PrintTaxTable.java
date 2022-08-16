@@ -27,14 +27,13 @@ public class PrintTaxTable {
     static double to = 60000;
 
     public static void main(String[] args) {
-        // Heasder
-        System.out.println("Taxable    Single     Married Joint     Married     Head of");
-        System.out.println("Income                of Qualifying     Separate    House hold");
-        System.out.println("                      Widow(er)                               ");
+        // Header
+        System.out.println("Taxable    Single     Married     Married     Head of");
+        System.out.println("Income     Single     Joint       Separate    a House");
 
         // details
         for (double income = from; income <= to; income += 50) {
-            System.out.printf("%-10d %-10d %-10d        %-10d  %-10d\n",
+            System.out.printf("%-10d %-10d %-10d  %-10d  %-10d\n",
                     Math.round(income),
                     Math.round(computeTax(SINGLE, income)),
                     Math.round(computeTax(JOINT, income)),
@@ -46,105 +45,71 @@ public class PrintTaxTable {
 
     public static double computeTax(int status, double taxableIncome) {
         double tax;
+        double amount10 = 0;
+        double amount15 = 0;
+        double amount25 = 0;
+        double amount28 = 0;
+        double amount33 = 0;
 
-        switch (status) {
-            case SINGLE:    // Compute tax for single filers
-                if (taxableIncome <= 8350) {
-                    tax = taxableIncome * 0.10;
-                } else if (taxableIncome <= 33950) {
-                    tax = 8350 * 0.10 + (taxableIncome - 8350) * 0.15;
-                } else if (taxableIncome <= 82250) {
-                    tax = 8350 * 0.10 + (33950 - 8350) * 0.15
-                            + (taxableIncome - 33950) * 0.25;
-                } else if (taxableIncome <= 171550) {
-                    tax = 8350 * 0.10 + (33950 - 8350) * 0.15
-                            + (82250 - 33950) * 0.25 + (taxableIncome - 82250) * 0.28;
-                } else if (taxableIncome <= 372950) {
-                    tax = 8350 * 0.10 + (33950 - 8350) * 0.15
-                            + (82250 - 33950) * 0.25 + (171550 - 82250) * 0.28
-                            + (taxableIncome - 171550) * 0.33;
-                } else {
-                    tax = 8350 * 0.10 + (33950 - 8350) * 0.15
-                            + (82250 - 33950) * 0.25 + (171550 - 82250) * 0.28
-                            + (372950 - 171550) * 0.33 + (taxableIncome - 372950) * 0.35;
-                }
-
+        // Convert chart to a case statement
+        switch(status) {
+            case SINGLE:
+                amount10 = 8351;
+                amount15 = 33951;
+                amount25 = 82251;
+                amount28 = 171551;
+                amount33 = 372951;
                 break;
-
-            case JOINT:    // Compute tax for married file joint
-                if (taxableIncome <= 16700) {
-                    tax = taxableIncome * 0.10;
-                } else if (taxableIncome <= 67900) {
-                    tax = 16700 * 0.10 + (taxableIncome - 16700) * 0.15;
-                } else if (taxableIncome <= 137050) {
-                    tax = 16700 * 0.10 + (67900 - 16700) * 0.15
-                            + (taxableIncome - 67900) * 0.25;
-                } else if (taxableIncome <= 208850) {
-                    tax = 16700 * 0.10 + (67900 - 16700) * 0.15
-                            + (137050 - 67900) * 0.25 + (taxableIncome - 137050) * 0.28;
-                } else if (taxableIncome <= 372950) {
-                    tax = 16700 * 0.10 + (67900 - 16700) * 0.15
-                            + (137050 - 67900) * 0.25 + (208850 - 137050) * 0.28
-                            + (taxableIncome - 208850) * 0.33;
-                } else {
-                    tax = 16700 * 0.10 + (67900 - 16700) * 0.15
-                            + (137050 - 67900) * 0.25 + (208850 - 137050) * 0.28
-                            + (372950 - 208850) * 0.33 + (taxableIncome - 372950) * 0.35;
-                }
-
+            case JOINT:
+                amount10 = 16701;
+                amount15 = 67901;
+                amount25 = 137051;
+                amount28 = 208851;
+                amount33 = 372951;
                 break;
-
-            case SEPARATE:   // Compute tax for married separately
-                if (taxableIncome <= 8350) {
-                    tax = taxableIncome * 0.10;
-                } else if (taxableIncome <= 33950) {
-                    tax = 8350 * 0.10 + (taxableIncome - 8350) * 0.15;
-                } else if (taxableIncome <= 68525) {
-                    tax = 8350 * 0.10 + (33950 - 8350) * 0.15
-                            + (taxableIncome - 33950) * 0.25;
-                } else if (taxableIncome <= 104425) {
-                    tax = 8350 * 0.10 + (33950 - 8350) * 0.15
-                            + (68525 - 33950) * 0.25 + (taxableIncome - 68525) * 0.28;
-                } else if (taxableIncome <= 186475) {
-                    tax = 8350 * 0.10 + (33950 - 8350) * 0.15
-                            + (68525 - 33950) * 0.25 + (104425 - 68525) * 0.28
-                            + (taxableIncome - 104425) * 0.33;
-                } else {
-                    tax = 8350 * 0.10 + (33950 - 8350) * 0.15
-                            + (68525 - 33950) * 0.25 + (104425 - 68525) * 0.28
-                            + (186475 - 104425) * 0.33 + (taxableIncome - 186475) * 0.35;
-                }
-
+            case SEPARATE:
+                amount10 = 8351;
+                amount15 = 33951;
+                amount25 = 68526;
+                amount28 = 104426;
+                amount33 = 186476;
                 break;
-
-            case HEAD:     // Compute tax for head of household
-                if (taxableIncome <= 11950) {
-                    tax = taxableIncome * 0.10;
-                } else if (taxableIncome <= 45500) {
-                    tax = 11950 * 0.10 + (taxableIncome - 11950) * 0.15;
-                } else if (taxableIncome <= 117450) {
-                    tax = 11950 * 0.10 + (45500 - 11950) * 0.15
-                            + (taxableIncome - 45500) * 0.25;
-                } else if (taxableIncome <= 190200) {
-                    tax = 11950 * 0.10 + (45500 - 11950) * 0.15
-                            + (117450 - 45500) * 0.25 + (taxableIncome - 117450) * 0.28;
-                } else if (taxableIncome <= 372950) {
-                    tax = 11950 * 0.10 + (45500 - 11950) * 0.15
-                            + (117450 - 45500) * 0.25 + (190200 - 117450) * 0.28
-                            + (taxableIncome - 190200) * 0.33;
-                } else {
-                    tax = 11950 * 0.10 + (45500 - 11950) * 0.15
-                            + (117450 - 45500) * 0.25 + (190200 - 117450) * 0.28
-                            + (372950 - 190200) * 0.33 + (taxableIncome - 372950) * 0.35;
-                }
-
+            case HEAD:
+                amount10 = 11951;
+                amount15 = 45501;
+                amount25 = 117551;
+                amount28 = 190201;
+                amount33 = 372951;
                 break;
-
-            default:
-                System.out.println("Error: invalid status");
-                tax = -9999;
         }
 
+        if (taxableIncome <= amount10)
+            tax = taxableIncome * 0.10;
+        else if (taxableIncome <= amount15)
+            tax = amount10 * 0.10
+                    + (taxableIncome - amount10) * 0.15;
+        else if (taxableIncome <= amount25)
+            tax = amount10 * 0.10
+                    + (amount15 - amount10) * 0.15
+                    + (taxableIncome - amount15) * 0.25;
+        else if (taxableIncome <= amount28)
+            tax = amount10 * 0.10
+                    + (amount15 - amount10) * 0.15
+                    + (amount25 - amount15) * 0.25
+                    + (taxableIncome - amount25) * 0.28;
+        else if (taxableIncome <= amount33)
+            tax = amount10 * 0.10
+                    + (amount15 - amount10) * 0.15
+                    + (amount25 - amount15) * 0.25
+                    + (amount28 - amount25) * 0.28
+                    + (taxableIncome - amount28) * 0.33;
+        else
+            tax = amount10 * 0.10
+                    + (amount15 - amount10) * 0.15
+                    + (amount25 - amount15) * 0.25
+                    + (amount28 - amount25) * 0.28
+                    + (amount33 - amount28) * 0.33
+                    + (taxableIncome - amount33) * 0.35;
         return tax;
     }
 }
