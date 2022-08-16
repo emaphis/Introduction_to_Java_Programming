@@ -13,7 +13,7 @@ import chapter10.example.listing10_07.StackOfIntegers;
  * Display the prime numbers
  * @author emaph
  */
-public class DisplayPrimeNumbers {
+public class Exercise10_06 {
     public static void main(String[] args) {
         final int LIMIT = 120;
 

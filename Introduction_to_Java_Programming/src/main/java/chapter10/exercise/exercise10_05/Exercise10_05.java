@@ -15,7 +15,7 @@ import java.util.Scanner;
  * Display the prime factors
  * @author emaph
  */
-public class DisplayPrimeFactors {
+public class Exercise10_05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -47,7 +47,6 @@ public class DisplayPrimeFactors {
         }
         return stack;
     }
-
 }
 
 /*
