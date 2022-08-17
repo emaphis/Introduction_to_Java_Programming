@@ -29,7 +29,7 @@ public class PrintTaxTable {
     public static void main(String[] args) {
         // Header
         System.out.println("Taxable    Single     Married     Married     Head of");
-        System.out.println("Income     Single     Joint       Separate    a House");
+        System.out.println("Income     Single     Joint      Separate    a House");
 
         // details
         for (double income = from; income <= to; income += 50) {
