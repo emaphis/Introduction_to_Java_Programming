@@ -1,5 +1,5 @@
-@startuml
-title Case Study: Designing the Course Class
+@startuml exercise10_9
+title Course class revision
 class Course {
     -courseName: String
     -students: String[]

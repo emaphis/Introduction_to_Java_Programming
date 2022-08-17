@@ -19,7 +19,7 @@ package chapter10.exercise.exercise10_09;
  *
  * @author emaph
  */
-public class TestCourse {
+public class Exercise10_09 {
 
     public static void main(String[] args) {
         Course course1 = new Course("Data Structures");
@@ -54,7 +54,7 @@ public class TestCourse {
                 + course2.getNumberOfStudents());
 
         course1.dropStudent("S1");
-        System.out.println("\nNumber of students in course1: "
+        System.out.println("Number of students in course1: "
                 + course1.getNumberOfStudents());
         students = course1.getStudents();
         for (int i = 0; i < course1.getNumberOfStudents(); i++) {

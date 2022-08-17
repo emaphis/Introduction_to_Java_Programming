@@ -1,10 +1,9 @@
 /*
- * Listing 10.6
- * 10.5 Case Study: Designing the Course Class
+ * Exercise 10.9
+ * Updating the Course Class
+ * Note: using System.ArrayCopy from Section 7.5
  */
 package chapter10.exercise.exercise10_09;
-
-import chapter10.example.listing10_05.*;
 
 /**
  * Course class
@@ -16,6 +15,7 @@ public class Course {
     private int numberOfStudents;
     private String[] students = new String[100];
 
+    /** Creates a course with the specified name. */
     public Course(String courseName) {
         this.courseName = courseName;
         this.numberOfStudents = 0;
@@ -39,14 +39,17 @@ public class Course {
         return copy;
     }
 
+    /** Returns the number of students */
     public int getNumberOfStudents() {
         return numberOfStudents;
     }
 
+    /** Returns name of course */
     public String getCourseName() {
         return courseName;
     }
 
+    /** Drops a student from the course */
     public void dropStudent(String student) {
         int idx = findStudent(student);
         if (idx >= 0)
@@ -55,6 +58,7 @@ public class Course {
         numberOfStudents--;
     }
 
+    /** Return index of found student or -1 */
     private int findStudent(String student) {
         for (int i = 0; i < numberOfStudents; i++) {
             if (students[i].equals(student))
@@ -63,6 +67,7 @@ public class Course {
         return -1;
     }
 
+    /** remove all students from the class */
     void clear() {
         for (int q = 0; q < numberOfStudents; q++) {
             students[q] = null;
