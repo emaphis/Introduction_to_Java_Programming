@@ -26,20 +26,20 @@ package chapter10.exercise.exercise10_10;
  * Exercise the Queue class
  * @author emaph
  */
-public class TestQueue {
+public class Exercise10_10 {
     public static void main(String[] args) {
         Queue q = new Queue();
-        System.out.println("Queue size " + q.getSize());
+        //System.out.println("Queue size " + q.getSize());
 
-        for (int i = 0; i <= 20; i++)
+        for (int i = 1; i <= 20; i++)
             q.enqueue(i);
 
-        System.out.println("Queue size " + q.getSize());
+        //System.out.println("Queue size " + q.getSize());
 
         while (!q.empty())
             System.out.print(q.dequeue() + " ");
 
-        System.out.println("Queue size " + q.getSize());
+        //System.out.println("Queue size " + q.getSize());
     }
 
 }

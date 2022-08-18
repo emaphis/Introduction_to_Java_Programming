@@ -1,4 +1,5 @@
-@startuml
+@startuml Exercise10.11
+title Exercise 10.11 - Circle2D Class
 class Circle2D {
     -x: double
     -y: double

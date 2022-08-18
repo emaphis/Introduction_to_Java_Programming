@@ -1,4 +1,5 @@
-@startuml
+@startuml exercise10.10
+title Exercise 10.10 - Queue Class
 class Queue {
     -elements: int[]
     -size: size

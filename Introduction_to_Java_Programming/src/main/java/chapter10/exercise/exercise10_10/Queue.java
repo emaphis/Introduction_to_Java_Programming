@@ -9,12 +9,13 @@ package chapter10.exercise.exercise10_10;
  * @author emaph
  */
 public class Queue {
+  private final int STARTING_SIZE = 8;
   private int[] elements;
   private int size;
 
   /** Construct a queue with the default capacity 8 */
   public Queue() {
-    this.elements = new int[8];
+    this.elements = new int[STARTING_SIZE];
     this.size = 0;
   }
 
