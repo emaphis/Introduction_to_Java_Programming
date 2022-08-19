@@ -32,6 +32,7 @@
  *  shown in Figure 10.23a. Otherwise, point p is not inside the triangle, as
  *  shown in Figure 10.23b.)
  */
+// TODO: This is a complecated one.
 package chapter10.exercise.exercise10_12;
 
 import chapter10.exercise.exercise10_04.MyPoint;

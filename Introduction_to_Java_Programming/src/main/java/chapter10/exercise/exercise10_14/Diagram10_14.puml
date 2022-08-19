@@ -1,0 +1,15 @@
+@startumlExercise01_14
+title Exercise 10,14 - MyDate
+class MyDate  {
+    -year: int
+    -month: int
+    -day: int
+    +MyDate()
+    +MyDate(elapsedTime: long)
+    +MyDate(year: int, month: int, day: int)
+    +getyear(): int
+    +getMonth(): int
+    +getDay(): int
+    +setDate(eleapedTime: long): void
+}
+@enduml
