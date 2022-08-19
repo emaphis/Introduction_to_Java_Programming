@@ -1,4 +1,4 @@
-@startumlExercise01_14
+@startuml Exercise01_14
 title Exercise 10,14 - MyDate
 class MyDate  {
     -year: int

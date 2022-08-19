@@ -17,8 +17,7 @@ public class MyDate {
 
     /** A no-arg constructor that creates a MyDate object for the current date */
     public MyDate() {
-        long elapsedTime = System.currentTimeMillis();
-        this.setDate(elapsedTime);
+        this.setDate(System.currentTimeMillis());
     }
 
     /* Constructs a MyDate object with a specified elapsed time since
