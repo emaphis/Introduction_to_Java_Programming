@@ -59,9 +59,9 @@ public class Triangle2D {
      * @return area of this triangle
      */
     public double getArea() {
-        double side1 = p2.distance(p1);
-        double side2 = p3.distance(p2);
-        double side3 = p1.distance(p3);
+        double side1 = p1.distance(p2);
+        double side2 = p2.distance(p3);
+        double side3 = p3.distance(p1);
 
         double s = (side1 + side2 + side3) / 2;
         return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
@@ -72,9 +72,9 @@ public class Triangle2D {
      * @return the perimeter of this triangle
      */
     public double getPerimeter() {
-        double side1 = p2.distance(p1);
-        double side2 = p3.distance(p2);
-        double side3 = p1.distance(p3);
+        double side1 = p1.distance(p2);
+        double side2 = p2.distance(p3);
+        double side3 = p3.distance(p1);
 
         return side1 + side2 + side3;
     }

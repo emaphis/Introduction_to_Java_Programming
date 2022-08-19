@@ -45,3 +45,4 @@ hs_err_pid*
 /Introduction_to_Java_Programming/target/
 
 .fake
+out/
