@@ -1,0 +1,21 @@
+@startuml exercise10.13
+title Exercise 10.13 - MyRectangle2D 10.13
+class MyRectangle2D {
+    -x: double
+    -y: double
+    -width: double
+    -heigth: double
+    +MyRectangle2D()
+    +MyRectangle2D(x: double, y: double,
+               width: double, heigth: double)
+    +getX(): double
+    +getY(): double
+    +getWidth(): double
+    +getHeigth(): double
+    +getArea(): double
+    +getPerimeter(): double
+    +contains(x: double, y: double): boolean
+    +contains(r: MyRectangle2D): boolean
+    +overlaps(r: MyRectangle2D): boolean
+}
+@enduml
