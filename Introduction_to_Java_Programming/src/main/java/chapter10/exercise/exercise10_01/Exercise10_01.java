@@ -34,7 +34,7 @@ package chapter10.exercise.exercise10_01;
 public class Exercise10_01 {
     public static void main(String[] args) {
         Time time0 = new Time();
-        Time time1 = new Time(555550000);  // eleapsed time
+        Time time1 = new Time(555550000);  // elapsed time
         Time time2 = new Time(5, 23, 55);
 
         displayTime(time0);
