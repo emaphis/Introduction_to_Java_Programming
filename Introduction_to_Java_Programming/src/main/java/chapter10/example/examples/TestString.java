@@ -1,11 +1,11 @@
 /*
  * 10.10 The String Class.
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Examples from book
  */
 package chapter10.example.examples;
 
 /**
- *
+ * String Class examples
  * @author emaph
  */
 public class TestString {

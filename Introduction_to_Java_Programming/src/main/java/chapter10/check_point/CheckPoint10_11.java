@@ -18,7 +18,7 @@ public class CheckPoint10_11 {
     static void test02() {
     // 10.11.2 How do you create a string builder from a string? How do you return a string
     //         from a string builder?
-    // a-  constructor
+    // a- Use StringBuilders constructor passing the string.
         StringBuilder builder = new StringBuilder("A string");
         builder.append(" is built.");
 
@@ -43,7 +43,7 @@ public class CheckPoint10_11 {
     //         StringBuilder class.
     static void test04() {
         StringBuilder builder = new StringBuilder("Java and HTML are OK");
-        builder.delete(4, 10);
+        builder.delete(4, 11);
         System.out.println(builder.toString());
     }
 
