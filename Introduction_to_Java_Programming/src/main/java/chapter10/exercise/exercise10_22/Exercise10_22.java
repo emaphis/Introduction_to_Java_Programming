@@ -15,7 +15,6 @@
 
 package chapter10.exercise.exercise10_22;
 
-import java.util.Arrays;
 
 /**
  * Exercise MyString1 class

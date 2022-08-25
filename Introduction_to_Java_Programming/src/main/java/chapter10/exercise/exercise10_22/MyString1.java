@@ -4,8 +4,6 @@
  */
 package chapter10.exercise.exercise10_22;
 
-import java.util.Arrays;
-
 /**
  * A String Class
  * @author emaph
