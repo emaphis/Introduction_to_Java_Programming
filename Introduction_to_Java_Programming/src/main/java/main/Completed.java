@@ -17,7 +17,8 @@ public class Completed {
         39, // ch 06
         37, // ch 07
         36, // ch 08
-        13  // ch 09
+        13, // ch 09
+        28  // ch 10
     };
 
     public static void main(String[] args) {
@@ -25,7 +26,7 @@ public class Completed {
         for (int num : exercises) {
             sum += num;
         }
-        System.out.println("I have " + exercises.length + " chapters with " +
+        System.out.println("I have finished " + exercises.length + " chapters with " +
                 sum + " exercises completed. ");
     }
 
