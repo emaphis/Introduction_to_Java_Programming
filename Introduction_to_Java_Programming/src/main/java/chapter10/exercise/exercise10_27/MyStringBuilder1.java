@@ -4,7 +4,6 @@
  */
 package chapter10.exercise.exercise10_27;
 
-import java.util.Arrays;
 
 /**
  * An implementation of StringBuilder
@@ -86,7 +85,6 @@ public class MyStringBuilder1 {
     public MyStringBuilder1 substring(int begin, int end) {
         char[] temp = new char[end - begin];
         System.arraycopy(this.buffer, begin, temp, 0, temp.length);
-        //this.buffer = temp;
         return new MyStringBuilder1(temp);
     }
 

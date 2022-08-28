@@ -25,25 +25,30 @@ public class Exercise10_27 {
     public static void main(String[] args) {
         // test a long string.
         MyStringBuilder1 big = new MyStringBuilder1("This Is Now A Long String For Testing");
-        System.out.println(big.length() + " - " + big);
+        testPrint(big);
 
         // test a short string
         MyStringBuilder1 small = new MyStringBuilder1("small ");
-        System.out.println(small.length() + " - " + small);
+        testPrint(small);
 
         // append big string on small string to test appending reallocation.
         small.append(big);
-        System.out.println(small.length() + " - " + small);
+        testPrint(small);
 
         // test append and convert to lower case
-        System.out.println(small.append(new MyStringBuilder1(" made LOWERCASE")).toLowerCase());
+        testPrint(small.append(new MyStringBuilder1(" made LOWERCASE")).toLowerCase());
 
         // test substring - extrace 'this'
         MyStringBuilder1 subset = small.substring(6, 10);
-        System.out.println(subset.length() + " " + subset);
+        testPrint(subset);
 
         // test append int
-        System.out.println(big.append(new MyStringBuilder1(" with an integer : ")).append(12345));
+        testPrint(big.append(new MyStringBuilder1(" with an integer : ")).append(12345));
+    }
+
+
+    static void testPrint(MyStringBuilder1 builder) {
+        System.out.println(builder.length() + " - " + builder);
     }
 }
 
@@ -51,7 +56,7 @@ public class Exercise10_27 {
 37 - This Is Now A Long String For Testing
 6 - small
 43 - small This Is Now A Long String For Testing
-small this is now a long string for testing made lowercase
-4 this
-This Is Now A Long String For Testing with an integer : 12345
+58 - small this is now a long string for testing made lowercase
+4 - this
+61 - This Is Now A Long String For Testing with an integer : 12345
 */
