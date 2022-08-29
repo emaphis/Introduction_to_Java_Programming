@@ -1,0 +1,5 @@
+Check Point 11.7 - 7 Polymorphism
+
+11.7.1 What are the three pillars of object-oriented programming? What is polymorphism?
+a- encapsulation, inheritance, polymorphism
+b - Polymorphism is a reference of a type can refer to a subtype.

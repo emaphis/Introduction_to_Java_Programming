@@ -1,0 +1,27 @@
+Check Point 11.5 - Check Point 11.5 - 
+
+
+11.5.1 Identify the problems in the following code:
+ See Circle.java
+ a- Constructor needs to use the this keyword. 
+   Need to use super keyword B's constructor and override getArea().
+
+11.5.2 Explain the difference between method overloading and method overriding.
+a- Overloading is methods with the same name but different signatures in the same class
+   Overriding is method with same name in a subclass.
+
+11.5.3 If a method in a subclass has the same signature as a method in its superclass with 
+       the same return type, is the method overridden or overloaded?
+a- overridden.
+
+11.5.4 If a method in a subclass has the same signature as a method in its superclass with 
+       a different return type, will this be a problem?
+a- Yes. Return type must be compatible.
+
+11.5.5 If a method in a subclass has the same name as a method in its superclass with
+       different parameter types, is the method overridden or overloaded?
+a- overloaded
+
+11.5.6 What is the benefit of using the @Override annotation?
+a- It allows the compiler to catch override errors. The compiler knows the function
+   isn't a overload.

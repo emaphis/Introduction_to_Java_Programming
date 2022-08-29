@@ -1,0 +1,40 @@
+Check Point 11.8 - 8 Dynamic Binding
+
+11.8.1 What is dynamic binding?
+a- A method can be implemented in several classes along the inheritance chain. The JVM 
+   decides which method is invoked at runtime
+
+11.8.2 Describe the difference between method matching and method binding.
+a- Methods are matched to the most specific implementation if the class hyarchy. 
+   Methods are bound to the reference of the class.
+
+ 11.8.3 Can you assign new int[50], new Integer[50], new String[50], or new 
+        Object[50] into a variable of Object[] type?
+a- yes
+
+11.8.4 4 What is wrong in the following code?
+  See Test1.java
+a- int[] isn't derived from Object[].
+
+
+11.8.5 Show the output of the following code:
+a-
+Person
+Student
+b-
+Person
+Person
+
+11.8.6 Show the output of following program:
+a - output:
+"B's constructor is invoked"
+"A's constructor is invoked"
+b- yes.
+
+
+11.8.7 Show the output of following program:
+a- output:
+i from A is 40
+i from A is 60
+i from B is 60
+
