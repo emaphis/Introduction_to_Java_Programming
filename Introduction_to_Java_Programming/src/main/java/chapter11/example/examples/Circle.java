@@ -1,6 +1,7 @@
 /*
  * 11.3 Using the super keyword
  * 11.4 Overriding Methods
+ * 11.10 The Objects equals Method
  */
 package chapter11.example.examples;
 
@@ -38,9 +39,14 @@ public class Circle extends GeometricObject {
         return radius * radius * Math.PI;
     }
 
-
+    /** Returns perimeter */
     public double getPerimeter() {
         return 2 * radius * Math.PI;
+    }
+
+    /** Returns diameter */
+    public double getDiameter() {
+        return 2 * radius;
     }
 
     /** Print the circle info */
@@ -56,5 +62,12 @@ public class Circle extends GeometricObject {
         return super.toString() + "\nradius is " + radius;
     }
 
-
+    // 11.10 the equals method
+    @Override
+    public boolean equals(Object other) {
+        if (other instanceof Circle)
+            return this.radius == ((Circle)other).radius;
+        else
+            return false;
+    }
 }

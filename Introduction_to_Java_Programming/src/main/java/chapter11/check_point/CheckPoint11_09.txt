@@ -1,0 +1,55 @@
+Check Point 11.9 - Casting Objects and the instanceof Operator
+
+11.9.1 Indicate true or false for the following statements:
+    a. You can always successfully cast an instance of a subclass to a superclass.
+    b. You can always successfully cast an instance of a superclass to a subclass
+a- Yes.
+b- No.  Not always.
+
+
+11.9.2 For the GeometricObject and Circle classes in Listings 11.1 and 11.2, answer 
+the following questions:
+    a. Assume that circle and object1 are created as follows:
+        Circle circle = new Circle(1);
+        GeometricObject object1 = new GeometricObject();
+        Are the following Boolean expressions true or false?
+        (circle instanceof GeometricObject)
+        (object instanceof GeometricObject)
+        (circle instanceof Circle)
+        (object instanceof Circle)
+a- true true true false     
+
+    b. Can the following statements be compiled?
+        Circle circle = new Circle(5);
+        GeometricObject object = circle;
+b- yes it can be compiled.
+
+    c. Can the following statements be compiled?
+        GeometricObject object = new GeometricObject();
+        Circle circle = (Circle)object;
+c- Yes. but it will fail at runtime.
+
+
+11.9.3 Suppose Fruit, Apple, Orange, GoldenDelicious, and McIntosh are defined 
+in the following inheritance hierarchy:
+
+Answer the following questions:
+    a. Is fruit instanceof Fruit?   yes
+    b. Is fruit instanceof Orange?  no
+    c. Is fruit instanceof Apple?   yes
+    d. Is fruit instanceof GoldenDelicious?  yes
+    e. Is fruit instanceof McIntosh?    no
+    f. Is orange instanceof Orange?     yes
+    g. Is orange instanceof Fruit?      yes
+    h. Is orange instanceof Apple?      no
+    i. Suppose the method makeAppleCider is defined in the Apple class. Can 
+       Fruit invoke this method? Can orange invoke this method?  no and no
+    j. Suppose the method makeOrangeJuice is defined in the Orange class. Can 
+       orange invoke this method? Can Fruit invoke this method?  no
+    k. Is the statement Orange p = new Apple() legal?       no
+    l. Is the statement McIntosh p = new Apple() legal?     no
+    m. Is the statement Apple p = new McIntosh() legal?     yes
+
+
+11.9.4 What is wrong in the following code?
+a- fruit can not be cast to apple. Runtime error.

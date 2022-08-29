@@ -1,0 +1,19 @@
+Check Point 11.10 - 0 The Object’s equals Method
+
+11.10.1 Does every object have a toString method and an equals method? Where do 
+        they come from? How are they used? Is it appropriate to override these methods?
+a- Yes, they are inherited from the Object class. Yes, depending on the class
+
+
+11.10.2 When overriding the equals method, a common mistake is mistyping its signa￾ture in the subclass. For example, the equals method is incorrectly written as 
+        equals(Circle circle), as shown in (a) in the following code; instead, it 
+        should be equals(Object circle), as shown in (b). Show the output of running 
+        class Test with the Circle class in (a) and in (b), respectively.
+a- true
+b- true
+
+
+
+
+
+
