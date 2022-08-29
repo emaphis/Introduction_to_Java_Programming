@@ -1,0 +1,16 @@
+Check Point 11.2
+11.2 Superclasses and Subclasses
+
+
+11.2.1 True or false? A subclass is a subset of a superclass
+a- false
+
+11.2.2 What keyword do you use to define a subclass?
+a- extends
+
+11.2.3 What is single inheritance? What is multiple inheritance?
+       Does Java support multiple inheritance?
+a- Singe inheritance is inheritance from a singe base class
+b- Inheritance from multiple base classes.
+c- No Java does not implement multiple inheritance, can extend multiple interfaces.
+  

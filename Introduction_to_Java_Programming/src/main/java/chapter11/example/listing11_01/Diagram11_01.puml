@@ -1,0 +1,50 @@
+@startuml "geometric objects"
+title "Listing 11.1 Geometic Objects"
+class GeometicObject {
+    –color: String
+    –filled: boolean
+    –dateCreated: Date
+    +GeometricObject()
+    +GeometricObject(color: String, 
+        filled: boolean)
+    +getColor(): String
+    +setColor(color: String): void
+    +isFilled(): boolean
+    +setFilled(filled: boolean): void
+    +getDateCreated(): java.util.Date
+    +toString(): String
+}
+
+class Circle {
+    –radius: double 
+    +Circle()
+    +Circle(radius: double)
+    +Circle(radius: double, color: String,
+        filled: boolean)
+    +getRadius(): double
+    +getArea(): double
+    +setRadius(radius: double): void
+    +printCircle(): void
+    +getPerimeter(): double
+    +getDiameter(): double
+}
+
+
+class Rectangle {
+    –width: double
+    –height: double
+    +Rectangle()
+    +Rectangle(width: double, height: double)
+    +Rectangle(width: double, height: double
+        color: String, filled: boolean)
+    +getWidth(): double
+    +getHeight(): double
+    +setHeight(height: double): void
+    +setWidth(width: double): void
+    +getArea(): double
+    +getPerimeter(): double
+}
+
+GeometicObject <|-- Circle
+GeometicObject <|-- Rectangle
+@enduml
