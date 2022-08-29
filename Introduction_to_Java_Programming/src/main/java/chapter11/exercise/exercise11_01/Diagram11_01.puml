@@ -1,0 +1,35 @@
+@startuml "triangle"
+title "Exercise 11.1 Triangle"
+class GeometicObject {
+    –color: String
+    –filled: boolean
+    –dateCreated: Date
+    +GeometricObject()
+    +GeometricObject(color: String, 
+        filled: boolean)
+    +getColor(): String
+    +setColor(color: String): void
+    +isFilled(): boolean
+    +setFilled(filled: boolean): void
+    +getDateCreated(): java.util.Date
+    +toString(): String
+}
+
+class Triangle {
+    –side1: double
+    –side2: double
+    –side3: double
+    +Triangle()
+    +Triangle(side1: double, side2: double, side3: double)
+    +Triangle(side1: double, side2: double, side3: double
+                color: String, filled: boolean)
+    +getSide1(): double
+    +getSide2(): double
+    +getSide3(): double
+    +getArea(): double
+    +getPerimeter(): double
+    +toString(): String
+}
+
+GeometicObject <|-- Triangle
+@enduml
