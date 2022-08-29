@@ -3,7 +3,7 @@ Check Point 11.2
 
 
 11.2.1 True or false? A subclass is a subset of a superclass
-a- false
+a- false - a subclass actually has more info than the base class.
 
 11.2.2 What keyword do you use to define a subclass?
 a- extends
