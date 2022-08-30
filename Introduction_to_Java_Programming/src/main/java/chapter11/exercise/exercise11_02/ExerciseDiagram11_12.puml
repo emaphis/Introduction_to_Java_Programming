@@ -1,0 +1,38 @@
+@startuml "exercise11_12"
+title Exercise 11.2
+class Person {
+    -name: String
+    -address: String
+    -phoneNumber: String
+    -emailAddress: String
+    +toString(): String
+}
+
+class Student {
+    -STATUS: String
+    +toString(): String
+}
+
+class Employee {
+    -office: String
+    -salary: double
+    -dateHired: MyDate
+    +toString(): String
+}
+
+class Faculty {
+    -officeHours: int
+    -rank: String
+    +toString(): String
+}
+
+class Staff {
+    -title: String
+    +toString(): String
+}
+
+Person <|-- Student
+Person <|-- Employee
+Employee <|-- Faculty
+Employee <|-- Staff
+@enduml
