@@ -1,0 +1,11 @@
+@startuml "mystack"
+title Case Study: A Custom Stack Class
+class MyStack {
+    -list: ArrayList<Object>
+    +isEmpty(): boolean
+    +getSize(): int
+    +peek(): Object
+    +pop(): Object
+    +push(o: Object): void
+}
+@enduml

@@ -1,0 +1,26 @@
+Check Point 11.14 - The protected Data and Methods
+
+11.14.1 What modifier should you use on a class so a class in the same package can 
+        access it, but a class in a different package cannot access it?
+a- default
+
+11.14.2 What modifier should you use so a class in a different package cannot access the 
+        class, but its subclasses in any package can access it?
+a- protected
+
+11.14.3 In the following code, the classes A and B are in the same package. If the ques
+        tion marks in (a) are replaced by blanks, can class B be compiled? If the question 
+        marks are replaced by private, can class B be compiled? If the question marks 
+        are replaced by protected, can class B be compiled?
+a- yes
+   no
+   yes
+
+11.14.4 In the following code, the classes A and B are in different packages. If the ques
+        tion marks in (a) are replaced by blanks, can class B be compiled? If the question 
+        marks are replaced by private, can class B be compiled? If the question marks 
+        are replaced by protected, can class B be compiled?
+a- No
+   No
+   Yes.
+
