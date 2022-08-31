@@ -39,10 +39,16 @@ buildNumber.properties
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-/Introduction_to_Java_Programming/nbproject/private/
-/Introduction_to_Java_Programming/build/
-/Introduction_to_Java_Programming/dist/
-/Introduction_to_Java_Programming/target/
+
+Introduction_to_Java_Programming/nbactions*
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
 .fake
 out/
