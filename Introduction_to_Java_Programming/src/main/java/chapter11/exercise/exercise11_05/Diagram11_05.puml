@@ -1,0 +1,14 @@
+@startuml "exercise11.5"
+title Exercise 11.5 - Course Class
+class Course {
+    -courseName: String
+    -students: ArrayList<String>
+
+    +Course(courseName: String)
+    +getCourseName(): String
+    +addStudent(student: String): void
+    +dropStudent(student: String): void
+    +getStudents(): String[]
+    +getNumberOfStudents(): int
+}
+@enduml
