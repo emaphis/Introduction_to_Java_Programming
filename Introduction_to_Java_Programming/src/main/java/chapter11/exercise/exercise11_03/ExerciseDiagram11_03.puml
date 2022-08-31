@@ -1,0 +1,38 @@
+@startuml "exercise11_02"
+title "Exercise 11.2 Diagram"
+class Account {
+    -id: int
+    -balance: double
+    -annualInterestRate: double
+    -dateCreated: Date
+
+    +Account()
+    +Account(newid: int, newBalance: double)
+    +setId(newId: int)
+    +setBalance(newBalance: double)
+    +setAnnualInterestRate(newAnnualInterestRate: double)
+    +getId(): int
+    +getBalance(): double
+    +getAnnualInterestRate(): double
+    +getDateCreated(): String
+    +getMonthlyInterestRate(): double
+    +getMonthlyInterest(): double
+    +withdraw(amount: double):void
+    +deposit(amount: double): void
+}
+
+class SavingsAccount {
+    +SavingsAccountid: int, balance: double)
+    +withdraw(amount: double): void
+}
+
+class CheckingAccount {
+    -overDraftLimit: double
+    +CheckingAccount(newid: int, newBalance: double,
+        overDraftLimit: double)
+    +withdraw(amount: double): void
+}
+
+Account <|-- SavingsAccount
+Account <|-- CheckingAccount
+@enduml

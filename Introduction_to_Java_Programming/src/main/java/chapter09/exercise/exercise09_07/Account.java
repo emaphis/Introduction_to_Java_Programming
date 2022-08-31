@@ -82,4 +82,13 @@ public class Account {
         balance += amount;
     }
 
+    // Added for Exercise 11.3
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", balance=" + balance +
+                ", dateCreated=" + dateCreated +
+                '}';
+    }
 }
