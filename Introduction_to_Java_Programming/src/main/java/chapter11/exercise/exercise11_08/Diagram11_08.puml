@@ -1,0 +1,41 @@
+@startuml "exercise11.8"
+title Exercise 11.8 Account Class
+class Account {
+    -name: String
+    -id: int
+    -balance: double
+    -annualInterestRate: double
+    -dateCreated: Date
+    -transactions<Transaction>
+
+    +Account()
+    +Account(name: String, id: int, balance: double)
+    +setId(id: int)
+    +setBalance(balance: double)
+    +setAnnualInterestRate(
+            newAnnualInterestRate: double)
+    +getId(): int
+    +getBalance(): double
+    +getAnnualInterestRate(): double
+    +getDateCreated(): Date
+    +getMonthlyInterestRate(): double
+    +getMonthlyInterest(): double
+    +withdraw(amount: double)
+    +deposit(amount: double)
+}
+
+class Transaction {
+    -date: java.util.Date
+    -type: char
+    -amount: double
+    -balance: double
+    -description: String
+    +Transaction(type: char, amount: double,
+                 balance: double, description: String)
+    +getDate(): Date
+    +getType(): char
+    +getAmount(): double
+    +getBalance(): double
+    +getDescription(): String
+}
+@enduml
