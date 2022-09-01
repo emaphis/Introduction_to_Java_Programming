@@ -1,0 +1,11 @@
+@startuml "mystack"
+title Exercise 11.10 MyStack
+class MyStack {
+    +getSize(): int
+    +peek(): Object
+    +pop(): Object
+    +push(obj: Object): void
+    +toString(): String
+}
+ArrayList <|-- MyStack
+@enduml
