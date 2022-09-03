@@ -60,3 +60,9 @@ public class Exercise11_14 {
         return list3;
     }
 }
+
+/*
+Enter five integers for list1: 3 5 45 4 3
+Enter five integers for list2: 33 51 5 4 13
+The comibned list is 3 5 45 4 3 33 51 5 4 13
+*/
