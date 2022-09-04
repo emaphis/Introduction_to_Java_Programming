@@ -18,7 +18,8 @@ public class Completed {
         37, // ch 07
         36, // ch 08
         13, // ch 09
-        28  // ch 10
+        28, // ch 10
+        19  // ch 11
     };
 
     public static void main(String[] args) {

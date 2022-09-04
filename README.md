@@ -2,7 +2,7 @@
 
 Repository for examples and exercises for "*Introduction to Java Programming (12th Edition)*" by Y. Daniel Liang
 
-I'm trying to complete all of the exercises, so far I have finished 10 chapters with 300 exercises completed.
+I'm trying to complete all of the exercises, so far I have finished 11 chapters with 319 exercises completed.
 
 Incomplete solutions are marked 'TODO:'
 
@@ -30,3 +30,5 @@ The notation used in the book is the same as PlantUML's source code, so direct t
 [Check Point Questions](https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/#checkpoints)
 
 [FAQ](https://liveexample.pearsoncmg.com/faq.html)
+
+[Differences with version 11](https://yongdanielliang.github.io/correlationjava12e.html)
