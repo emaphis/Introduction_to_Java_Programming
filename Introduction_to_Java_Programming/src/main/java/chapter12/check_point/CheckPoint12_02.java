@@ -8,8 +8,10 @@ public class CheckPoint12_02 {
 
     // 12.2.1 What is the advantage of using exception handling?
     // a- The error cn be delt with at the callng method.
+    //    Otherwise the method must handle the error itself.
+
     // 12.2.2 Which of the following statements will throw an exception?
-    // a- the first statement thows the exception
+    // a- the first statement throws the exception
     static void test02() {
         // System.out.println(1 / 0);
         // Exception in thread "main" java.lang.ArithmeticException: / by zero
@@ -28,6 +30,7 @@ public class CheckPoint12_02 {
     //        exception?
     // a- It creates an exception object and then looks for a handler for the exception.
     //    You can use a try-catch block to handle an exception somewher in the calling code.
+
     // 12.2.5 What is the output of the following code?
     // a- "Value is too small"
     //    "Continue after the catch block"
@@ -46,18 +49,20 @@ public class CheckPoint12_02 {
     }
 
     // 12.2.6 Show the output of the following code:
-    // a-  0 1
+    // a-  0  Exception occurred
+    //     1  Exception occurred
     static void test06a() {
         for (int i = 0; i < 2; i++) {
             System.out.print(i + " ");
             try {
                 System.out.println(1 / 0);
             } catch (Exception e) {
+                System.out.println("Exception occurred");
             }
         }
     }
 
-    // b- 0
+    // b- 0  Exception occurred
     // the loop only loops once.
     static void test06b() {
         try {
@@ -66,6 +71,7 @@ public class CheckPoint12_02 {
                 System.out.println(1 / 0);
             }
         } catch (Exception ex) {
+            System.out.println("Exception occurred");
         }
     }
 
