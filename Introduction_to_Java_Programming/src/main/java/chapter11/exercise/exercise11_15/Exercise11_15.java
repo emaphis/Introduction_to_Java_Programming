@@ -44,7 +44,8 @@ public class Exercise11_15 {
 
     /**
      * Find the area of a convex polygon
-     * see : http://www.mathwords.com/a/area_convex_polygon.htm
+     * <p>
+     * see: <https://www.mathwords.com/a/area_convex_polygon.htm>
      * <p>
      * area = s1/2 * [(x1y2 + x2y3 + x3y4 + ... + xny1) - (y1x2 + y2x3 + y3x4 + ... + ynx1)]
      */
