@@ -2,7 +2,7 @@
  * Listing 12.8
  * 12.4 Declaring, Throwing, and Catching Exceptions
  */
-package chapter12.example.Listing12_07;
+package chapter12.example.listing12_07;
 
 
 /**

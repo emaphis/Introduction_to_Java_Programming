@@ -2,7 +2,7 @@
  * Listing 12.6
  * 12.4 Declaring, Throwing, and Catching Exceptions
  */
-package chapter12.example.Listing12_06;
+package chapter12.example.listing12_06;
 
 /**
  * You can use the printStackTrace(), getMessage(), toString(), and

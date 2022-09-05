@@ -2,7 +2,7 @@
  * Listing 12.5
  * \12.2 Exception-Handling Overview
  */
-package chapter12.example.Listing12_05;
+package chapter12.example.listing12_05;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
