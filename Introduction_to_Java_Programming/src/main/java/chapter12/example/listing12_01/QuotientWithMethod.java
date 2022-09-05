@@ -4,7 +4,7 @@
  * NOTE: The method shouldin't terminate the program, that should be up
  *       to the caller.  That's why we need exceptions
  */
-package chapter12.example.Listing12_01;
+package chapter12.example.listing12_01;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
  * Moving integer division to a method.
  * @author emaph
  */
-public class Quotient1WithMethod {
+public class QuotientWithMethod {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

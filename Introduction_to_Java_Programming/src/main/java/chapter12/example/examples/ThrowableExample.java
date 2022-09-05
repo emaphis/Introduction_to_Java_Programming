@@ -2,7 +2,7 @@
  * Chapter 12.3
  * Example of Throwable
  */
-package chapter12.example;
+package chapter12.example.examples;
 
 /**
  * Throwable test

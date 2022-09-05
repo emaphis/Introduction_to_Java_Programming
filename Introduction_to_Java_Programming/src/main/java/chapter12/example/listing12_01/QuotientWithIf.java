@@ -2,7 +2,7 @@
  *  Listing 12.2
  *  12.2 Exception-Handling Overview
  */
-package chapter12.example.Listing12_01;
+package chapter12.example.listing12_01;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Guarding an integer division with if.
  * @author emaph
  */
-public class Quotient1WithIf {
+public class QuotientWithIf {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
