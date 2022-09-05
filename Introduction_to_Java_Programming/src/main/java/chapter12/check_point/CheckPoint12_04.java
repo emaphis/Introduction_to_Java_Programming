@@ -9,15 +9,18 @@ public class CheckPoint12_04 {
     // 12.4.1 What is the purpose of declaring exceptions? How do you declare an exception
     //        and where? Can you declare multiple exceptions in a method header?
     // a- Declare esception so the compiler know the method throws an exception.
-    //    You declare the exception in the method header
-    //    Yes, you can declair multiple exceptions in a method.
+    //    You declare the exception with the 'throws' in the method header
+    //    Yes, you can declare multiple exceptions in a method using commas.
+
     // 12.4.2 How do you throw an exception? Can you throw multiple exceptions in one
     //        throw statement?
     // a- use the 'throw' keyword, creating a new exception
     //    No.
+
     // 12.4.3 What is the keyword throw used for? What is the keyword throws used for?
     // a- 'throw' throws a new exception
     //    'throws' declares a exception signature for a method.
+
     // 12.4.4 Suppose statement2 causes an exception in the following try-catch block:
     /*
     try {
@@ -38,7 +41,8 @@ public class CheckPoint12_04 {
     //   No.
     // ■ If the exception is caught in the catch block, will statement4 be executed?
     //   Yes.
-    // 12.4.5 What is displayed when running the following program?
+
+     // 12.4.5 What is displayed when running the following program?
     // a- RuntimeException
     static void test05() {
         try {
@@ -99,8 +103,10 @@ public class CheckPoint12_04 {
 
     // 12.4.8 What does the method getMessage() do?
     // a- Returns the string the Exception was created with.
+
     // 12.4.9 What does the method printStackTrace() do?
     // a- Prints the stack of the functions that called the offending method.
+
     // 12.4.10 Does the presence of a try-catch block impose overhead when no exception
     //         occurs?
     // a- No.

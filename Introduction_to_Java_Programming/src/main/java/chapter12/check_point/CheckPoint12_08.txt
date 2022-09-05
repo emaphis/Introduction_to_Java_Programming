@@ -1,0 +1,9 @@
+Check Point 12.8 - Chained Exceptions
+
+12.8.1 What would be the output if line 16 of Listing 12.9 is replaced by the following line?
+
+    throw new Exception("New info from method1");
+
+a-  java.lang.Exception: New info from method1
+        at ChainedExceptionDemo.method1(ChainedExceptionDemo.java:16)
+        at ChainedExceptionDemo.main(ChainedExceptionDemo.java:4)

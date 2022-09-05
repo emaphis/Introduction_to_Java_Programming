@@ -1,0 +1,110 @@
+Check Point 12.5 - The finally Clause
+
+
+12.5.1 Suppose you run the following code:
+
+public static void main(String[] args) throws Exception2 {
+    m();
+    statement7;
+}
+
+public static void m() {
+    try {
+        statement1;
+        statement2;
+        statement3;
+    }
+    catch (Exception1 ex1) {
+        statement4;
+    }
+    finally {
+        statement5;
+    }
+    statement6;
+}
+
+Answer the following questions:
+a. If no exception occurs, which statements are executed?
+a-  statement1;
+    statement2;
+    statement3;
+    statement5;
+    statement6;
+    statement7;
+
+b. If statement2 throws an exception of type Exception1, which statements are
+   executed?
+b-  statement1;
+    statement2;
+    statement4;
+    statement5;
+    statement6;
+    statement7;
+
+c. If statement2 throws an exception of type Exception2, which statements are
+   executed?
+c-  statement1;
+    statement2;
+    statement5;
+
+d. If statement2 throws an exception that is neither Exception1 nor Exception2, which
+   statements are executed?
+d-  statement1;
+    statement2;
+    statement5;
+
+
+2.5.2 Suppose you run the following code:
+
+public static void main(String[] args) {
+  try {
+    m();
+    statement7;
+  }
+  catch (Exception2 ex {
+    statement8;
+  }
+}
+
+public static void m() {
+  try {
+    statement1;
+    statement2;
+    statement3;
+  }
+  catch (Exception1 ex1) {
+    statement4;
+  }
+  finally {
+    statement5;
+  }
+  statement6;
+}
+
+Answer the questions:
+1. If no exception occurs, which statements are executed?
+a-  statement1;
+    statement2;
+    statement3;
+    statement5;
+    statement6;
+    statement7;
+
+2. If statement2 throws an exception of type Exception1, which statements are executed?
+b-  statement1;
+    statement2;
+    statement4;
+    statement5;
+    statement6;
+    statement7;
+
+3. If statement2 throws an exception of type Exception2, which statements are executed?
+b-  statement1;
+    statement2;
+    statement5;
+    statement8;
+
+4. If statement2 throws an exception that is neither Exception1 nor Exception 2, which statements are executed?
+b-  statement1;
+    statement2;
+    statement5;

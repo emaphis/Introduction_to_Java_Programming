@@ -1,0 +1,36 @@
+Check Point 12.7 - Rethrowing Exceptions
+
+12.7.1 Suppose that statement2 may cause an exception in the following code:
+
+try {
+    statement1;
+    statement2;
+    statement3;
+}
+catch (Exception1 ex1) {
+}
+catch (Exception2 ex2) {
+    throw ex2;
+}
+finally {
+    statement4;
+}
+statement5;
+
+Answer the following questions:
+
+a. If no exception occurs, will statement4 or statement5 be executed?
+a-  Yes. both.
+
+b. If the exception is of type Exception1, will statement4 or statement5 be
+   executed?
+b- Yes. both.
+
+c. If the exception is of type Exception2, will statement4 or statement5 be
+   executed?
+c- No. Just statement4
+
+
+d. If the exception is not Exception1 nor Exception2, will statement4 or
+   statement5 be executed?
+d- No. Just statement 4.
