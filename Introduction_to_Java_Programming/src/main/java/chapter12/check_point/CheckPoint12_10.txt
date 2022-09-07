@@ -1,0 +1,21 @@
+Check Point 12.10 - The File Class
+
+12.10.1 What is wrong about creating a File object using the following statement?
+        new File("c:\book\test.dat");
+a- Single slash '\' is a reserved char, should use '\\' using the escape sequence 
+   instead on windows  - new File("c:\\book\\test.dat")
+
+
+12.10.2 How do you check whether a file already exists? How do you delete a file? How 
+        do you rename a file? Can you find the file size (the number of bytes) using the 
+        File class? How do you create a directory?
+a-  file.exists();
+    file.delete();
+    file.renameTo("newFile");
+    file.length();
+    file.mkDirs();
+
+12.10.3 Can you use the File class for I/O? Does creating a File object create a file on 
+        the disk?
+a- no
+   no.

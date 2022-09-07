@@ -1,0 +1,4 @@
+amount is 32.320000 3.232000e+01
+amount is 32.3200 3.2320e+01
+ false
+  Java
