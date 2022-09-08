@@ -1,0 +1,16 @@
+Check Point 12.13 -  Case Study: Web Crawler
+
+
+12.13.1 Before a URL is added to listOfPendingURLs, line 25 checks whether it has been 
+        traversed. Is it possible that listOfPendingURLs contains duplicate URLs? If so, 
+        give an example.
+a- Yes. A page could appear on more than one other page and be deleted from the list of
+   Taversed URL's
+
+
+12.13.2 Simplify the code in lines 20-28 as follows: 1. Delete lines 20 and 28;
+        2. Add an addi￾tional condition !listOfPendingURLs.contains(s) to the
+        if statement in line 25. 
+        Write the complete new code for the while loop in lines 17-29.
+        Does this revision work?
+

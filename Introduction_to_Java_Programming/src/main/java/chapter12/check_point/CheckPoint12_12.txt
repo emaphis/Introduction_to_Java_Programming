@@ -1,0 +1,5 @@
+Check Point 12.12 -  Reading Data from the Web
+
+
+12.12.1 How do you create a Scanner object for reading text from a URL?
+a- Pass a InputStream to the Scanner constructor that represents a valid URL.
