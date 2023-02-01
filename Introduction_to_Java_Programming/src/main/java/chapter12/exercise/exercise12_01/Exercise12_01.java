@@ -11,6 +11,7 @@ package chapter12.exercise.exercise12_01;
 
 /**
  * Calculator with exception
+ *
  * @author emaph
  */
 public class Exercise12_01 {
@@ -26,28 +27,40 @@ public class Exercise12_01 {
         int result = 0;
 
         // Try parsing
-        try {
-            // Determine the operator
-            switch (args[1].charAt(0)) {
-                case '+':
-                    result = Integer.parseInt(args[0]) + Integer.parseInt(args[2]);
-                    break;
-                case '-':
-                    result = Integer.parseInt(args[0]) - Integer.parseInt(args[2]);
-                    break;
-                case '.':
-                    result = Integer.parseInt(args[0]) * Integer.parseInt(args[2]);
-                    break;
-                case '/':
-                    result = Integer.parseInt(args[0]) / Integer.parseInt(args[2]);
-                    break;
-            }
-
-            // Display result
-            System.out.println(args[0] + ' ' + args[1] + ' ' + args[2] + " = " + result);
-
-        } catch (NumberFormatException ex) {
-            System.out.println("Wrong " + ex.getMessage());
+        // Determine the operator
+        switch (args[1].charAt(0)) {
+            case '+':
+                result = getInt(args[0]) + getInt(args[2]);
+                break;
+            case '-':
+                result = getInt(args[0]) - getInt(args[2]);
+                break;
+            case '.':
+                result = getInt(args[0]) * getInt(args[2]);
+                break;
+            case '/':
+                result = getInt(args[0]) / getInt(args[2]);
+                break;
         }
+
+        // Display result
+        System.out.println(args[0] + ' ' + args[1] + ' ' + args[2] + " = " + result);
+    }
+
+    /**
+     * Parse String as int
+     * Exit program if string doesn't parse
+     */
+    private static int getInt(String number) {
+        int num = 0;
+
+        try {
+            num = Integer.parseInt(number);
+        } catch (NumberFormatException e) {
+            System.out.println("Wrong input " + number);
+            System.exit(1);
+        }
+
+        return num;
     }
 }

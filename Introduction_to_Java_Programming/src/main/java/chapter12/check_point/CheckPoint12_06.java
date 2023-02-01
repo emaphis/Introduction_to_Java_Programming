@@ -33,7 +33,5 @@ public class CheckPoint12_06 {
 
         System.out.println(isNumeric2(str1));
         System.out.println(isNumeric2(str2));
-
-
     }
 }
