@@ -37,7 +37,7 @@ public class Exercise12_02 {
                 loop = false;
             } catch (InputMismatchException ex) {
                 System.out.print("Enter a correct integer: ");
-                input.nextLine();  // discard incorrect input.
+                input.reset();
             }
         } while (loop);
 
