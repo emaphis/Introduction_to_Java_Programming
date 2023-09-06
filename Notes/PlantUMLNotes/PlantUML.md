@@ -10,7 +10,7 @@ Several lines - /' comment '/
 
 ## Class diagrams
 
-### Decaring element
+### Declaring element
 
 ''' plantuml
 @startuml
@@ -46,7 +46,7 @@ Class07 .. Class08
 Class09 -- Class10
 @enduml
 
-''' platnuml
+''' plantuml
 @startuml relation2
 title Relations between classes 2
 Class11 <|.. Class12

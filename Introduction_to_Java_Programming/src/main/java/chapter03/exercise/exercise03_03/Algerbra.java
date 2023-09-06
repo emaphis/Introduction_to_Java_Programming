@@ -31,11 +31,13 @@ public class Algerbra {
         double d = input.nextDouble();
         double e = input.nextDouble();
         double f = input.nextDouble();
+        
+        input.close();
 
         // Calculate the divisor
         double div = a * d - b * c;
 
-        if (div > 0.000000001) {
+        if (Math.abs(div) > 0.000000001) {
             double x = (e * d - b * f) / div;
             double y = (a * f - e * c) / div;
             System.out.println("x is " + x + " and y is " + y);

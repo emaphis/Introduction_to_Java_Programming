@@ -36,6 +36,8 @@ public class IntersectingPoint {
         double x4 = input.nextDouble();
         double y4 = input.nextDouble();
 
+        input.close();
+
         /*
          * You can use Cramer’s rule to solve the following
          * 2 * 2 system of linear equation:

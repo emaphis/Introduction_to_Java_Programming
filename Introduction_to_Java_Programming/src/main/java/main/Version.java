@@ -11,8 +11,10 @@ import java.util.Properties;
  * @author emaph
  */
 public class Version {
-    public static void main(String[] args) {
-        System.out.println("******************** Hello, JDK ********************");
+
+    /** Print out the version of the JDK */
+    static void version() {
+            System.out.println("******************** Hello, JDK ********************");
         Properties prop = System.getProperties();
 
         String version = prop.getProperty("java.version");
@@ -31,5 +33,10 @@ public class Version {
         System.out.println("User dir:  " + path);
         System.out.println("Temp dir:  " + temp);
         System.out.println("****************************************************");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Hello Program!\n");
+        version();
     }
 }
