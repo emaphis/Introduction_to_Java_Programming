@@ -31,7 +31,7 @@ public class Algerbra {
         double d = input.nextDouble();
         double e = input.nextDouble();
         double f = input.nextDouble();
-        
+
         input.close();
 
         // Calculate the divisor
