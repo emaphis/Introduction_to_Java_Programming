@@ -1,0 +1,8 @@
+@startuml Methods1
+title Methods 1
+Object <|-- ArrayList
+Object : equals(): bool
+
+ArrayList : Object[] elementData
+ArrayList : size(): int
+@enduml

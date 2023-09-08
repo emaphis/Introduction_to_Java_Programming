@@ -1,6 +1,34 @@
-@startuml relations
-    /'See relations.png for a diagram'/
-    title Relations
+@startuml Relations
+    title Relations between classes
+    /'
+        Extension   <|--
+        Composition *--
+        Aggregation o--
+        Arrow <--
+    '/
+    class Class01 {
+        i: inheritance
+    }
+    class Class02 { }
+    class Class03 {
+        a: composition
+    }
+
+    class Class04 { }
+    class Class04 {}
+    class Class05 {
+         a: aggregation
+    }
+    class Class06 {}
+    class Class07 {
+        d: dottedLine
+    }
+    class Class08 {}
+    class Class09 {
+        s: solidLine
+    }
+    class Class10 {}
+
     Class01 <|-- Class02
     Class03 *-- Class04
     Class05 o-- Class06

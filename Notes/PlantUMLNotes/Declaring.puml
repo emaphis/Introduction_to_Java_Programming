@@ -1,0 +1,14 @@
+@startuml Declaring
+    title Declaring elements
+    abstract        Abstract { }
+    abstract class  "abstract class" { }
+    annotation      Annotation { }
+    circle          circle { }
+    ()              circle_short_form
+    diamond         diamond
+    <>              diamond_short_form
+    class           Class { }
+    entity          Entity { }
+    enum            Enum { }
+    interface       Interface { }    
+@enduml

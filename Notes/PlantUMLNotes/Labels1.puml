@@ -1,0 +1,6 @@
+@startuml Labels1
+title Labels on relations
+    Class01 "1" *-- "many" Class02 : contains
+    Class03 o-- Class04 : aggregation
+    Class05 --> "1" Class06 : arrow
+@enduml

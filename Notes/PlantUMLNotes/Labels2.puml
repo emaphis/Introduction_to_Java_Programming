@@ -1,0 +1,18 @@
+@startuml Labels2
+title Labels on relations
+class Driver {
+}
+class Car {
+    wheelNum : int
+    drives(driver: Driver): void
+}
+class Wheel {
+}
+class Person {
+    myCar: Car
+}
+
+Driver - Car : drives >
+Car *-- Wheel : have 4 >
+Car -- Person : < owns
+@enduml
