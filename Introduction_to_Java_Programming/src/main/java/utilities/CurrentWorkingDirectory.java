@@ -2,7 +2,7 @@
  * Chapter 12
  * Find the current working directory as a utility.
  */
-package main;
+package utilities;
 
 /**
  * Find the current working directory
