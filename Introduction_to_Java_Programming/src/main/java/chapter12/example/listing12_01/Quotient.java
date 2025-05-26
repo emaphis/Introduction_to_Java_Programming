@@ -1,26 +1,28 @@
 
-import java.util.Scanner;
-
 /*
  * Listing 12.1
- * 12.8 Exception-Handling Overview
- *  Demonstrate exception handling, including how an exception object is
- *  created and thrown.
+ * 12.1 Exception-Handling Overview
+ * Demonstrate exception handling, including how an exception object is
+ * created and thrown.
  */
 
+package chapter12.example.listing12_01;
+
+import java.util.Scanner;
+
 /**
- * An exception example. 
+ * An exception example.
  * @author emaph
  */
 public class Quotient {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
+
         // Prompt user to enter two integers
         System.out.print("Enter two integers: ");
         int number1 = input.nextInt();
         int number2 = input.nextInt();
-        
+
         System.out.println(number1 + " / " + number2 + " is " +
                 (number1 / number2));
     }
