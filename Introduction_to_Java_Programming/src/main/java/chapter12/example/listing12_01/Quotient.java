@@ -1,12 +1,14 @@
 
-import java.util.Scanner;
-
 /*
  * Listing 12.1
  * 12.8 Exception-Handling Overview
  *  Demonstrate exception handling, including how an exception object is
  *  created and thrown.
  */
+
+package chapter12.example.listing12_01;
+
+import java.util.Scanner;
 
 /**
  * An exception example. 
