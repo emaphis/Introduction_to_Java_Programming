@@ -18,19 +18,19 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-base</artifactId>
-            <version>17.0.15</version>
+            <version>17.0.20</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>17.0.15</version>
+            <version>17.0.20</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics</artifactId>
-            <version>17.0.15</version>
+            <version>17.0.20</version>
             <type>jar</type>
         </dependency>
     </dependencies>
@@ -41,7 +41,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.14.0</version>
+                    <version>3.16.0</version>
                     <configuration>
                         <useIncrementalCompilation>false</useIncrementalCompilation>
                         <showDeprecation>true</showDeprecation>

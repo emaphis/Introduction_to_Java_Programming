@@ -1,0 +1,117 @@
+Continuing exercises.
+
+- Area
+Listing 2.1 ComputeArea.java
+Listing 2.2 ComputeAreaWithConsoleInput.java - Listing 2.2 rewrites Listing 2.1
+Listing 2.4 ComputeAreaWithConstant.java - rewrite Listing 2.2, as in Listing 2.4.
+
+
+Exercise 1.11
+2.11 (Population projection) Rewrite Programming Exercise 1.11
+
+Listing 2.10,
+Exercise 2.22 (Financial application: monetary units) Rewrite Listing 2.10,
+Exercise 4.26 (Financial application: monetary units) Rewrite Listing 2.10,
+
+Exercise 5.39 (Financial application: find the sales amount)
+Exercise 5.42 (Financial application: find the sales amount) Rewrite Programming Exercise 5.39
+
+Listing 3.5
+Exercise 8.12 (Financial application: compute tax) Rewrite Listing 3.5,
+
+- Birthday
+Listing 4.3
+Exercise 4.10 (Guess birthday) Rewrite Listing 4.3,
+
+
+Exercise 3.9
+Exercise 4.19 (Business: check ISBN-10) Rewrite Programming Exercise 3.9
+
+
+- Quiz.
+Recall that Listing 3.1, AdditionQuiz.java,
+Listing 5.1 RepeatAdditionQuiz.java
+Exercise 11.16 (Addition quiz) Rewrite Listing 5.1
+
+
+ Listings 5.12 and 5.13
+Listing 5.12.3 Rewrite the programs TestBreak and TestContinue
+
+
+-  Greatest Common Divisor
+Listing 5.9
+Listing 6.6 GreatestCommonDivisorMethod.java
+
+
+Listing 5.15
+Exercise 7.6 (Revise Listing 5.15, PrimeNumber.java)
+
+
+- Reverse method
+Section 7.7 reverses an array by copying
+7.12 (Reverse an array) The reverse method
+
+
+In Listing 7.8,
+Exercise *7.20 (Revise selection sort)
+
+Listing 8.4
+Exercise 8.24 (Check Sudoku solution) Listing 8.4
+
+Listing 8.2,
+Exercise 8.3 Rewrite Listing 8.2,
+
+- Circle class
+9.14.2 Using this to Invoke a Constructor
+11.3.3 Calling Superclass Methods - rewrite the printCircle()
+
+Listing 13.2
+Exercise 13.9 (Enable Circle comparable) Rewrite the Circle class in Listing 13.2
+
+Listing 10.6
+Exercise 11.5 (The Course class) Rewrite the Course class in Listing 10.6.
+Exercise *13.13 (Enable the Course class cloneable) Rewrite the Course class in Listing 10.6
+
+- Rectangle
+Listing 13.3
+Exercise 13.10 (Enable Rectangle comparable) Rewrite the Rectangle class in Listing  13.3
+
+Listing 12.2
+Listing 12.3 QuotientWithMethod.java -  rewrite Listing 12.2 t
+
+
+Listing 12.3 can be rewritten, as shown in Listing 12.4.
+Listing 12.4 QuotientWithException.java
+
+
+Exercise 7.35 Hangman
+Exercise 12.17 (Game: hangman) Rewrite Programming Exercise 7.35
+
+Listing 6.12
+Exercise 13.4 (Display calendars) Rewrite the PrintCalendar class in Listing 6.12
+
+- MyStack
+Listing 11.10
+13.8 (Revise the MyStack class) Rewrite the MyStack class in Listing 11.10
+
+
+ Listing 13.13
+Exercise 13.14 (Demonstrate the benefits of encapsulation) Rewrite the Rational class in List
+ing 13.13
+
+Exercise 3.1
+Exercise 13.20 (Algebra: solve quadratic equations) Rewrite Programming Exercise 3.1
+Exercise 13.17
+Complex class in  Programming  Exercise 13.17
+
+
+Auto resize cylinder
+Exercise 14.10
+Exercise 15.22 (Auto resize cylinder) Rewrite Programming Exercise 14.10
+
+Auto resize stop sign
+Exercise 14.15
+15.23 (Auto resize stop sign) Rewrite Programming Exercise 14.15
+
+
+52/156 Rewrite
