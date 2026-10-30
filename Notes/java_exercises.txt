@@ -1,80 +1,334 @@
 Continuing exercises.
+Modify Revise rewrite
 
-- Area
+ch01
+
+- Population projection
+Exercise 1.11 (Population projection)
+Exercise 2.11 (Population projection) Rewrite Programming Exercise 1.11
+
+
+- Cramer's rule
+Exercise 1.13 (Algebra: solve 2 * 2 linear equations) Y
+Exercise 3.3 (Algebra: solve 2 * 2 linear equations) A linear equation
+
+ch02
+
+- Area Circle
 Listing 2.1 ComputeArea.java
 Listing 2.2 ComputeAreaWithConsoleInput.java - Listing 2.2 rewrites Listing 2.1
 Listing 2.4 ComputeAreaWithConstant.java - rewrite Listing 2.2, as in Listing 2.4.
 
+- BMI
+Case Study: Computing Body Mass Index
+Exercise 2.14 (Health application: computing BMI)
+Listing 3.4, ComputeAndInterpretBMI.java
+Exercise 3.6 (Health application: BMI) Revise Listing 3.4
 
-Exercise 1.11
-2.11 (Population projection) Rewrite Programming Exercise 1.11
 
-Listing 2.10,
-Exercise 2.22 (Financial application: monetary units) Rewrite Listing 2.10,
+- Current time
+Listing 2.7, ShowCurrentTime.java
+Exercise 2.8 (Current time) Listing 2.7, ShowCurrentTime.java
+Exercise 3.30 (Current time) Revise Programming Exercise 2.8
+Exercise 6.24 (Display current date and time) Listing 2.7, ShowCurrentTime.java,
+
+
+-  loans
+Listing 2.8, ComputeLoan.java
+Listing 2.9, ComputeLoan.java.
+Exercise 5.21 (Financial application: compare loans with various interest rates)
+Listing 10.2
+Exercise 12.4 (IllegalArgumentException) Modify the Loan class in Listing 10.2
+Exercise 36.7 (Compute loan payments) Rewrite Listing 2.8, ComputeLoan.java
+
+
+- Financial applicationy: monetary units
+Listing 2.10, ComputeChange.java
+Exercise 2.22 (Financial application: monetary units) Rewrite Listing 2.10
+Exercise 3.7 (Financial application: monetary units) Modify Listing 2.10,
 Exercise 4.26 (Financial application: monetary units) Rewrite Listing 2.10,
 
-Exercise 5.39 (Financial application: find the sales amount)
-Exercise 5.42 (Financial application: find the sales amount) Rewrite Programming Exercise 5.39
 
-Listing 3.5
+- wind-chill temperature
+Exercise 2.17 (Science: wind-chill temperature) How cold is it outside?
+Exercise 3.20 (Science: wind-chill temperature) Programming Exercise 2.17
+
+
+ch03
+
+- Addition Quiz.
+Listing 3.1, AdditionQuiz.java
+Listing 3.3, SubtractionQuiz.java
+Exercise 3.2 (Game: add three numbers) The program in Listing 3.1
+Exercise 3.10 (Game: addition quiz) Listing 3.3, SubtractionQuiz.java, randomly generates
+Listing 5.1 RepeatAdditionQuiz.java
+Listing 5.4, SubtractionQuizLoop.java
+Exercise 5.2 (Repeat additions) Listing 5.4, SubtractionQuizLoop.java,
+Exercise 11.16 (Addition quiz) Rewrite Listing 5.1
+Exercise 21.15 (Addition quiz) Rewrite Programming Exercise 11.16
+Exercise 38.14 (Addition quiz) Write a JSP program
+Exercise 38.15 (Subtraction quiz) Write a JSP programs
+Exercise 39.5 (Addition quiz) Write a JSF program
+
+
+- compute tax
+Listing 3.5  ComputeTax.java
+Exercise 3.13 (Financial application: compute taxes) Listing 3.5,
 Exercise 8.12 (Financial application: compute tax) Rewrite Listing 3.5,
 
-- Birthday
-Listing 4.3
-Exercise 4.10 (Guess birthday) Rewrite Listing 4.3,
+
+- Case Study: Determining Leap Year
+LisTing 3.7 LeapYear.java
 
 
+-  Case Study: Lottery
+Listing 3.8, Lottery.java
+Exercise 3.15 (Game: lottery) Revise Listing 3.8
+LisTing 4.5 LotteryUsingStrings.jav
+Exercise 5.32 (Game: lottery) Revise Listing 3.8, Lottery.java
+Exercise 20.8 (Game: lottery) Revise Programming Exercise 3.15
+
+
+- scissor, rock, paper
+Exercise 3.17 (Game: scissor, rock, paper) Write a program that plays
+Exercise 5.34 (Game: scissor, rock, paper) Programming Exercise 3.17
+
+
+- ISBN-10
 Exercise 3.9
 Exercise 4.19 (Business: check ISBN-10) Rewrite Programming Exercise 3.9
+Exercise 5.36 (Business application: checking ISBN)
+Exercise 5.47 (Business: check ISBN-13) ISBN-13
 
 
-- Quiz.
-Recall that Listing 3.1, AdditionQuiz.java,
-Listing 5.1 RepeatAdditionQuiz.java
-Exercise 11.16 (Addition quiz) Rewrite Listing 5.1
+- Calendar
+Exercise 3.21 uses Zeller’s congruence
+Listing 6.12
+Exercise 6.34 (Print calendar) Programming Exercise 3.21 uses Zeller’s congruence
+Exercise 39.13 (Day of week)
 
 
- Listings 5.12 and 5.13
-Listing 5.12.3 Rewrite the programs TestBreak and TestContinue
+Exercise 3.1
+Exercise 13.20 (Algebra: solve quadratic equations) Rewrite Programming Exercise 3.1
+Exercise 13.17
+Complex class in  Programming  Exercise 13.17
 
+
+ch04
+
+- Birthday
+Listing 4.3 GuessBirthday.java
+Exercise 4.10 (Guess birthday) Rewrite Listing 4.3
+Exercise 39.7 (Guess birthday) Listing 4.3, GuessBirthday.java
+
+
+Exercise 4.6
+Exercise 14.25 (Random points on a circle) Modify Programming Exercise 4.6
+
+
+ch05
 
 -  Greatest Common Divisor
 Listing 5.9
 Listing 6.6 GreatestCommonDivisorMethod.java
 
 
-Listing 5.15
-Exercise 7.6 (Revise Listing 5.15, PrimeNumber.java)
+Listings 5.12 and 5.13
+Listing 5.12.3 Rewrite the programs TestBreak and TestContinue
 
+
+- prime numbers
+Listing 5.15
+Exercise 5.20 (Display prime numbers between 2 and 1,000) Modify the program given in  Listing 5.15
+Exercise 7.6 (Revise Listing 5.15, PrimeNumber.java) Listing 5.15
+
+
+Exercise 5.21
+Exercise 16.13 (Compare loans with various interest rates) Rewrite Programming Exercise 5.21 to create a GUI.
+
+- Financial application
+Exercise 5.39 (Financial application: find the sales amount)
+Exercise 5.42 (Financial application: find the sales amount) Rewrite Programming Exercise 5.39
+
+
+Exercise 5.22 (Financial application: loan amortization schedule)
+
+Exercise 5.31 (Financial application: compute CD value)
+
+
+ch06
+
+Listing 6.8
+12.6 (NumberFormatException) Listing 6.8
+
+
+- Craps
+Exercise 6.30
+Exercise 6.32 (Game: chance of winning at craps) Revise Programming Exercise 6.30
+
+ch07
 
 - Reverse method
 Section 7.7 reverses an array by copying
 7.12 (Reverse an array) The reverse method
 
 
+-  selection sort
 In Listing 7.8,
-Exercise *7.20 (Revise selection sort)
+Exercise 7.20 (Revise selection sort)
 
-Listing 8.4
-Exercise 8.24 (Check Sudoku solution) Listing 8.4
+
+- Bubble sort
+Exercise 7.18 (Bubble sort)
+
+Exercise 7.19 (Sorted?) Write the fo
+
+
+- Calculator
+Listing 7.9, Calculator.java
+Exercise 10.26 (Calculator) Revise Listing 7.9, Calculator.java
+
+
+Exercise 7.1
+Exercise 30.1 (Assign grades) Rewrite Programming Exercise 7.1 u
+
+Exercise 7.3
+Exercise 30.2 (Count occurrence of numbers) Rewrite Programming Exercise 7.3
+
+Exercise 7.4
+Exercise 30.3 (Analyze scores) Rewrite Programming Exercise 7.4 using streams.
+
+Exercise 7.5
+Exercise 30.4 (Print distinct numbers) Rewrite Programming Exercise 7.5
+
+Exercise 7.7
+30.5 (Count single digits) Rewrite Programming Exercise 7.7
+
+Exercise 7.8
+30.6 (Average an array) Rewrite Programming Exercise 7.8
+
+Exercise 7.9
+Exercise 30.7 (Find the smallest element)
+
+Exercise 7.15
+30.8 (Eliminate duplicates)
+
+Exercise 7.17
+30.9 (Sort students) Rewrite Programming Exercise 7.17
+
+- bean machine
+Exercise 7.37
+Exercise 14.29 (Game: bean machine) Write a program that displays a bean machine
+Exercise 15.33 (Game: bean-machine animation)
+
+- Game: hangman
+ Exercise 7.35
+Exercise 12.17 (Game: hangman) Rewrite Programming Exercise 7.35
+Exercise 20.7 (Game: hangman) Programming Exercise 7.35
+
+
+ch08
 
 Listing 8.2,
 Exercise 8.3 Rewrite Listing 8.2,
 
+
+- Points nearest to each other
+Listing 8.3
+Exercise 8.7 (Points nearest to each other) Listing 8.3 gives a program
+Exercise 8.8 (All closest pairs of points) Revise Listing 8.3
+
+
+- Sudoku
+8.7 Case Study: Sudoku
+Listing 8.4
+Exercise 8.24 (Check Sudoku solution) Listing 8.4
+Exercise 22.20 (Game: multiple Sudoku solutions)
+Exercise 22.21 (Game: Sudoku) The complete solution for the Sudoku problem
+Exercise 22.22 (Game: recursive Sudoku) Write a recursive solution for the Sudoku problem.
+Exercise 22.25 (Game: Sudoku) Revise Programming Exercise 22.21
+Exercise 32.20 (Sudoku search animation) Modify Programming Exercise 22.21
+
+
+Exercise 8.20
+Exercise 16.31  (Game: connect four) Programming Exercise 8.20
+
+
+- Largest block
+Exercise 8.35
+Exercise 22.19 (Largest block) The problem for finding a largest block
+
+
+- Capitals
+Exercise 8.37
+Exercise 9.22
+Exercise 20.3 (Guessing the capitals) Rewrite Programming Exercise 8.37
+Exercise 21.9 (Guess the capitals using maps) Rewrite Programming Exercise 8.37
+Exercise 39.8 (Guess capitals) Write a JSF that prompts
+Exercise 38.17 (Guess capitals) Write a JSP
+
+
+ch09
+
+- Account
+Exercise 9.7
+Exercise 11.8 (New Account class) An Account class was specified in Programming Exercise 9.7
+
+
 - Circle class
+Listing 9.2 Circle.java (AlternativeCircle.java)
+9.7 Static Variables, Constants, and Methods
+Listing 9.8, Circle.java
 9.14.2 Using this to Invoke a Constructor
 11.3.3 Calling Superclass Methods - rewrite the printCircle()
+Listing 12.7 CircleWithException.java
 
-Listing 13.2
-Exercise 13.9 (Enable Circle comparable) Rewrite the Circle class in Listing 13.2
 
+ch10
+
+
+- Loan
+Listing 10.2
+Exercise 12.4 (IllegalArgumentException) Modify the Loan class in Listing 10.2
+Exercise 17.6 (Store Loan objects) The Loan class in Listing 10.2
+Exercise 17.7 (Restore objects from a file) Suppose a file named Exercise17_06.dat
+Exercise 17.7 (Restore objects from a file) Suppose a file named Exercise17_06.dat
+
+
+- Queue
+Section 10.6 gives a class for Stack
+Exercise 10.10 (The Queue class)
+
+- Course class
 Listing 10.6
+Exercise 10.9 (The Course class) Revise the Course class
 Exercise 11.5 (The Course class) Rewrite the Course class in Listing 10.6.
 Exercise *13.13 (Enable the Course class cloneable) Rewrite the Course class in Listing 10.6
 
-- Rectangle
-Listing 13.3
-Exercise 13.10 (Enable Rectangle comparable) Rewrite the Rectangle class in Listing  13.3
+
+ch11
+
+
+- Stack
+ Section 11.13, Case Study: A Custom Stack Class,
+Listing 19.1 GenericStack.java
+Exercise 19.1 (Revising Listing19.1) Revise the GenericStack class in Listing 19.1
+Exercise 19.2 (Implement GenericStack using inheritance) In Listing 19.1, GenericStack
+
+
+- MyStack
+Listing 11.10
+Exercise 11.10 (Implement MyStack using inheritance)
+Exercise 13.8 (Revise the MyStack class) Rewrite the MyStack class in Listing 11.10
+
+
+- Triange
+Exercise 11.1
+Exercise 12.5 (IllegalTriangleException) Programming Exercise 11.1
+Exercise 13.1 (Triangle class) Design a new Triangle class that extends the abstract GeometricObject class.
+
+
+ch12
 
 Listing 12.2
 Listing 12.3 QuotientWithMethod.java -  rewrite Listing 12.2 t
@@ -83,35 +337,435 @@ Listing 12.3 QuotientWithMethod.java -  rewrite Listing 12.2 t
 Listing 12.3 can be rewritten, as shown in Listing 12.4.
 Listing 12.4 QuotientWithException.java
 
+- WebCrawler
+Listing 12.18 WebCrawler.java
+Exercise 12.33 (Search Web) Modify Listing 12.18 WebCrawler.java
 
-Exercise 7.35 Hangman
-Exercise 12.17 (Game: hangman) Rewrite Programming Exercise 7.35
 
-Listing 6.12
+- hex2ec
+Exercise 12.6
+Exercise 12.8 (HexFormatException) Programming Exercise 12.6
+
+
+- Replace text
+Exercise 12.16
+Exercise 12.22 (Replace text) Revise Programming Exercise 12.16
+
+
+- Baby name
+Exercise 12.31
+Exercise 21.11 (Baby name popularity ranking) Use the data files from Programming  Exercise 12.31
+Exercise 21.12 (Name for both genders) Write a program that prompts the user to enter one of the
+filenames described in Programming Exercise 12.31
+Exercise 21.13 (Baby name popularity ranking) Revise Programming Exercise 21.11
+Exercise *** Baby name by name popularity ranking) Use the data files from Programming  Exercise 12.31
+
+
+
+ch13
+
+Listing 13.2
+Exercise 13.6 (The ComparableCircle class) Define a class named ComparableCircle that extends Circle and implements Comparable
+Exercise 13.9 (Enable Circle comparable) Rewrite the Circle class in Listing 13.2
+
+
+- GeometricObject
+Exercise 13.5 (Enable GeometricObject comparable) Modify the GeometricObject
+
+
+- Rectangle
+Listing 13.3
+Exercise 13.10 (Enable Rectangle comparable) Rewrite the Rectangle class in Listing  13.3
+
+
 Exercise 13.4 (Display calendars) Rewrite the PrintCalendar class in Listing 6.12
-
-- MyStack
-Listing 11.10
-13.8 (Revise the MyStack class) Rewrite the MyStack class in Listing 11.10
 
 
  Listing 13.13
 Exercise 13.14 (Demonstrate the benefits of encapsulation) Rewrite the Rational class in List
 ing 13.13
 
-Exercise 3.1
-Exercise 13.20 (Algebra: solve quadratic equations) Rewrite Programming Exercise 3.1
-Exercise 13.17
-Complex class in  Programming  Exercise 13.17
 
+ch14
 
 Auto resize cylinder
 Exercise 14.10
 Exercise 15.22 (Auto resize cylinder) Rewrite Programming Exercise 14.10
+
+
+- ClockPane
+Section 14.12
+Exercise 14.26 (Use the ClockPane class) Write a program that displays two clocks
+Exercise 14.27 (Draw a detailed clock) Modify the ClockPane class in Section 14.12
+Exercise 14.28 (Random time) Modify the ClockPane class
+Exercise 15.32 (Control a clock) Modify Listing 14.21
+
 
 Auto resize stop sign
 Exercise 14.15
 15.23 (Auto resize stop sign) Rewrite Programming Exercise 14.15
 
 
-52/156 Rewrite
+ch15
+
+Exercise 15.20 (Geometry: display angles - see Listing 4.1.
+
+Exercise 15.24
+15.26 (Change opacity) Rewrite Programming Exercise 15.24
+
+
+Exercise 15.28
+Exercise 16.18 (Simulation: a running fan) Rewrite Programming Exercise 15.28
+
+
+Exercise 15.30
+Exercise 16.28 (Slide show) Programming Exercise 15.30
+
+
+ch16
+
+16.10  ScrollBar
+16.11  Slider
+
+
+ Listing 16.8
+Exercise 16.27 (Display country flag and flag description) Listing 16.8
+
+
+
+ch17
+
+Exercise 17.10 (Split files)
+Exercise 17.11 (Split files GUI) Rewrite Exercise 17.10
+
+
+17.12 (Combine files)
+17.13 (Combine files GUI) Rewrite Exercise 17.12
+
+
+c18
+
+- Fibonacci
+Listing 18.2
+18.2 (Fibonacci numbers) Rewrite the fib method in Listing 18.2
+Exercise 18.10.2   Rewrite the fib method in Listing 18.2 using tail recursion.
+
+
+
+Listing 18.7,
+Exercise 18.28 (Nonrecursive directory size) Rewrite Listing 18.7
+Exercise 20.18 (Directory size) Listing 18.7
+
+
+- TowerOfHanoi
+Listing 18.8, TowerOfHanoi.java
+Exercise 18.18 (Tower of Hanoi) Modify Listing 18.8
+Exercise 20.22 (Nonrecursive Tower of Hanoi) Implement the moveDisks method in
+Listing 18.8 using a stack
+
+
+- (Sierpinski triangle
+ Listing 18.9
+ Exercise 18.19 (Sierpinski triangle) Revise Listing 18.9
+
+
+Exercise 18.9
+18.12 (Print the characters in a string reversely) Rewrite Programming Exercise 18.9
+
+
+Exercise 18.12 (Print the characters in a string reversely) Rewrite Programming Exercise 18.9
+Exercise 18.10 (Occurrences of a specified character in a string)
+Exercise 18.15 (Occurrences of a specified character in a string) Rewrite Programming Exercise 18.10
+
+
+ch20
+
+Point2D
+Exercise 20.4 (Sort points in a plane) -  using Point2D
+
+
+- MultipleBallApp
+Listing 20.10, MultipleBallApp.java
+Exercise 20.9 (Remove the largest ball first) Modify Listing 20.10,
+
+
+- Evaluate expression
+Listing 20.12,
+Exercise 20.23 (Evaluate expression) Modify Listing 20.12
+
+
+ch21
+
+Listing 21.7
+Exercise 21.10 (Count the occurrences of each keyword) Rewrite Listing 21.7
+
+Listing 21.9
+Exercise 21. (Revise Listing 21.9, CountOccurrenceOfWords.java) Rewrite Listing 21.9
+Exercise 21.8 (Count the occurrences of words in a text file) Rewrite Listing 21.9
+
+
+ Listing 21.9
+Exercise 21.7 (Revise Listing 21.9, CountOccurrenceOfWords.java) Rewrite Listing 21.9
+Exercise 21.8 (Count the occurrences of words in a text file) Rewrite Listing 21.9
+Listing 30.13 CountOccurrenceOfWordsStream.java
+
+
+Listing 21.7,
+Exercise 21.10 (Count the occurrences of each keyword) Rewrite Listing 21.7,
+
+
+Listing 22.11, EightQueens.java
+Exercise 22.23 (Game: multiple Eight Queens solution)
+Exercise 32.18 (Parallel Eight Queens) Revise Listing 22.11
+
+
+Exercise 22.26 (Bin packing with smallest object first)
+Exercise 22.27 (Optimal bin packing) Rewrite the preceding program
+
+
+ch23
+
+- Quick sort
+Exercise 23.4 (Improve quick sort)
+
+- Merge Sort
+Exercise 23.5 (Modify merge sort) Rewrite the mergeSort
+
+
+ch28
+
+NineTail.java
+Exercise 28.13 (4 * 4 16 tails problem) Listing 28.14, NineTail.java,
+Exercise 28.14 (4 * 4 16 tails analysis) T
+Exercise 28.15 (4 * 4 16 tails GUI) Rewrite Programming Exercise 28.14
+
+
+KnightTourApp.java
+Exercise 28.18 (Knight’s Tour cycle) Rewrite KnightTourApp.java
+
+
+Listing 28.6
+28.19 (Display a DFS/BFS tree in a graph) Modify GraphView in Listing 28.6
+
+Listing 28.10, ConnectedCircles.java,
+28.23 (Connected rectangles) Listing 28.10, ConnectedCircles.java,
+Exercise 28.24 (Remove a circle) Modify Listing 28.10, C
+
+
+Listing 28.4, UnweightedGraph.java
+Exercise 28.25 (Implement remove(V v)) Modify Listing 28.4,
+Exercise 28.26 (Implement remove(int u, int v)) Modify Listing 28.4,
+
+
+Listing 21.7 gives a program to count the keywords in a Java source file.
+Listing 30.12 CountKeywordStream.java
+
+Listing 21.9 gives a program that counts the occurrences of words in a text
+
+Exercise 7.1
+Exercise 30.1 (Assign grades) Rewrite Programming Exercise 7.1 u
+
+Exercise 7.3
+Exercise 30.2 (Count occurrence of numbers) Rewrite Programming Exercise 7.3
+
+Exercise 7.4
+Exercise 30.3 (Analyze scores) Rewrite Programming Exercise 7.4 using streams.
+
+Exercise 7.5
+Exercise 30.4 (Print distinct numbers) Rewrite Programming Exercise 7.5
+
+Exercise 7.7
+30.5 (Count single digits) Rewrite Programming Exercise 7.7
+
+Exercise 7.8
+30.6 (Average an array) Rewrite Programming Exercise 7.8
+
+Exercise 7.9
+Exercise 30.7 (Find the smallest element)
+
+Exercise 7.15
+30.8 (Eliminate duplicates)
+
+Exercise 7.17
+30.9 (Sort students) Rewrite Programming Exercise 7.17
+
+
+Exercise 6.2
+Exercise 30.12 (Sum the digits in an integer) Rewrite Programming Exercise 6.2
+
+Exercise 6.20
+Exercise 30.13 (Count the letters in a string) Rewrite Programming Exercise 6.20
+
+Exercise 6.23
+Exercise 30.14 (Occurrences of a specified character) Rewrite Programming Exercise 6.23
+
+Exercise 20.1
+Exercise 30.15 (Display words in ascending alphabetical order)
+
+
+ scores array in Section 8.8
+Exercise 30.16 (Distinct scores)
+
+Exercise 21.4
+Exercise 30.17 (Count consonants and vowels)
+
+
+Exercise 21.8
+Exercise 30.18 (Count the occurrences of words in a text file)
+
+
+Exercise 15.29
+Exercise 32.2 (Racing cars) Rewrite Programming Exercise 15.29
+
+Listing 15.13
+Exercise 32.3 (Raise flags)
+
+
+Listing 16.13, ImageAudioAnimation.java,
+Exercise 36.10 (Flag and anthem) Rewrite Listing 16.13, ImageAudioAnimation.java,
+
+
+Exercise 15.28
+Exercise 32.5 (Display a running fan)
+
+Listing 15.17
+Exercise 32.6 (Bouncing balls)
+
+Exercise 15.32
+Exercise 32.7 (Control a clock)
+
+Listing 32.6, ThreadCooperation.java
+Exercise 32.8 (Account synchronization) Rewrite Listing 32.6,
+
+
+Exercise 20.5
+Exercise 32.21 (Combine colliding bouncing balls) Rewrite Programming Exercise 20.5
+
+
+Listing 22.11, EightQueens.java,
+Exercise 32.22 (Eight Queens animation)
+
+
+
+Listing 34.2, FindGrade.java
+34.4 (Find grades) Listing 34.2, FindGrade.java
+
+
+Exercise 34.8
+Exercise 35.5 (Populate Salary table)
+
+
+Exercise 4.22
+Exercise 36.5 (Compute loan amortization schedule)
+
+Listing 2.8, ComputeLoan.java
+Exercise 36.7 (Compute loan payments)
+Exercise 40.2 (Compute loan) Rewrite Programming Exercise 33.1
+
+
+- DecimalFormat
+Exercise 5.8
+Exercise 36.8 (Use the DecimalFormat class) Rewrite Exercise 5.8
+
+
+Section 36.3.6
+*36.9 (Use resource bundle) Modify the example for displaying a calendar in Section 36.3.6
+
+Listing 16.13, ImageAudioAnimation.java
+Exercise 36.10 (Flag and anthem) Rewrite Listing 16.13, ImageAudioAnimation.java,
+
+Exercise 37.1
+Exercise 38.1 (Factorial table in JSP) Rewrite Exercise 37.1 using JSP
+
+
+ Exercise 37.2
+ 38.2 (Muliplication table in JSP) Rewrite Exercise 37.2
+
+
+Listing 37.4
+Exercise 38.3 (Obtain parameters in JSP) Rewrite the servlet in Listing 37.4
+
+
+Exercise 37.4
+38.4 (Calculate tax in JSP) Rewrite Exercise 37.4
+
+
+Exercise 37.6
+Exercise 38.5 (Find scores from text files) Rewrite Exercise 37.6 using servlets
+
+
+Exercise 37.7
+Exercise 38.6 (Find scores from database tables) Rewrite Exercise 37.7
+
+
+Exercise 37.8
+Exercise 38.7 (Change the password) Rewrite Exercise 37.8
+
+Exercise 37.10
+Exercise 38.8 (Store cookies in JSP) Rewrite Exercise 37.10
+
+
+Exercise 37.11
+Exercise 38.9 (Retrieve cookies in JSP) Rewrite Exercise 37.11
+
+
+Flag
+Exercise 38.10 Draw images) Write a JSP program that displays a country's flag and description
+
+
+Exercise 37.12
+Exercise 38.11 (Syntax highlighting) Rewrite Exercise 37.12
+
+
+- Poll
+Exercise 37.13
+Exercise 38.12  (Opinion poll) Rewrite Exercise 37.13
+Exercise 38.13 (Multiple-question opinion poll) The Poll table in Exercise 37.13
+
+
+- Birthday
+Listing 3.3, GuessBirthDay.java
+38.16 (Guess birthday) Listing 3.3
+
+
+- Staff table
+Exercise 33.1
+Exercise 38.19 (Access and update a Staff table)
+Exercise 39.9 (Access and update a Staff table)
+
+
+
+- Factorial
+Exercise 39.1
+Exercise 39.6 (Large factorial) Rewrite Exercise 39.
+
+- Total count
+Listing 39.22 DisplayCount.xhmt
+Exercise 39.14 (Display total count)
+
+
+- Cards
+Exercise 20.13
+Exercise 39.10 (Random cards)
+Exercise 39.11 (Game: the 24-point card game) Rewrite Exercise 20.13
+Exercise 39.12 (Game: the 24-point card game) Rewrite Exercise 20.17
+
+
+Exercise 33.4
+Exercise 40.3 (Web visit count) Rewrite Programming Exercise 33.4
+
+- student information
+Exercise 33.6
+Exercise 40.4 (Display and add addresses) Rewrite Programming Exercise 33.6
+Exercise 40.5 (Address in a database table) Rewrite Programming Exercise 40.4
+Exercise 40.6 (Three-tier application) Use the three-tier approach to modify Programming Exercise 40.4,
+
+
+Exercise 33.13
+Exercise 40.7 (Chat) Rewrite Programming Exercise 33.13
+
+
+- TicTacToe
+Exercise 8.9 (Game: play a tic-tac-toe game) In a game of tic-tac-toe,
+Section 40.6, “RMI Callbacks,”
+Exercise 40.8 (Improve TicTacToe)
